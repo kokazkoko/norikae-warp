@@ -77,6 +77,12 @@ if abs(p12["y"] - YPLAT) < .3:
             T["y"] = round(Y3F - 1.1, 2); nt += 1
     log.append(f"Chuo tracks raised: {nt}")
 
+# 5b) 東京ラーメンストリートは一番街の地下1階（OSM ではホーム高さの孤立片になっていた）
+if "東京ラーメンストリート" in NAMES:
+    ri = NAMES.index("東京ラーメンストリート")
+    seeds = [a for a, b, k, nm, ind in E if nm == ri and k == 0]
+    if seeds: log.append(f"ramen street -> B1: {relevel(flood(seeds[0], N[seeds[0]][1]), YB1)}")
+
 # steps / escalator interiors: re-interpolate between their (possibly moved) ends
 flat_deg = collections.Counter()
 for a, b, k, nm, ind in E:
@@ -104,6 +110,27 @@ have = {g[0] for g in D["gates"]}
 for key, name in (("exit_mn", "丸の内北口"), ("exit_ms", "丸の内南口")):
     n = D["spots"].get(key)
     if n is not None and n not in have: D["gates"].append([n, "exit:JRE", name]); log.append(f"gate added: {name}")
+# 7b) グランスタ地下北口（JR東日本の改札）が無く、地下の北自由通路から改札内へ素通りできていた
+if "東京駅;グランスタ地下北口" in NAMES:
+    gi = NAMES.index("東京駅;グランスタ地下北口"); cnt = collections.Counter()
+    for a, b, k, nm, ind in E:
+        if nm == gi: cnt[a] += 1; cnt[b] += 1
+    for n, c in cnt.items():
+        if c >= 2 and n not in have: D["gates"].append([n, "exit:JRE", "グランスタ地下北口"]); have.add(n); log.append("gate added: グランスタ地下北口")
+# 7c) JR東海図: 八重洲側の新幹線改札は 北口・中央北口・中央南口・南口 の4つ。名前の無い改札(八重洲中央口の隣)は中央南口、
+#     南口は OSM に無いので 1F コンコース南端と八重洲南口前の歩道の間に置く
+for g in D["gates"]:
+    if g[1] == "exit:JRC" and not g[2] and math.dist(N[g[0]], N[D["spots"]["exit_yc"]]) < 15: g[2] = "新幹線八重洲中央南口"
+if not any(g[2] == "新幹線八重洲南口" for g in D["gates"]):
+    jrc = set(D["sealed"]["JRC"])
+    ys = N[D["spots"]["exit_ys"]]
+    inner = min((n for n in jrc if abs(N[n][1] - Y1F) < .3), key=lambda n: math.dist(N[n], ys))
+    outer = min((n for n in range(len(N)) if n not in jrc and n not in have and abs(N[n][1] - Y1F) < .3 and adj[n] and N[n][2] > N[inner][2] + 3
+                 and not any(E[i][3] >= 0 and "通路" in NAMES[E[i][3]] for v, i in adj[n])), key=lambda n: math.dist(N[n], N[inner]))
+    N.append([round((N[inner][0] + N[outer][0]) / 2, 2), Y1F, round((N[inner][2] + N[outer][2]) / 2, 2)]); g_ = len(N) - 1
+    E.extend([[inner, g_, 0, -1, 1], [g_, outer, 0, -1, 1]]); adj[inner].append((g_, len(E) - 2)); adj[g_] += [(inner, len(E) - 2), (outer, len(E) - 1)]; adj[outer].append((g_, len(E) - 1))
+    D["gates"].append([g_, "exit:JRC", "新幹線八重洲南口"]); have.add(g_); log.append(f"gate added: 新幹線八重洲南口 between {inner} and {outer}")
+gate = {g[0]: g for g in D["gates"]}
 
 # 8) 孤立した小さな通路片（例: 新幹線八重洲中央北口の改札前）を、同じ高さで 5m 以内の本体通路へつなぐ
 adj = collections.defaultdict(list)
@@ -201,6 +228,19 @@ for lst in pos.values():
     for a_, b_ in zip(lst, lst[1:]):
         if (min(a_, b_), max(a_, b_)) not in existing: E.append([a_, b_, 0, -1, 1]); twins += 1
 log.append(f"flattened level stairs: {flatten}, joined duplicate points: {twins}")
+
+# 10c) 「平らな通路」なのに 1 階分近く上下する区間: 勾配 1/12 より急なら階段扱い（ベビーカーが通らないように）
+steep = 0
+for e in E:
+    if e[2] != 0: continue
+    dy = abs(N[e[0]][1] - N[e[1]][1]); hz = math.dist((N[e[0]][0], N[e[0]][2]), (N[e[1]][0], N[e[1]][2]))
+    if dy > 1.5 and hz < 12 * dy: e[2] = 1; steep += 1
+log.append(f"steep 'flat' segments -> stairs: {steep}")
+if "東京ラーメンストリート" in NAMES:
+    ri = NAMES.index("東京ラーメンストリート"); cnt = collections.Counter()
+    for a, b, k, nm, ind in E:
+        if nm == ri: cnt[a] += 1; cnt[b] += 1
+    if cnt: D["spots"]["ramen"] = max(cnt, key=lambda n: (cnt[n], -n))
 
 # 11) エレベーター（OSM highway=elevator）: 近くの各階の通路を縦につなぐ（ベビーカー・車いすルート用, kind 4）
 DATA = HTML.parent / "tools" / "data"
@@ -325,6 +365,45 @@ for top, bot in conn:
     w = math.dist(N[top], N[bot]); SG[top].append((bot, w)); SG[bot].append((top, w))
 log.append(f"estimated connector elevators: {est2}")
 
+# 11d) 改札の外（自由通路）と改札内をエレベーターで直結しない: 改札を通らずに外から JR ホームへ行ける経路があれば、
+#      その経路上でいちばんホーム寄りのエレベーター区間を外す（無くなるまで繰り返す）
+def leak_path():
+    gn = {g[0] for g in D["gates"]}; sl = {n for l in D["sealed"].values() for n in l}
+    ad = collections.defaultdict(list)
+    for i, (a_, b_, k, nm, ind) in enumerate(E): ad[a_].append((b_, i)); ad[b_].append((a_, i))
+    used = set(D["linePlat"].values())
+    goal = {p["stand"] for p in D["plats"] if p["sys"] == "JRE" and p["key"] in used}
+    src = D["spots"]["yaechika"]; prev = {src: None}; q = collections.deque([src])
+    while q:
+        u = q.popleft()
+        if u in goal:
+            out = []
+            while prev[u]: u, i = prev[u]; out.append(i)
+            return out[::-1]
+        for v, i in ad[u]:
+            if v not in prev and v not in gn and v not in sl: prev[v] = (u, i); q.append(v)
+    return None
+removed = 0
+while (lp := leak_path()):
+    ev = [i for i in lp if E[i][2] == 4]
+    if not ev: log.append("WARNING: gate-free path to a JR platform without elevators: " + str(lp[-5:])); break
+    del E[ev[-1]]; removed += 1
+log.append(f"free<->in-station elevator links removed: {removed}")
+# 11e) 東京駅の外の地下鉄駅（大手町・有楽町など）は改札の位置データが不完全で、改札を通らずホームに着いてしまう。
+#      そのホームは「改札データなし（FREE）」として扱い、改札を通ったふりをしない
+_gn = {g[0] for g in D["gates"]}; _sl = {n for l in D["sealed"].values() for n in l}
+_ad = collections.defaultdict(list)
+for a_, b_, *_ in E: _ad[a_].append(b_); _ad[b_].append(a_)
+_seen = {D["spots"]["yaechika"]}; _st = list(_seen)
+while _st:
+    u = _st.pop()
+    for v in _ad[u]:
+        if v not in _seen and v not in _gn and v not in _sl: _seen.add(v); _st.append(v)
+opened = [p["key"] for p in D["plats"] if not p["sys"].startswith("JR") and p["sys"] != "FREE" and p["stand"] in _seen]
+for p in D["plats"]:
+    if p["key"] in opened: p["sys"] = "FREE"
+log.append(f"metro platforms without gate data -> FREE: {len(opened)}")
+
 # 12) お店（OSM shop / 飲食）: 駅の通路に面したものを、通路脇の半透明の区画として配置
 CAT = [("food", ("restaurant", "fast_food", "food_court", "pub", "bar")), ("cafe", ("cafe", "ice_cream")),
        ("gift", ("gift", "confectionery", "bakery", "department_store", "mall", "variety_store", "chocolate", "pastry", "tea", "alcohol", "deli")),
@@ -357,7 +436,7 @@ for e in json.loads((DATA / "shops.json").read_text())["elements"]:
     off = 1.95   # 通路の壁の内側に沿った店先として置く（壁の外に置くと POV で見えない）
     cx, cz = px - uz * off * side, pz + ux * off * side
     cat = next((c for c, ks in CAT if kind in ks), "shop")
-    shops.append([round(cx, 1), round(N[a_][1], 2), round(cz, 1), round(math.atan2(ux, uz), 3), cat, t.get("name", "")])
+    shops.append([round(cx, 1), round(N[a_][1], 2), round(cz, 1), round(math.atan2(ux, uz), 3), cat, t.get("name", ""), side])
 # お店ゾーン（改札内は OSM に個別店舗がほぼ無い）: ゾーン名の付いた通路の両側に店先を並べる
 ZONES = [("ラーメン", "food"), ("おかし", "gift"), ("キャラクター", "shop"), ("グランスタ", "gift"), ("一番街", "gift"), ("八重北", "food"),
          ("黒塀", "food"), ("グルメ", "food"), ("地下街", "shop"), ("ヤエチカ", "shop"), ("地下1番通り", "shop"), ("地下2番通り", "food"), ("エキュート", "gift")]
@@ -377,7 +456,7 @@ for a_, b_, k, nm, ind in E:
             cx, cz = ax + ux * t - uz * 1.95 * side, az + uz * t + ux * 1.95 * side
             if any(abs(q[2] - y) < .5 and math.hypot(q[0] - cx, q[1] - cz) < 3.5 for q in taken): continue
             alt = cat if cat != "gift" or (int(t / 5) + side) % 3 else "food"
-            shops.append([round(cx, 1), round(y, 2), round(cz, 1), round(math.atan2(ux, uz), 3), alt, zname.split(";")[0]]); taken.append((cx, cz, y)); zone_n += 1
+            shops.append([round(cx, 1), round(y, 2), round(cz, 1), round(math.atan2(ux, uz), 3), alt, zname.split(";")[0], side]); taken.append((cx, cz, y)); zone_n += 1
         t += 5
 log.append(f"shop-zone storefronts: {zone_n}")
 D["shops"] = shops
@@ -418,6 +497,17 @@ for a, b, k, nm, ind in E:
         for L, y in H.items():
             if lo - .2 <= y + 3.4 and y < hi - .3: shaft[L].update(cs)
             if lo + .3 < y < hi + .2: hole[L].update(cs)
+# お店の区画: 通路の壁を開けて奥行き 4.5m の店舗スペースにする（外周だけ壁）
+for x, y, z, yaw, cat, nm, side in D["shops"]:
+    L = level_of(y)
+    ux, uz = math.sin(yaw), math.cos(yaw); nx, nz = -uz * side, ux * side
+    for t in (-1.8, -0.9, 0, 0.9, 1.8):
+        for dpt in (-0.6, 0.3, 1.2, 2.1, 3.0, 3.9):
+            px, pz = x + ux * t + nx * dpt, z + uz * t + nz * dpt
+            u, v = rot(px, pz)
+            if not enclosed(L, u, v): continue
+            c = (math.floor(u / CELL), math.floor(v / CELL))
+            cells[L].setdefault(c, 1)
 for p in D["plats"]:
     L = level_of(p["y"])
     if L >= 1: continue
