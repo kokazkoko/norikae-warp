@@ -1,5 +1,4 @@
-<!doctype html><html lang="ja"><head><title>乗換ワープ｜東京駅 乗換3Dシミュレーター</title><link rel="icon" href="data:,"><meta name="description" content="東京駅の乗り換えを実地図データの3D模型と高速POVで確認できる無料ツール"><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>乗換ワープ</title>
+<!doctype html><html lang="ja"><head><title>東京駅乗り換え3Dアプリ</title><link rel="icon" href="data:,"><meta name="description" content="東京駅の乗り換えを実地図データの3D模型と高速POVで確認できる無料ツール"><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
   :root{
@@ -69,6 +68,7 @@
   .ropts{display:flex;flex-direction:column;gap:6px;margin-top:4px}
   .ropt{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:#0d121b;color:var(--dim);cursor:pointer;font:500 11.5px "Zen Kaku Gothic New",sans-serif}
   .ropt b{font-size:13.5px;color:var(--ink)}
+  .ropt .tagline{font-size:12px;color:var(--amber)}
   .ropt .mono{font-size:12px;color:var(--ink)}
   .ropt.on{border-color:var(--amber);background:rgba(255,176,32,.08)}
   .ropt.on b::before{content:"● ";color:var(--amber)}
@@ -137,7 +137,7 @@
 
 <div id="top">
   <form id="controls" class="panel" autocomplete="off">
-    <div class="brand"><h1>乗換ワープ</h1><span>東京駅 JY01 · 実地図データ模型</span></div>
+    <div class="brand"><h1>東京駅乗り換え3Dアプリ</h1><span>東京駅 JY01 · 実地図データ模型</span></div>
     <div class="row">
       <div class="field combo"><label for="fromInput">乗ってきた路線 ▾</label><input id="fromInput" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="fromList" value="丸ノ内線" placeholder="タップで一覧"><div class="list" id="fromList" role="listbox" hidden></div></div>
       <button type="button" class="iconbtn" id="swapBtn" aria-label="出発と到着を入れ替え">⇅</button>
@@ -325,6 +325,9 @@ class Heap { constructor() { this.a = []; } push(x) { const a = this.a; a.push(x
   pop() { const a = this.a, top = a[0], last = a.pop(); if (a.length) { a[0] = last; let i = 0; for (;;) { const l = 2 * i + 1, r = l + 1; let m = i; if (l < a.length && a[l][0] < a[m][0]) m = l; if (r < a.length && a[r][0] < a[m][0]) m = r; if (m === i) break; [a[m], a[i]] = [a[i], a[m]]; i = m; } } return top; } get size() { return this.a.length; } }
 
 // phases: 0 = inside origin fare system, 1 = outside (free), 2 = inside destination system
+const EPEN = new Float32Array(D.edges.length).fill(1), GPEN = new Map();
+const ELEN = new Float32Array(D.edges.length);
+D.edges.forEach(([a, b], i) => { ELEN[i] = NP[a].distanceTo(NP[b]); });
 function routeSearch(src, dst, So, Sd, mode, profile = "inside") {
   const outMul = profile === "inside" ? 6 : 1, exitPen = profile === "inside" ? 400 : 120;
   const same = So === Sd, sysOf = [So, "FREE", Sd];
@@ -354,7 +357,7 @@ function routeSearch(src, dst, So, Sd, mode, profile = "inside") {
         }
       }
       if (mode !== "free") { const s = SEALED.get(v); if (s && s !== sysOf[nph]) continue; }
-      const nd = d0 + w * (OUTDOOR[ei] ? outMul : 1) + pen, idx = v * K + nph;
+      const nd = d0 + w * (OUTDOOR[ei] ? outMul : 1) * EPEN[ei] + pen + (GPEN.get(v) || 0), idx = v * K + nph;
       if (nd < dist[idx]) { dist[idx] = nd; prev[idx] = u * K + ph; pedge[idx] = ei; h.push([nd, v, nph]); }
     }
   }
@@ -370,6 +373,25 @@ function findRoute(a, b, profile = "inside") {
   if (!r) r = routeSearch(s, t, So, Sd, "relaxed", profile);
   if (!r) r = routeSearch(s, t, So, Sd, "free", profile);
   return r;
+}
+
+// several genuinely different routes: after each hit, make its passages and gates expensive and search again
+function findAlternatives(a, b, max = 6) {
+  EPEN.fill(1); GPEN.clear();
+  const out = []; let best = Infinity;
+  const plan = ["inside", "outside", "inside", "inside", "outside", "inside", "inside", "outside", "inside", "inside", "inside", "outside"];
+  for (const profile of plan) {
+    if (out.length >= max) break;
+    const r = findRoute(a, b, profile); if (!r) continue;
+    let L = 0; for (const ei of r.edges) L += ELEN[ei];
+    const set = new Set(r.edges);
+    const dup = out.some(o => { let ov = 0; for (const ei of set) if (o.set.has(ei)) ov += ELEN[ei]; return ov / Math.min(o.L, L) > .8; });
+    if (!dup && L <= Math.max(best * 2.3, best + 600)) { Object.assign(r, { L, set, profile }); out.push(r); best = Math.min(best, L); }
+    for (const ei of r.edges) EPEN[ei] *= 2.5;
+    for (const n of r.nodes) if (GATE.has(n)) GPEN.set(n, (GPEN.get(n) || 0) + 250);
+  }
+  EPEN.fill(1); GPEN.clear();
+  return out.filter(o => o.L <= best * 2.3 || o.L <= best + 600).sort((x, y) => x.L - y.L);
 }
 
 /* =========================================================
@@ -697,8 +719,26 @@ const routeGroup = new THREE.Group(); scene.add(routeGroup);
 let route = null;
 const EYE = 1.6;
 const LVN = y => y > 7 ? "ホーム階" : y > 3 ? "2階" : y > -2 ? "1階" : `地下${Math.max(1, Math.round(-y / 5.6))}階`;
-function buildRoute(a, b, profile = "inside") {
-  const r = findRoute(a, b, profile); if (!r) return null;
+const SPOT_NODES = Object.entries(LINES).filter(([id, L]) => L.spot && D.spots[L.spot] != null && !/^exit_/.test(id)).map(([id, L]) => [L.name, NP[D.spots[L.spot]]]);
+function routeTags(r, outdoor, a, b) {
+  const band = new Map();
+  r.edges.forEach((ei, i) => { if (D.edges[ei][2] !== 0) return; const y = NP[r.nodes[i]].y; if (y > 7) return; const k = LVN(y); band.set(k, (band.get(k) || 0) + ELEN[ei]); });
+  const tags = [];
+  const exits = r.nodes.filter(n => GATE.has(n) && GATE.get(n).cls.startsWith("exit")).length;
+  if (exits >= 2 && /^JR/.test(sysOfLine(a)) && /^JR/.test(sysOfLine(b))) tags.push("一度改札を出る（別途きっぷが必要な場合あり）");
+  if (outdoor >= 30) tags.push("外を歩く");
+  const bands = [...band.entries()].sort((x, y) => y[1] - x[1]).filter(([, v], i) => i === 0 || v > 40).slice(0, 2).map(([k]) => k);
+  if (bands.length) tags.push(bands.join("・") + "経由");
+  const names = new Set();
+  for (const ei of r.edges) { const nm = D.edges[ei][3]; if (nm < 0) continue; const m = D.names[nm].match(/(北通路|中央通路|南通路|北自由通路)/); if (m) names.add(m[1]); }
+  if (names.size) tags.push([...names].slice(0, 2).join("・"));
+  const near = new Set();
+  for (let i = 0; i < r.nodes.length; i += 2) { const p = NP[r.nodes[i]]; for (const [nm, q] of SPOT_NODES) if (Math.abs(p.y - q.y) < 4 && Math.hypot(p.x - q.x, p.z - q.z) < 25) near.add(nm); }
+  if (near.size) tags.push([...near].slice(0, 2).join("・") + "付近");
+  return tags;
+}
+function buildRoute(a, b, profile = "inside", raw) {
+  const r = raw || findRoute(a, b, profile); if (!r) return null;
   let outdoor = 0; r.edges.forEach(ei => { if (OUTDOOR[ei]) { const [x, y] = D.edges[ei]; outdoor += NP[x].distanceTo(NP[y]); } });
   const nodes = r.nodes, pts = nodes.map(n => NP[n].clone().add(new THREE.Vector3(0, EYE, 0)));
   // steps
@@ -753,7 +793,7 @@ function buildRoute(a, b, profile = "inside") {
   const seg = dense.map((p, i) => { const st = merged.find(x => cum[i] >= x.s0 - .01 && cum[i] <= x.s1 + .01) || merged[0]; return { stairs: .55, esc: .7, gate: .5 }[st.kind] || 1; });
   const total = cum[cum.length - 1];
   const face = (isEnd) => { const i0 = isEnd ? Math.max(0, dense.length - 6) : Math.min(dense.length - 1, 5), i1 = isEnd ? dense.length - 1 : 0; const d = dense[i1].clone().sub(dense[i0]).setY(0); if (d.lengthSq() < 1e-4) d.set(0, 0, 1); d.setLength(12); return dense[i1].clone().add(d); };
-  return { fromLine: a, toLine: b, dense, cum, total, steps: merged, seg, mode: r.mode, profile, outdoor, startFace: face(false), endFace: face(true) };
+  return { fromLine: a, toLine: b, dense, cum, total, steps: merged, seg, mode: r.mode, profile, outdoor, tags: routeTags(r, outdoor, a, b), startFace: face(false), endFace: face(true) };
 }
 function d_icon(turn) { return turn.startsWith("左") ? "↰" : "↱"; }
 function drawRouteTube(r) {
@@ -848,10 +888,8 @@ function plan(go) {
   if (a === b) { err.textContent = "同じ路線です。別の路線を選んでください。"; return false; }
   if (nodeOfLine(a) === nodeOfLine(b)) { err.textContent = `${LINES[a].name}と${LINES[b].name}は同じホームから発車します（乗換の移動はありません）。`; return false; }
   fromInput.value = LINES[a].name; toInput.value = LINES[b].name;
-  const rin = buildRoute(a, b, "inside"), rout = buildRoute(a, b, "outside");
-  if (!rin && !rout) { err.textContent = "地図データ上で経路が見つかりませんでした。"; return false; }
-  const sameRoute = rin && rout && Math.abs(rin.total - rout.total) < 15 && Math.abs(rin.outdoor - rout.outdoor) < 15;
-  routeOptions = sameRoute || !rout ? [rin] : !rin ? [rout] : [rin, rout];
+  routeOptions = findAlternatives(a, b).map(r => buildRoute(a, b, r.profile, r)).filter(Boolean);
+  if (!routeOptions.length) { err.textContent = "地図データ上で経路が見つかりませんでした。"; return false; }
   showRoute(routeOptions[0]);
   if (mode !== "fly") frameRoute();
   if (go) startFlight();
@@ -865,13 +903,13 @@ function showRoute(r) {
   const m = route.total, min = Math.max(1, Math.round(m / 75));
   const gatesOf = x => x.steps.filter(s => s.kind === "gate").map(s => s.main.replace(/を通る$/, ""));
   const opts = routeOptions.map((o, i) => {
-    const on = o === r, lab = o.profile === "inside" ? "駅構内ルート" : "外を歩くルート";
-    return `<button type="button" class="ropt${on ? " on" : ""}" data-i="${i}"><b>${lab}</b><span class="mono">約${Math.round(o.total / 10) * 10}m・屋外${Math.round(o.outdoor / 10) * 10}m</span><span>${gatesOf(o).length ? gatesOf(o).join(" → ") : "改札を出ない"}</span></button>`;
+    const on = o === r, lab = `ルート${i + 1}${i === 0 ? "（最短）" : ""}`;
+    return `<button type="button" class="ropt${on ? " on" : ""}" data-i="${i}"><b>${lab}</b><span class="tagline">${(o.tags || []).join(" / ") || (o.outdoor >= 30 ? "外を歩く" : "駅構内")}</span><span class="mono">約${Math.round(o.total / 10) * 10}m・屋外${Math.round(o.outdoor / 10) * 10}m・約${Math.max(1, Math.round(o.total / 75))}分</span><span>改札：${gatesOf(o).length ? gatesOf(o).join(" → ") : "出ない（改札内で乗換）"}</span></button>`;
   }).join("");
   summary.innerHTML = `<div><span style="color:${LINES[a].color}">■</span> ${LINES[a].name} → <span style="color:${LINES[b].color}">■</span> ${LINES[b].name}</div>
     <div><span class="big mono">約${Math.round(m / 10) * 10}m</span>　<span style="color:var(--dim)">徒歩の目安 約${min}分</span></div>
+    <div style="font-size:11.5px;color:var(--dim);margin-top:4px">${routeOptions.length > 1 ? `ルート候補 ${routeOptions.length} 本（押すと切り替わります）` : "地図データ上で見つかった、ほかと大きく違うルートはこの1本です"}</div>
     <div class="ropts">${opts}</div>
-    ${routeOptions.length === 1 ? `<div style="font-size:11.5px;color:var(--dim)">${r.outdoor > 5 ? "駅の中だけを通るルートは地図データ上にありません" : "外を歩く近道はありません（駅構内のルートが最短）"}</div>` : ""}
     ${route.mode === "strict" || route.mode === "reenter" ? "" : `<div style="font-size:11.5px;color:#ffb020">※ この区間は地図データに改札の情報が不足しているため、改札の判定を簡略化しています</div>`}`;
   summary.querySelectorAll(".ropt").forEach(bt => bt.onclick = () => { showRoute(routeOptions[+bt.dataset.i]); if (mode === "overview") frameRoute(); });
   stepsEl.innerHTML = "";
