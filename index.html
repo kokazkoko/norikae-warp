@@ -137,7 +137,12 @@
     #navIcon{flex-basis:34px;height:34px;font-size:18px}
     #navText span{display:none}
     #navDist{font-size:17px}
-    #board{width:100%;max-height:28vh}
+    #board{width:100%;max-height:none;overflow:visible}
+    /* スマホ: 上のパネル全体を縦スワイプでスクロール（ルート候補を全部見られる） */
+    #top{bottom:calc(64px + env(safe-area-inset-bottom,0px));overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;align-content:flex-start;padding-bottom:12px}
+    .brand{flex-wrap:wrap;gap:2px 8px}
+    .brand h1{font-size:16px;letter-spacing:.02em;white-space:nowrap}
+    .brand span{font-size:10px;letter-spacing:.02em;white-space:nowrap}
     #mapWrap{display:none!important}
     #note{display:none}
     #miniNote{display:block}
@@ -994,7 +999,11 @@ function showRoute(r) {
     <div class="ropts">${opts}</div>
     ${strollerMissing ? `<div style="font-size:11.5px;color:var(--dim)">ベビーカー・車いすで通れる（階段を使わない）ルートは、地図データのエレベーター情報では見つかりませんでした</div>` : ""}
     ${route.mode === "strict" || route.mode === "reenter" ? "" : `<div style="font-size:11.5px;color:#ffb020">※ この区間は地図データに改札の情報が不足しているため、改札の判定を簡略化しています</div>`}`;
-  summary.querySelectorAll(".ropt").forEach(bt => bt.onclick = () => { showRoute(routeOptions[+bt.dataset.i]); if (mode === "overview") frameRoute(); });
+  summary.querySelectorAll(".ropt").forEach(bt => bt.onclick = () => {
+    showRoute(routeOptions[+bt.dataset.i]);
+    if (matchMedia("(max-width:760px)").matches) { if (mode !== "overview") toOverview(); document.body.classList.add("clean"); frameRoute(); }   // スマホ: パネルを隠して模型全体でルートを見せる
+    else if (mode === "overview") frameRoute();
+  });
   stepsEl.innerHTML = "";
   route.steps.forEach(st => { const li = document.createElement("li"); li.innerHTML = `<span class="dot"></span><span>${st.main}</span><span class="m mono">${st.s1 - st.s0 >= 1 ? Math.round(st.s1 - st.s0) + "m" : ""}</span>`; stepsEl.appendChild(li); });
 }
@@ -1018,7 +1027,8 @@ function frameRoute() {
   if (!route) return;
   const b3 = new THREE.Box3(); route.dense.forEach(p => b3.expandByPoint(p));
   const c = b3.getCenter(new THREE.Vector3()), size = b3.getSize(new THREE.Vector3()).length();
-  tweenCam(c.clone().addScaledVector(new THREE.Vector3(.42, .78, .95).normalize(), Math.max(160, size * 1.05)), c, 1.1);
+  const fit = camera.aspect < 1 ? 1 / Math.max(.45, camera.aspect) : 1;   // 縦長画面では横幅に収まるよう引く
+  tweenCam(c.clone().addScaledVector(new THREE.Vector3(.42, .78, .95).normalize(), Math.max(160, size * 1.05 * fit)), c, 1.1);
 }
 function tweenCam(pos, target, dur) { camTween.active = true; camTween.t0 = performance.now(); camTween.dur = dur * 1000; camTween.p0 = camera.position.clone(); camTween.t0v = controls.target.clone(); camTween.p1 = pos; camTween.t1 = target; }
 /* ---------------- playback: pause / seek / swipe ---------------- */
