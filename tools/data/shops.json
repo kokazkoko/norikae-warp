@@ -1,0 +1,6813 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-26T13:03:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1423728707,
+  "lat": 35.6793997,
+  "lon": 139.7720539,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "中央区",
+    "addr:housename": "ニッセイ同和損保 日本橋本社ビル",
+    "addr:housenumber": "19",
+    "addr:neighbourhood": "日本橋三丁目",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "alt_name:en": "Saint Marc Café",
+    "amenity": "cafe",
+    "branch": "日本橋八重洲通り店",
+    "brand": "サンマルクカフェ",
+    "brand:en": "ST.MARC CAFÉ",
+    "brand:ja": "サンマルクカフェ",
+    "brand:wikidata": "Q11305988",
+    "brand:wikipedia": "ja:サンマルクホールディングス",
+    "cuisine": "coffee_shop",
+    "name": "サンマルクカフェ",
+    "name:en": "Saint Marc Cafe",
+    "name:ja": "サンマルクカフェ",
+    "name:ja_rm": "Sanmaruku Kafe",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "サンマルクカフェ",
+    "outdoor_seating": "no",
+    "phone": "03-3548-0703",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "http://www.saint-marc-hd.com/cafe/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1482906581,
+  "lat": 35.6824523,
+  "lon": 139.7706883,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "洋麺屋　五右衛門",
+    "name:zh": "洋面屋",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1482906583,
+  "lat": 35.6827970,
+  "lon": 139.7708840,
+  "tags": {
+    "amenity": "cafe",
+    "brand": "エクセルシオール カフェ",
+    "brand:en": "EXCELSIOR CAFFÉ",
+    "brand:ja": "エクセルシオール カフェ",
+    "brand:wikidata": "Q11289828",
+    "brand:wikipedia": "ja:エクセルシオール カフェ",
+    "cuisine": "coffee_shop",
+    "name": "エクセルシオール カフェ",
+    "name:en": "EXCELSIOR CAFE",
+    "name:ja": "エクセルシオール カフェ",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1483109762,
+  "lat": 35.6817884,
+  "lon": 139.7704619,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "福龍",
+    "name:en": "Fukuryu",
+    "website": "http://www.cany.co.jp"
+  }
+},
+{
+  "type": "node",
+  "id": 1896499019,
+  "lat": 35.6830260,
+  "lon": 139.7717219,
+  "tags": {
+    "addr:postcode": "103-0028",
+    "amenity": "cafe",
+    "branch": "八重洲一丁目店",
+    "brand": "上島珈琲店",
+    "brand:en": "Ueshima Coffee House",
+    "brand:ja": "上島珈琲店",
+    "brand:wikidata": "Q96152143",
+    "cuisine": "coffee_shop",
+    "name": "上島珈琲店",
+    "name:en": "Ueshima Coffee House",
+    "name:ja": "上島珈琲店",
+    "name:ja_rm": "Ueshima Kohi Ten",
+    "name:zh": "上岛咖啡店",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa,Su,PH 10:00-19:00",
+    "operator": "ユーシーシーフードサービスシステムズ",
+    "source": "(URL)",
+    "takeaway": "yes",
+    "website": "https://www.ueshima-coffee-ten.jp/"
+  }
+},
+{
+  "type": "node",
+  "id": 1898471645,
+  "lat": 35.6775989,
+  "lon": 139.7708250,
+  "tags": {
+    "addr:postcode": "104-0031",
+    "amenity": "cafe",
+    "branch": "京橋丁目店",
+    "brand": "上島珈琲店",
+    "brand:en": "Ueshima Coffee House",
+    "brand:ja": "上島珈琲店",
+    "brand:wikidata": "Q96152143",
+    "brand:wikipedia": "ja:UCC上島珈琲",
+    "cuisine": "coffee_shop",
+    "name": "上島珈琲店",
+    "name:en": "Ueshima Coffee House",
+    "name:ja": "上島珈琲店",
+    "name:ja_rm": "Ueshima Kohi Ten",
+    "operator": "ユーシーシーフードサービスシステムズ",
+    "source": "(URL)",
+    "takeaway": "yes",
+    "website": "https://www.ueshima-coffee-ten.jp/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1952141255,
+  "lat": 35.6847212,
+  "lon": 139.7674365,
+  "tags": {
+    "brand": "LAWSON",
+    "brand:en": "LAWSON",
+    "brand:ja": "ローソン",
+    "brand:wikidata": "Q1557223",
+    "brand:wikipedia": "ja:ローソン",
+    "name": "ローソン",
+    "name:en": "Lawson",
+    "name:ja": "ローソン",
+    "name:ja_rm": "Rōson",
+    "name:ko": "로손",
+    "name:zh": "罗森便利店",
+    "shop": "convenience",
+    "source": "Bing 2010",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2059756436,
+  "lat": 35.6836993,
+  "lon": 139.7729253,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housenumber": "19",
+    "addr:neighbourhood": "1",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "brand": "LAWSON",
+    "brand:en": "LAWSON",
+    "brand:ja": "ローソン",
+    "brand:wikidata": "Q1557223",
+    "brand:wikipedia": "ja:ローソン",
+    "name": "ローソン",
+    "name:en": "Lawson",
+    "name:ja": "ローソン",
+    "name:ja_rm": "Rōson",
+    "name:ko": "로손",
+    "opening_hours": "24/7",
+    "shop": "convenience",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2065895673,
+  "lat": 35.6813069,
+  "lon": 139.7636463,
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "千代田区",
+    "addr:country": "JP",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "pharmacy",
+    "branch": "丸の内店",
+    "brand": "トモズ",
+    "brand:en": "Tomod's",
+    "brand:ja": "トモズ",
+    "brand:wikidata": "Q7820097",
+    "brand:wikipedia": "ja:トモズ",
+    "fax": "+81-3-52207717",
+    "healthcare": "pharmacy",
+    "level": "-1",
+    "name": "トモズ",
+    "name:en": "Tomod's",
+    "name:ja": "トモズ",
+    "name:ja_rm": "Amerikan Famashi",
+    "opening_hours": "Mo-Sa 10:30-21:00; Su,PH 10:00-20:00",
+    "operator": "住商ドラッグストアーズ",
+    "phone": "+81-3-52207716",
+    "shop": "chemist",
+    "source": "(URL) 2012",
+    "website": "https://www.tomods.jp/"
+  }
+},
+{
+  "type": "node",
+  "id": 2065895720,
+  "lat": 35.6823860,
+  "lon": 139.7639798,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "新丸ビル",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "no",
+    "level": "-1",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "official_name:en": "Seven-Eleven",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81-3-32877776",
+    "shop": "convenience",
+    "source": "(URL) 2012",
+    "website": "https://www.sej.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2065895733,
+  "lat": 35.6839402,
+  "lon": 139.7658222,
+  "tags": {
+    "addr:block_number": "6",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "丸の内センタービル",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "wlan",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "official_name:en": "Seven-Eleven",
+    "opening_hours": "24/7",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81-3-32135407",
+    "shop": "convenience",
+    "source": "(URL) 2012",
+    "website": "https://www.sej.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2077116933,
+  "lat": 35.6807800,
+  "lon": 139.7636440,
+  "tags": {
+    "amenity": "cafe",
+    "name": "ease",
+    "name:it": "Ease",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2130340739,
+  "lat": 35.6850221,
+  "lon": 139.7716413,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "日本橋本石町一丁目",
+    "addr:postcode": "103-0021",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "常盤橋",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "official_name:en": "Seven-Eleven",
+    "opening_hours": "24/7",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81 3-3277-2733",
+    "shop": "convenience",
+    "source": "(URL) 2015",
+    "website": "https://www.sej.co.jp/"
+  }
+},
+{
+  "type": "node",
+  "id": 2214684270,
+  "lat": 35.6798593,
+  "lon": 139.7647819,
+  "tags": {
+    "addr:block_number": "7",
+    "addr:city": "千代田区",
+    "addr:floor": "B1-5",
+    "addr:housenumber": "2",
+    "addr:neighbourhood": "二丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "brand:wikidata": "Q24900018",
+    "name": "KITTE",
+    "opening_hours": "Mo-Sa 11:00-21:00; Su 11:00-20:00",
+    "operator": "JR",
+    "shop": "mall",
+    "source": "Bing;survey",
+    "toilets:wheelchair": "yes",
+    "website": "http://jptower-kitte.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2365110377,
+  "lat": 35.6818040,
+  "lon": 139.7717759,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "中央区",
+    "addr:housenumber": "21",
+    "addr:neighbourhood": "日本橋二丁目",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "日本橋二丁目店",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:zh": "7-11便利店",
+    "official_name:en": "Seven-Eleven",
+    "opening_hours": "24/7",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81 3-5201-5518",
+    "shop": "convenience",
+    "source": "(URL) 2015",
+    "website": "https://www.sej.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2365111053,
+  "lat": 35.6817170,
+  "lon": 139.7714550,
+  "tags": {
+    "branch": "八重洲一丁目店",
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "brand:wikipedia": "en:FamilyMart",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "name:ja_rm": "Famirī Mato",
+    "opening_hours": "24/7",
+    "phone": "+81 3 5204 0236",
+    "shop": "convenience",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2365554362,
+  "lat": 35.6813550,
+  "lon": 139.7714960,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "中央区",
+    "addr:housenumber": "18",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "brand": "おかしのまちおか",
+    "brand:en": "Machioka",
+    "brand:ja": "おかしのまちおか",
+    "brand:wikidata": "Q117828763",
+    "name": "おかしのまちおか",
+    "name:en": "Machioka",
+    "name:ja": "おかしのまちおか",
+    "shop": "confectionery",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2365555224,
+  "lat": 35.6812828,
+  "lon": 139.7716731,
+  "tags": {
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "brand:wikipedia": "en:FamilyMart",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2402924705,
+  "lat": 35.6811280,
+  "lon": 139.7725200,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "中央区",
+    "addr:housenumber": "10",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "branch": "日本橋店",
+    "brand": "丸善",
+    "brand:en": "MARUZEN",
+    "brand:ja": "丸善",
+    "brand:wikidata": "Q1906012",
+    "brand:wikipedia": "ja:丸善雄松堂",
+    "name": "丸善",
+    "name:en": "MARUZEN",
+    "name:ja": "丸善",
+    "name:ja-Latn": "Maruzen Nihonbashi",
+    "official_name": "丸善雄松堂",
+    "official_name:en": "Maruzen Yushodo",
+    "official_name:ja": "丸善雄松堂",
+    "phone": "+81 3 6214 2001",
+    "shop": "books",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2441120251,
+  "lat": 35.6817067,
+  "lon": 139.7724051,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "delivery": "no",
+    "internet_access": "no",
+    "name": "カキ酒場 北海道厚岸",
+    "name:en": "Hokkaido Akkeshi",
+    "outdoor_seating": "no",
+    "phone": "+81-3-5255-4220",
+    "source": "survey",
+    "takeaway": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2463553445,
+  "lat": 35.6804924,
+  "lon": 139.7688005,
+  "tags": {
+    "addr:block_number": "7",
+    "addr:city": "羽村市",
+    "addr:housenumber": "23",
+    "addr:neighbourhood": "栄町1丁目",
+    "addr:postcode": "205-0002",
+    "addr:province": "東京都",
+    "fixme": "please put it in proper location (address included)",
+    "name": "レアルヘアー",
+    "phone": "+81-42-554-6455",
+    "shop": "hairdresser",
+    "wheelchair": "yes",
+    "wheelchair:description": "車いすのかたでも使える美容院。トイレも広い。"
+  }
+},
+{
+  "type": "node",
+  "id": 3351513393,
+  "lat": 35.6807590,
+  "lon": 139.7715988,
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "中央区",
+    "addr:housenumber": "15",
+    "addr:neighbourhood": "3",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "cuisine": "japanese",
+    "name": "つじ半",
+    "name:en": "Tsujihan",
+    "name:ko": "쯔지한",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3351519493,
+  "lat": 35.6806449,
+  "lon": 139.7714518,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housenumber": "3",
+    "addr:neighbourhood": "3",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "pub",
+    "check_date": "2024-11-08",
+    "cuisine": "fish_and_chips",
+    "food": "yes",
+    "level": "0",
+    "name": "HUB",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3351520893,
+  "lat": 35.6806145,
+  "lon": 139.7714161,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housenumber": "3",
+    "addr:neighbourhood": "3",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "pub",
+    "cuisine": "japanese",
+    "food": "yes",
+    "level": "-1",
+    "name": "やきとりまる金",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3495130798,
+  "lat": 35.6785637,
+  "lon": 139.7650451,
+  "tags": {
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "cuisine": "okonomiyaki",
+    "name": "お好み焼ききじ",
+    "name:en": "Kizi",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3505153907,
+  "lat": 35.6816286,
+  "lon": 139.7734291,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "中央区",
+    "addr:housename": "日本橋髙島屋三井ビルディング",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "cafe",
+    "cuisine": "japanese",
+    "disused:shop": "tea",
+    "level": "0",
+    "name": "山本山 ふじヱ茶房",
+    "name:en": "Yamamotoyama Fujie sabo",
+    "opening_hours": "10:30-20:00",
+    "phone": "+81 3 3271 3273",
+    "website": "https://fujie.yamamotoyama.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3579802099,
+  "lat": 35.6847676,
+  "lon": 139.7671608,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "大手町二丁目",
+    "addr:postcode": "100-0004",
+    "addr:province": "東京都",
+    "branch": "大手町店",
+    "brand": "NTT docomo",
+    "brand:en": "NTT docomo",
+    "brand:ja": "NTTドコモ",
+    "brand:wikidata": "Q853958",
+    "brand:wikipedia": "ja:NTTドコモ",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "ドコモショップ",
+    "name:ang": "NTT docomo",
+    "name:en": "docomo Shop",
+    "name:ja": "ドコモショップ",
+    "name:ja_rm": "Dokomo Shoppu",
+    "name:zh": "docomo",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 11:00-19:00; Su,PH off",
+    "operator": "NTTドコモ",
+    "phone": "+81 3-3281-2360",
+    "shop": "mobile_phone",
+    "source": "(URL) 2015",
+    "website": "https://www.nttdocomo.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3579876681,
+  "lat": 35.6806763,
+  "lon": 139.7684655,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "branch": "東京駅グランルーフ店",
+    "brand": "NTT docomo",
+    "brand:en": "NTT docomo",
+    "brand:ja": "NTTドコモ",
+    "brand:wikidata": "Q853958",
+    "brand:wikipedia": "ja:NTTドコモ",
+    "internet_access": "wlan",
+    "level": "1",
+    "name": "ドコモショップ",
+    "name:en": "docomo Shop",
+    "name:ja": "ドコモショップ",
+    "name:ja_rm": "Dokomo Shoppu",
+    "opening_hours": "Mo-Su 10:00-21:00",
+    "operator": "NTTドコモ",
+    "phone": "+81 3-5221-8886",
+    "shop": "mobile_phone",
+    "source": "(URL) 2015",
+    "website": "https://www.nttdocomo.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3593816993,
+  "lat": 35.6809357,
+  "lon": 139.7684923,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内1丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "branch": "東京駅グランルーフフロント",
+    "brand": "SoftBank",
+    "brand:en": "SoftBank",
+    "brand:ja": "ソフトバンク",
+    "brand:wikidata": "Q2214105",
+    "brand:wikipedia": "ja:ソフトバンクショップ",
+    "level": "-1",
+    "name": "ソフトバンクショップ",
+    "name:en": "SoftBank Shop",
+    "name:ja": "ソフトバンクショップ",
+    "name:ja_rm": "Sofutobanku Shoppu",
+    "official_name": "ソフトバンクショップ",
+    "official_name:en": "SoftBankShop",
+    "official_name:ja": "ソフトバンクショップ",
+    "opening_hours": "Mo-Su 10:00-21:00",
+    "operator": "ソフトバンク",
+    "phone": "+81-3-3284-1170",
+    "shop": "mobile_phone",
+    "source": "(URL) 2015",
+    "website": "https://www.softbank.jp/mobile/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3595780894,
+  "lat": 35.6821949,
+  "lon": 139.7732578,
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "中央区",
+    "addr:housename": "柳屋ビルディング1F",
+    "addr:housenumber": "10",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "branch": "日本橋店",
+    "brand": "NTT docomo",
+    "brand:en": "NTT docomo",
+    "brand:ja": "NTTドコモ",
+    "brand:wikidata": "Q853958",
+    "brand:wikipedia": "ja:NTTドコモ",
+    "check_date": "2023-01-11",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "ドコモショップ",
+    "name:en": "docomo Shop",
+    "name:ja": "ドコモショップ",
+    "name:ja_rm": "Dokomo Shoppu",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa,Su,PH 11:00-19:00",
+    "operator": "NTTドコモ",
+    "phone": "+81 3 3516 2552",
+    "shop": "mobile_phone",
+    "source": "(URL) 2015",
+    "website": "https://www.nttdocomo.co.jp/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3606456593,
+  "lat": 35.6824802,
+  "lon": 139.7644454,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "千代田区",
+    "addr:floor": "B1F",
+    "addr:housename": "新丸の内ビルディング",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "branch": "新丸の内ビル店",
+    "cuisine": "chinese",
+    "fax": "03-3211-1606",
+    "level": "-1",
+    "name": "水蓮月",
+    "name:en": "Lotus Moon",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "phone": "+81 3-3211-1660",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3608224790,
+  "lat": 35.6838478,
+  "lon": 139.7685382,
+  "tags": {
+    "addr:block_number": "7",
+    "addr:city": "千代田区",
+    "addr:housenumber": "12",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "東京ステーションシティ サピアタワー店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "ja:スターバックス",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa,Su,PH 07:00-19:00",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "+81 3-5224-8075",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3608230842,
+  "lat": 35.6829498,
+  "lon": 139.7689928,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housename": "丸の内中央ビル",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "JR東京駅日本橋口店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "ja:スターバックス",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "name:zh": "星巴克",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Su 07:00-22:30",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "+81 3-5219-6066",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.starbucks.co.jp/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3608237973,
+  "lat": 35.6801809,
+  "lon": 139.7636129,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "千代田区",
+    "addr:housename": "三菱ビル",
+    "addr:housenumber": "2",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "丸の内三菱ビル店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "ja:スターバックス",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Fr 07:00-21:00; Sa,Su,PH 08:00-20:00",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "+81 3-5288-9050",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3608248439,
+  "lat": 35.6775598,
+  "lon": 139.7624487,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "千代田区",
+    "addr:housename": "丸の内新東京ビル",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内三丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "丸の内新東京ビル店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "ja:スターバックス",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:es": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "name:zh": "星巴克",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Fr 07:00-22:30; Sa 08:00-21:00; Su,PH 10:00-20:00",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "03-3216-3552",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.co.jp/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3608271505,
+  "lat": 35.6829448,
+  "lon": 139.7642107,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "千代田区",
+    "addr:housename": "新丸の内ビル",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "新丸ビル店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "name:zh": "星巴克",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "+81 3-5224-8688",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3608450662,
+  "lat": 35.6811556,
+  "lon": 139.7635159,
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "千代田区",
+    "addr:country": "JP",
+    "addr:housename": "丸の内ビルディング",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "丸の内ビル店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "ja:スターバックス",
+    "cuisine": "coffee_shop",
+    "description": "丸の内ビルディング内",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "level": "-1",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "+81-3-5220-7748",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://store.starbucks.co.jp/detail-371/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3608465503,
+  "lat": 35.6792208,
+  "lon": 139.7629111,
+  "tags": {
+    "addr:block_number": "6",
+    "addr:city": "千代田区",
+    "addr:housename": "丸の内パークビルディング",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-6990",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "丸の内パークビル店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "ja:スターバックス",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:es": "Starbucks",
+    "name:ja": "スターバックス",
+    "name:ja_rm": "Sutābakkusu",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa,Su,PH 08:00-22:00",
+    "operator": "スターバックスコーヒージャパン",
+    "phone": "+81 3-5220-2082",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3626074451,
+  "lat": 35.6777815,
+  "lon": 139.7670236,
+  "tags": {
+    "addr:block_number": "11",
+    "addr:city": "千代田区",
+    "addr:floor": "B1F",
+    "addr:housename": "パシフィックセンチュリープレイス丸の内",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "PCP丸の内店",
+    "brand": "タリーズコーヒー",
+    "brand:en": "Tully's Coffee",
+    "brand:ja": "タリーズコーヒー",
+    "brand:wikidata": "Q3541983",
+    "brand:wikipedia": "en:Tully's Coffee",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "level": "-1",
+    "name": "タリーズコーヒー",
+    "name:en": "Tully's Coffee",
+    "name:ja": "タリーズコーヒー",
+    "name:ja_rm": "Tarīzu Kohī",
+    "opening_hours": "Mo-Fr 07:30-22:00; Sa 09:00-19:00; Su,PH 09:00-18:00",
+    "operator": "タリーズコーヒージャパン",
+    "phone": "+81 3-5208-8423",
+    "smoking": "no",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.tullys.co.jp/",
+    "wheelchair": "yes",
+    "wikidata": "Q11316408",
+    "wikipedia": "ja:タリーズコーヒージャパン"
+  }
+},
+{
+  "type": "node",
+  "id": 3626098418,
+  "lat": 35.6853311,
+  "lon": 139.7615043,
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "千代田区",
+    "addr:floor": "B1F",
+    "addr:housename": "パレスビル",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "丸の内パレスビル店",
+    "brand": "タリーズコーヒー",
+    "brand:en": "Tully's Coffee",
+    "brand:ja": "タリーズコーヒー",
+    "brand:wikidata": "Q3541983",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "level": "-1",
+    "name": "タリーズコーヒー",
+    "name:en": "Tully's Coffee",
+    "name:it": "Tully's",
+    "name:ja": "タリーズコーヒー",
+    "name:ja_rm": "Tarīzu Kohī",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa,Su,PH 09:00-19:00",
+    "operator": "タリーズコーヒージャパン",
+    "phone": "+81 3-5220-4818",
+    "smoking": "no",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.tullys.co.jp/",
+    "wikidata": "Q11316408",
+    "wikipedia": "ja:タリーズコーヒージャパン"
+  }
+},
+{
+  "type": "node",
+  "id": 3626108624,
+  "lat": 35.6845613,
+  "lon": 139.7646793,
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "千代田区",
+    "addr:floor": "B1F",
+    "addr:housename": "丸の内永楽ビルディング",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "丸の内永楽ビルディング店",
+    "brand": "タリーズコーヒー",
+    "brand:en": "Tully's Coffee",
+    "brand:ja": "タリーズコーヒー",
+    "brand:wikidata": "Q3541983",
+    "brand:wikipedia": "en:Tully's Coffee",
+    "cuisine": "coffee_shop",
+    "internet_access": "no",
+    "level": "-1",
+    "name": "タリーズコーヒー",
+    "name:en": "Tully's Coffee",
+    "name:ja": "タリーズコーヒー",
+    "name:ja_rm": "Tarīzu Kohī",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa 08:00-20:00; Su,PH off",
+    "operator": "タリーズコーヒージャパン",
+    "phone": "+81 3-5220-5525",
+    "smoking": "yes",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.tullys.co.jp/",
+    "wheelchair": "yes",
+    "wikidata": "Q11316408",
+    "wikipedia": "ja:タリーズコーヒージャパン"
+  }
+},
+{
+  "type": "node",
+  "id": 3626228096,
+  "lat": 35.6819096,
+  "lon": 139.7688825,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:floor": "4F",
+    "addr:housename": "大丸東京店",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "大丸東京店",
+    "brand": "タリーズコーヒー",
+    "brand:en": "Tully's Coffee",
+    "brand:ja": "タリーズコーヒー",
+    "brand:wikidata": "Q3541983",
+    "brand:wikipedia": "en:Tully's Coffee",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "level": "3",
+    "name": "タリーズコーヒー",
+    "name:en": "Tully's Coffee",
+    "name:ja": "タリーズコーヒー",
+    "name:ja_rm": "Tarīzu Kohī",
+    "opening_hours": "Mo-We 10:00-20:00; Th,Fr 10:00-21:00; Sa,Su,PH 10:00-20:00",
+    "operator": "タリーズコーヒージャパン",
+    "phone": "03-5221-8074",
+    "smoking": "no",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.tullys.co.jp/"
+  }
+},
+{
+  "type": "node",
+  "id": 3632328673,
+  "lat": 35.6854635,
+  "lon": 139.7638018,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "千代田区",
+    "addr:floor": "B1F",
+    "addr:housename": "大手町ファーストスクエアビル",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "大手町一丁目",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "大手町ファーストスクエア店",
+    "brand": "ドトール",
+    "brand:en": "DOUTOR",
+    "brand:ja": "ドトール",
+    "brand:wikidata": "Q11322732",
+    "brand:wikipedia": "ja:ドトールコーヒーショップ",
+    "cuisine": "coffee_shop",
+    "level": "-1",
+    "name": "ドトールコーヒーショップ",
+    "name:en": "Doutor Coffee Shop",
+    "name:ja": "ドトールコーヒーショップ",
+    "name:ja_rm": "Dotōru Kōhī Shoppu",
+    "opening_hours": "Mo-Fr 06:45-20:30; Sa,Su,PH off",
+    "operator": "ドトールコーヒー",
+    "operator:wikidata": "Q11322732",
+    "operator:wikipedia": "ja:ドトールコーヒーショップ",
+    "phone": "+81 3-3217-0830",
+    "short_name": "DCS",
+    "smoking": "no",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.doutor.co.jp/dcs/",
+    "wheelchair": "limited",
+    "wifi": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3632429799,
+  "lat": 35.6850603,
+  "lon": 139.7675903,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "大手町二丁目",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "新大手町ビル店",
+    "brand": "ドトール",
+    "brand:en": "DOUTOR",
+    "brand:ja": "ドトール",
+    "brand:wikidata": "Q11322732",
+    "brand:wikipedia": "ja:ドトールコーヒーショップ",
+    "cuisine": "coffee_shop",
+    "name": "ドトールコーヒーショップ",
+    "name:en": "Doutor Coffee Shop",
+    "name:ja": "ドトールコーヒーショップ",
+    "name:ja_rm": "Dotōru Kōhī Shoppu",
+    "opening_hours": "Mo-Fr 07:00-21:00; Sa 08:00-14:30",
+    "operator": "ドトールコーヒー",
+    "operator:wikidata": "Q11322732",
+    "operator:wikipedia": "ja:ドトールコーヒーショップ",
+    "phone": "+81 3-5204-2213",
+    "short_name": "DCS",
+    "smoking": "separated",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "https://www.doutor.co.jp/dcs/",
+    "wheelchair": "yes",
+    "wifi": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3633684753,
+  "lat": 35.6806696,
+  "lon": 139.7680959,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "branch": "八重洲中央口店",
+    "brand": "ドトール",
+    "brand:en": "DOUTOR",
+    "brand:ja": "ドトール",
+    "brand:wikidata": "Q11322732",
+    "brand:wikipedia": "ja:ドトールコーヒーショップ",
+    "cuisine": "coffee_shop",
+    "name": "ドトールコーヒーショップ",
+    "name:en": "Doutor Coffee Shop",
+    "name:ja": "ドトールコーヒーショップ",
+    "name:ja_rm": "Dotōru Kōhī Shoppu",
+    "opening_hours": "Mo-Fr 06:30-22:30; Sa,Su,PH 06:30-22:00",
+    "operator": "ドトールコーヒー",
+    "phone": "+81 3-3287-3009",
+    "short_name": "DCS",
+    "smoking": "separated",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.doutor.co.jp/dcs/",
+    "wheelchair": "yes",
+    "wifi": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3633974836,
+  "lat": 35.6817202,
+  "lon": 139.7723735,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housename": "テイトビル",
+    "addr:housenumber": "15",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "cafe",
+    "branch": "日本橋2丁目西店",
+    "brand": "ドトール",
+    "brand:en": "DOUTOR",
+    "brand:ja": "ドトール",
+    "brand:wikidata": "Q11322732",
+    "brand:wikipedia": "ja:ドトールコーヒーショップ",
+    "capacity": "41",
+    "cuisine": "coffee_shop",
+    "internet_access": "no",
+    "level": "0",
+    "name": "ドトールコーヒーショップ",
+    "name:en": "Doutor Coffee Shop",
+    "name:ja": "ドトールコーヒーショップ",
+    "name:ja_rm": "Dotōru Kōhī Shoppu",
+    "opening_hours": "Mo-Fr 06:45-21:00; Sa 08:00-20:00; PH 10:00-18:00",
+    "operator": "ドトールコーヒー",
+    "outdoor_seating": "no",
+    "phone": "03-3273-5533",
+    "short_name": "DCS",
+    "smoking": "separated",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "http://sasp.mapion.co.jp/b/doutor/info/01010776/?shopmastergyokna=1100"
+  }
+},
+{
+  "type": "node",
+  "id": 3658925991,
+  "lat": 35.6777903,
+  "lon": 139.7630482,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "千代田区",
+    "addr:housename": "新東京ビル",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内三丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "alt_name:en": "Saint Marc Café",
+    "amenity": "cafe",
+    "branch": "丸の内新東京ビル店",
+    "brand": "サンマルクカフェ",
+    "brand:en": "ST.MARC CAFÉ",
+    "brand:ja": "サンマルクカフェ",
+    "brand:wikidata": "Q11305988",
+    "brand:wikipedia": "ja:サンマルクホールディングス",
+    "cuisine": "coffee_shop",
+    "name": "サンマルクカフェ",
+    "name:en": "Saint Marc Cafe",
+    "name:it": "St-Marc",
+    "name:ja": "サンマルクカフェ",
+    "name:ja_rm": "Sanmaruku Kafe",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "サンマルクカフェ",
+    "phone": "+81 3-5224-3309",
+    "source": "(URL) 2015",
+    "takeaway": "yes",
+    "website": "http://www.saint-marc-hd.com/cafe/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3753761925,
+  "lat": 35.6848714,
+  "lon": 139.7616362,
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "丸の内パレスビル",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "wlan",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "official_name:en": "Seven-Eleven",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81 3-3287-1125",
+    "shop": "convenience",
+    "source": "(URL) 2015",
+    "website": "https://www.sej.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3753777122,
+  "lat": 35.6842055,
+  "lon": 139.7645755,
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "丸の内永楽ビル",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "wlan",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "official_name:en": "Seven-Eleven",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81 3-3201-3272",
+    "shop": "convenience",
+    "source": "(URL) 2015",
+    "website": "https://www.sej.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3756803582,
+  "lat": 35.6788149,
+  "lon": 139.7676550,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housename": "グラントウキョウサウ",
+    "addr:housenumber": "2",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-6633",
+    "addr:province": "東京都",
+    "atm": "yes",
+    "branch": "リクルートサウスタワー",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "internet_access": "no",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "name:zh": "7-Eleven",
+    "official_name:en": "Seven-Eleven",
+    "operator": "セブンイレブン・ジャパン",
+    "phone": "+81 3-3201-1355",
+    "shop": "convenience",
+    "source": "(URL) 2015",
+    "website": "https://www.sej.co.jp/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3789921336,
+  "lat": 35.6789368,
+  "lon": 139.7712591,
+  "tags": {
+    "craft": "blacksmith",
+    "name": "西勘刀 本店",
+    "name:en": "Tokyo Nishikan",
+    "shop": "houseware",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3789921348,
+  "lat": 35.6801773,
+  "lon": 139.7719477,
+  "tags": {
+    "name": "Shoichiro",
+    "shop": "art",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 3789921350,
+  "lat": 35.6789898,
+  "lon": 139.7712886,
+  "tags": {
+    "name": "千疋屋",
+    "name:en": "Sembikiya",
+    "shop": "greengrocer",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3789923357,
+  "lat": 35.6801602,
+  "lon": 139.7719577,
+  "tags": {
+    "name": "MASATAKA CONTEMPORARY",
+    "shop": "art",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 3789923359,
+  "lat": 35.6790420,
+  "lon": 139.7713087,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "すき家",
+    "brand:en": "Sukiya",
+    "brand:ja": "すき家",
+    "brand:wikidata": "Q6137375",
+    "brand:wikipedia": "ja:すき家",
+    "check_date": "2026-09-22",
+    "cuisine": "beef_bowl",
+    "name": "Sukiya / すき家",
+    "name:en": "Sukiya",
+    "name:ja": "すき家",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3790001978,
+  "lat": 35.6789703,
+  "lon": 139.7730506,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "中央区",
+    "addr:housenumber": "11",
+    "addr:neighbourhood": "3",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "brand": "LAWSON",
+    "brand:en": "LAWSON",
+    "brand:ja": "ローソン",
+    "brand:wikidata": "Q1557223",
+    "brand:wikipedia": "ja:ローソン",
+    "name": "ローソン",
+    "name:en": "Lawson",
+    "name:ja": "ローソン",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3790001981,
+  "lat": 35.6774770,
+  "lon": 139.7728392,
+  "tags": {
+    "name": "gardenia",
+    "shop": "florist"
+  }
+},
+{
+  "type": "node",
+  "id": 3790005986,
+  "lat": 35.6775404,
+  "lon": 139.7728771,
+  "tags": {
+    "name": "古美術　藤島",
+    "shop": "antiques"
+  }
+},
+{
+  "type": "node",
+  "id": 3790005996,
+  "lat": 35.6775166,
+  "lon": 139.7728642,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "華龍飯店"
+  }
+},
+{
+  "type": "node",
+  "id": 3861632385,
+  "lat": 35.6837535,
+  "lon": 139.7688626,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "level": "2",
+    "name": "Papa Milano Trattoria",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4149983889,
+  "lat": 35.6800361,
+  "lon": 139.7678472,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内1丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "六厘舎",
+    "name:en": "Rokurinsha Tokyo Ramen Street Store",
+    "website": "https://rokurinsha.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585862,
+  "lat": 35.6785322,
+  "lon": 139.7650373,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "noodle",
+    "name": "おいしいおうどん つるとんたん",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585863,
+  "lat": 35.6783618,
+  "lon": 139.7649557,
+  "tags": {
+    "amenity": "pub",
+    "name": "どいちゃん",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585864,
+  "lat": 35.6788303,
+  "lon": 139.7650552,
+  "tags": {
+    "name": "みんなのぱんや",
+    "shop": "bakery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585865,
+  "lat": 35.6782445,
+  "lon": 139.7646884,
+  "tags": {
+    "amenity": "restaurant",
+    "layer": "2",
+    "level": "2",
+    "name": "ろくまる 五元豚",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585866,
+  "lat": 35.6787971,
+  "lon": 139.7650522,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "インデアンカレー",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585868,
+  "lat": 35.6781909,
+  "lon": 139.7648946,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "シチリアン テラス ボーノ",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585869,
+  "lat": 35.6786978,
+  "lon": 139.7650133,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "noodle",
+    "name": "トナリ",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585871,
+  "lat": 35.6783019,
+  "lon": 139.7649126,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "spanish",
+    "layer": "1",
+    "level": "1",
+    "name": "バル デ エスパーニャ ムイ",
+    "name:en": "BAR de ESPANA MUY",
+    "phone": "03-5224-6161",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585872,
+  "lat": 35.6782084,
+  "lon": 139.7646968,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "mexican",
+    "name": "ムーチョ モダン メキシカーノ",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585873,
+  "lat": 35.6789349,
+  "lon": 139.7651308,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "layer": "1",
+    "level": "1",
+    "name": "レゾナンス",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585874,
+  "lat": 35.6787504,
+  "lon": 139.7650331,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "串あげもの 旬s",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585875,
+  "lat": 35.6787197,
+  "lon": 139.7651020,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "天ぷら 菊亭",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585876,
+  "lat": 35.6786033,
+  "lon": 139.7650606,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "宮崎地鶏炭火焼 車",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585877,
+  "lat": 35.6786705,
+  "lon": 139.7650816,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "barbecue",
+    "name": "焼肉 たむら",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585878,
+  "lat": 35.6783370,
+  "lon": 139.7649054,
+  "tags": {
+    "amenity": "restaurant",
+    "layer": "2",
+    "level": "2",
+    "name": "葡萄の森 互談や",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585879,
+  "lat": 35.6787913,
+  "lon": 139.7651242,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name": "鮨一輝",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4160585880,
+  "lat": 35.6782708,
+  "lon": 139.7649072,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "龍福小龍堂",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4286885493,
+  "lat": 35.6816741,
+  "lon": 139.7717142,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "中央区",
+    "addr:housenumber": "21",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "cafe",
+    "brand": "カフェ・ベローチェ",
+    "brand:en": "CAFFÈ VELOCE",
+    "brand:ja": "カフェ・ベローチェ",
+    "brand:wikidata": "Q11294597",
+    "check_date": "2023-01-11",
+    "cuisine": "coffee_shop",
+    "level": "0",
+    "name": "カフェ・ベローチェ",
+    "name:en": "CAFE VELOCE",
+    "name:ja": "カフェ・ベローチェ",
+    "opening_hours": "Mo-Fr 07:00-23:00; Sa,Su,PH 07:00-21:00",
+    "outdoor_seating": "no",
+    "phone": "+81 3 3242 5861",
+    "smoking": "separated",
+    "takeaway": "yes",
+    "website": "https://chatnoir-company.com/chatnoir/ShopSearch?shop_code=802",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4286886091,
+  "lat": 35.6818361,
+  "lon": 139.7715660,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "扇寿司",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4314108090,
+  "lat": 35.6813118,
+  "lon": 139.7718858,
+  "tags": {
+    "level": "0",
+    "name": "富士の国やまなし館",
+    "name:en": "Yamanashi Prefecture Shop",
+    "shop": "gift",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4417975390,
+  "lat": 35.6833212,
+  "lon": 139.7667549,
+  "tags": {
+    "air_conditioning": "yes",
+    "branch": "丸の内本店",
+    "brand": "丸善",
+    "brand:en": "MARUZEN",
+    "brand:ja": "丸善",
+    "brand:wikidata": "Q1906012",
+    "level": "0;1;2;3",
+    "name": "丸善",
+    "name:en": "MARUZEN",
+    "name:ja": "丸善",
+    "official_name": "丸善 丸の内",
+    "official_name:en": "Maruzen Marunouchi",
+    "official_name:ja": "丸善 丸の内",
+    "phone": "+81 3 5288 8881",
+    "shop": "books",
+    "toilets": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4449910791,
+  "lat": 35.6828533,
+  "lon": 139.7724310,
+  "tags": {
+    "branch": "日本橋二丁目",
+    "brand": "NATURAL LAWSON",
+    "brand:en": "NATURAL LAWSON",
+    "brand:ja": "ナチュラルローソン",
+    "brand:wikidata": "Q11323850",
+    "brand:wikipedia": "ja:ナチュラルローソン",
+    "check_date": "2023-01-11",
+    "description": "日本橋二丁目",
+    "level": "0",
+    "name": "ナチュラルローソン",
+    "name:en": "Natural Lawson",
+    "name:ja": "ナチュラルローソン",
+    "opening_hours": "24/7",
+    "phone": "+81 3 5201 5515",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4451080190,
+  "lat": 35.6816180,
+  "lon": 139.7714309,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-01-11",
+    "cuisine": "japanese",
+    "level": "0",
+    "name": "銀だこ・ハイボール酒場八重洲北口店",
+    "name:en": "Takoyaki restaurant",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4465721914,
+  "lat": 35.6814835,
+  "lon": 139.7726084,
+  "tags": {
+    "addr:block_number": "3",
+    "addr:city": "中央区",
+    "addr:housenumber": "6",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "cafe",
+    "brand": "ルノアール",
+    "brand:en": "Renoir",
+    "brand:ja": "ルノアール",
+    "brand:wikidata": "Q11649991",
+    "brand:wikipedia": "ja:銀座ルノアール",
+    "check_date": "2023-01-11",
+    "cuisine": "coffee_shop",
+    "level": "-1",
+    "name": "ルノアール",
+    "name:en": "Renoir",
+    "name:ja": "ルノアール",
+    "official_name": "喫茶室ルノアール",
+    "official_name:en": "Ginza Renoir",
+    "official_name:ja": "喫茶室ルノアール",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4469290393,
+  "lat": 35.6795705,
+  "lon": 139.7669450,
+  "tags": {
+    "amenity": "restaurant",
+    "branch": "東京駅",
+    "branch:en": "Tokyo Station",
+    "capacity": "36",
+    "cuisine": "ramen",
+    "description:en": "Vegan ramen restaurant in Grandsta Tokyo 1F between Uniqlo and Keiyō line in Tokyo JR station.",
+    "diet:vegan": "only",
+    "level": "0",
+    "menu:physical": "yes",
+    "menu:tablet": "yes",
+    "name": "T's たんたん",
+    "name:en": "T's Tantan",
+    "ordering:tablet": "only"
+  }
+},
+{
+  "type": "node",
+  "id": 4522502894,
+  "lat": 35.6799461,
+  "lon": 139.7684740,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "underground ramen street"
+  }
+},
+{
+  "type": "node",
+  "id": 4536681995,
+  "lat": 35.6809649,
+  "lon": 139.7734170,
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "中央区",
+    "addr:housename": "日本橋高島屋",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-8265",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "level": "-1",
+    "name": "小倉山莊 日本橋髙島屋店",
+    "name:en": "Ogurasanso",
+    "name:ja": "小倉山莊 日本橋髙島屋店",
+    "phone": "+81 3 3510 7671",
+    "shop": "confectionery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4536759390,
+  "lat": 35.6784612,
+  "lon": 139.7703362,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "中央区",
+    "addr:housenumber": "4",
+    "addr:neighbourhood": "京橋一丁目",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "name": "伊勢廣 串燒",
+    "name:en": "Isehiro",
+    "name:ja": "伊勢廣 串燒",
+    "name:ko": "이세히로 쿄바시 본점"
+  }
+},
+{
+  "type": "node",
+  "id": 4536759392,
+  "lat": 35.6813047,
+  "lon": 139.7635424,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "harbs",
+    "name:it": "Harbs",
+    "name:ja": "harbs",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4559957789,
+  "lat": 35.6774670,
+  "lon": 139.7622136,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese;fish",
+    "name": "やんも",
+    "name:en": "Yanmo",
+    "phone": "+81 3 5224 3322",
+    "website": "https://yanmo.co.jp/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4646514991,
+  "lat": 35.6812599,
+  "lon": 139.7688241,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "1丁目",
+    "addr:postcode": "100-6701",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "name": "大丸",
+    "name:en": "Daimaru Tokyo",
+    "name:es": "Daimaru Tokyo",
+    "name:ja": "大丸東京店",
+    "name:ko": "다이마루 도쿄점",
+    "name:zh": "大丸東京店",
+    "opening_hours": "10:00-20:00; Th,Fr 10:00-21:00",
+    "operator": "株式会社大丸松坂屋百貨店",
+    "phone": "+81 3 3212 8011",
+    "shop": "department_store",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.daimaru.co.jp/",
+    "wheelchair": "yes",
+    "wikidata": "Q116909154",
+    "wikimedia_commons": "Category:Daimaru Tokyo",
+    "wikipedia": "ja:大丸東京店"
+  }
+},
+{
+  "type": "node",
+  "id": 4646514992,
+  "lat": 35.6803754,
+  "lon": 139.7678774,
+  "tags": {
+    "amenity": "food_court",
+    "name": "東京ラーメンストリート",
+    "name:en": "Tokyo Ramen Street",
+    "name:ja": "東京ラーメンストリート",
+    "name:zh": "東京拉麵街",
+    "tourism": "attraction",
+    "website": "https://www.tokyoeki-1bangai.co.jp/street/ramen/",
+    "wheelchair": "yes",
+    "wikidata": "Q11524461",
+    "wikipedia": "ja:東京ラーメンストリート"
+  }
+},
+{
+  "type": "node",
+  "id": 4663566842,
+  "lat": 35.6797080,
+  "lon": 139.7644101,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "比內雞親子丼",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4664594590,
+  "lat": 35.6773680,
+  "lon": 139.7695850,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "やまや",
+    "name:ja": "やまや",
+    "website": "https://www.y-shokukobo.com/store/kyobashi_e/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4697659390,
+  "lat": 35.6813413,
+  "lon": 139.7668440,
+  "tags": {
+    "name": "駅弁屋 祭",
+    "name:en": "Ekiben-ya Matsuri",
+    "name:ja": "駅弁屋 祭",
+    "opening_hours": "Mo-Su 05:30-23:00",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4721324291,
+  "lat": 35.6834274,
+  "lon": 139.7662946,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Pit ねのひ",
+    "name:en": "Pit Nenohi",
+    "name:es": "Pit Nenohi",
+    "name:ja": "Pit ねのひ",
+    "phone": "03-6212-8088",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4737170022,
+  "lat": 35.6835012,
+  "lon": 139.7727874,
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housenumber": "19",
+    "addr:neighbourhood": "1",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "check_date": "2025-10-30",
+    "level": "0",
+    "name": "うさぎや 本店",
+    "name:en": "Usagiya",
+    "name:ja": "うさぎや 本店",
+    "opening_hours": "Mo-Fr 09:30-18:00; PH off",
+    "payment:cash": "yes",
+    "phone": "+81 3 3271 9910",
+    "shop": "confectionery"
+  }
+},
+{
+  "type": "node",
+  "id": 4766924630,
+  "lat": 35.6817790,
+  "lon": 139.7685247,
+  "tags": {
+    "name:en": "Donguri garden",
+    "opening_hours": "Mo-Su 09:00-20:30",
+    "shop": "toys"
+  }
+},
+{
+  "type": "node",
+  "id": 4768263321,
+  "lat": 35.6790424,
+  "lon": 139.7728545,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "中央区",
+    "addr:housenumber": "12",
+    "addr:neighbourhood": "3",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "restaurant",
+    "cuisine": "steak_house",
+    "level": "-1",
+    "name": "西洋料理 島",
+    "name:en": "Shima (Steak Sandwich)",
+    "name:ja": "西洋料理 島",
+    "opening_hours": "Mo-Sa 12:00-13:00,18:00-21:00",
+    "phone": "+81 3 3271 7889",
+    "website": "http://www.jimu-uke.co.jp/shima_site/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4982707221,
+  "lat": 35.6803498,
+  "lon": 139.7692400,
+  "tags": {
+    "name:en": "Sandog Inn",
+    "name:zh": "Sandog Inn 神戸屋",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 5046154024,
+  "lat": 35.6786257,
+  "lon": 139.7619550,
+  "tags": {
+    "name:en": "Pass The Baton - Marunouchi",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5053420822,
+  "lat": 35.6796222,
+  "lon": 139.7651732,
+  "tags": {
+    "addr:block_number": "7",
+    "addr:city": "千代田区",
+    "addr:housename": "JPタワー KITTE",
+    "addr:housenumber": "2",
+    "addr:neighbourhood": "丸の内2丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "level": "4",
+    "name": "根室花まる",
+    "name:en": "Hanamaru",
+    "name:ko": "하나마루",
+    "opening_hours": "11:00-23:00",
+    "opening_hours:kitchen": "Mo-Su 11:00-22:00",
+    "phone": "+81-3-6269-9026",
+    "website": "https://www.sushi-hanamaru.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5053717321,
+  "lat": 35.6785163,
+  "lon": 139.7624793,
+  "tags": {
+    "addr:block_number": "6",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-6901",
+    "addr:province": "東京都",
+    "name": "ECHIRE MAISON DU BEURRE",
+    "name:ko": "에쉬레",
+    "shop": "bakery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5066879063,
+  "lat": 35.6788390,
+  "lon": 139.7720575,
+  "tags": {
+    "level": "-1",
+    "name": "Liquors Hasegawa",
+    "note": "in Tokyo Station underground, not sure exact location",
+    "shop": "alcohol"
+  }
+},
+{
+  "type": "node",
+  "id": 5158145823,
+  "lat": 35.6788733,
+  "lon": 139.7629812,
+  "tags": {
+    "addr:block_number": "6",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name:en": "Manten-sushi",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5208140040,
+  "lat": 35.6786320,
+  "lon": 139.7626199,
+  "tags": {
+    "amenity": "cafe",
+    "name": "エシレメゾンデュブール",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5224039524,
+  "lat": 35.6773492,
+  "lon": 139.7652392,
+  "tags": {
+    "amenity": "pub",
+    "name": "鍛冶屋文蔵",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5224039525,
+  "lat": 35.6771825,
+  "lon": 139.7651647,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-05-03",
+    "name": "陳家私菜",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5224039526,
+  "lat": 35.6772678,
+  "lon": 139.7652092,
+  "tags": {
+    "amenity": "pub",
+    "name": "小樽横丁",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5224039528,
+  "lat": 35.6770485,
+  "lon": 139.7650984,
+  "tags": {
+    "amenity": "pub",
+    "name": "日本橋紅とん",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5224039529,
+  "lat": 35.6771095,
+  "lon": 139.7651283,
+  "tags": {
+    "amenity": "pub",
+    "name": "鳥良商店",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5224058913,
+  "lat": 35.6793863,
+  "lon": 139.7659859,
+  "tags": {
+    "name": "はとマルシェ",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 5224058914,
+  "lat": 35.6783489,
+  "lon": 139.7656122,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "焼肉　吟次郎"
+  }
+},
+{
+  "type": "node",
+  "id": 5224058917,
+  "lat": 35.6777992,
+  "lon": 139.7654023,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "KoKo"
+  }
+},
+{
+  "type": "node",
+  "id": 5224058918,
+  "lat": 35.6789547,
+  "lon": 139.7659100,
+  "tags": {
+    "amenity": "pub",
+    "name": "築地活鮮市場"
+  }
+},
+{
+  "type": "node",
+  "id": 5224058919,
+  "lat": 35.6780522,
+  "lon": 139.7655036,
+  "tags": {
+    "amenity": "pub",
+    "name": "屋台屋 博多劇場"
+  }
+},
+{
+  "type": "node",
+  "id": 5253172884,
+  "lat": 35.6832221,
+  "lon": 139.7691229,
+  "tags": {
+    "addr:postcode": "102-0000",
+    "level": "0",
+    "name": "Bellmart kiosk",
+    "opening_hours": "Su-Fr 06:30-23:00; Sa 06:30-22:00",
+    "shop": "kiosk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5308229321,
+  "lat": 35.6786412,
+  "lon": 139.7627113,
+  "tags": {
+    "name": "PASS THE BATON MARUNOUCHI",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 5505701422,
+  "lat": 35.6775573,
+  "lon": 139.7629746,
+  "tags": {
+    "addr:floor": "B1F",
+    "amenity": "restaurant",
+    "level": "-1",
+    "name": "舎鈴",
+    "opening_hours": "Mo-Fr 11:00-22:45; Sa-Su 11:00-16:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5541415747,
+  "lat": 35.6800242,
+  "lon": 139.7712159,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "多奈か",
+    "name:en": "Tanaka"
+  }
+},
+{
+  "type": "node",
+  "id": 5640927727,
+  "lat": 35.6799925,
+  "lon": 139.7701276,
+  "tags": {
+    "addr:place": "八重洲地下1番通り",
+    "amenity": "restaurant",
+    "level": "-1",
+    "name": "Bubby's burger",
+    "name:ja": "バビーズバーガー"
+  }
+},
+{
+  "type": "node",
+  "id": 5731497921,
+  "lat": 35.6797656,
+  "lon": 139.7678456,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "マクドナルド",
+    "brand:en": "McDonald's",
+    "brand:ja": "マクドナルド",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "ja:マクドナルド",
+    "cuisine": "burger",
+    "name": "マクドナルド",
+    "name:en": "McDonald's",
+    "name:ja": "マクドナルド",
+    "name:ko": "맥도날드",
+    "name:zh": "麥當勞",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5798267853,
+  "lat": 35.6841096,
+  "lon": 139.7677057,
+  "tags": {
+    "amenity": "bar",
+    "name": "ビア・チムニー",
+    "name:en": "Chimney"
+  }
+},
+{
+  "type": "node",
+  "id": 5871004550,
+  "lat": 35.6781920,
+  "lon": 139.7695120,
+  "tags": {
+    "check_date": "2025-05-24",
+    "level": "0",
+    "name": "理容室Honu",
+    "name:en": "Honu",
+    "shop": "hairdresser",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5874416286,
+  "lat": 35.6803543,
+  "lon": 139.7679812,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "diet:gluten_free": "yes",
+    "diet:vegan": "yes",
+    "name": "ソラノイロNIPPON",
+    "name:en": "Soranoiro Nippon",
+    "opening_hours": "09:00-23:00"
+  }
+},
+{
+  "type": "node",
+  "id": 5877627985,
+  "lat": 35.6786352,
+  "lon": 139.7676280,
+  "tags": {
+    "amenity": "cafe",
+    "name:en": "Dean&Deluca Cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 5880807285,
+  "lat": 35.6821475,
+  "lon": 139.7645293,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Brooklyn Brewery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5891213672,
+  "lat": 35.6826597,
+  "lon": 139.7688646,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:country": "JP",
+    "addr:housename": "東京駅一番街",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "alt_name": "ポケモンストア",
+    "alt_name:en": "Pókemon Store",
+    "branch": "東京駅店",
+    "branch:en": "Tokyo Station",
+    "brand": "ポケモンセンター",
+    "brand:en": "Pokémon Center",
+    "brand:ja": "ポケモンセンター",
+    "brand:wikidata": "Q89673816",
+    "check_date": "2026-03-27",
+    "level": "-1",
+    "name": "Pokémon Store",
+    "name:en": "Pokémon Store",
+    "name:es": "Tienda de Pokémon",
+    "name:ja": "ポケモンストア",
+    "name:ja-Hira": "ぽけもんすとあ",
+    "name:ja-Latn": "Pokemon Sutoa",
+    "opening_hours": "10:00-20:30",
+    "phone": "03-5224-6121",
+    "shop": "hobby",
+    "shop:anime": "yes",
+    "shop:games": "yes",
+    "shop:tcg": "yes",
+    "website": "https://www.pokemon.co.jp/shop/en/store/tokyo/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5896269889,
+  "lat": 35.6805218,
+  "lon": 139.7680107,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "中央区",
+    "addr:country": "JP",
+    "addr:housename": "東京駅一番街",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "branch": "東京駅店",
+    "branch:en": "Tokyo Station",
+    "brand": "ジャンプショップ",
+    "brand:en": "Jump Shop",
+    "brand:ja": "ジャンプショップ",
+    "brand:wikidata": "Q11310200",
+    "brand:wikipedia": "ja:ジャンプショップ",
+    "level": "-1",
+    "name": "ジャンプショップ",
+    "name:en": "Jump Shop",
+    "name:ja": "ジャンプショップ",
+    "opening_hours": "10:00-20:30",
+    "operator": "Shueisha",
+    "phone": "03-3215-0123",
+    "shop": "hobby",
+    "shop:anime": "yes",
+    "shop:comic_goods": "yes",
+    "shop:manga": "yes",
+    "website": "http://www.shonenjump.com/j/jumpshop/store.html"
+  }
+},
+{
+  "type": "node",
+  "id": 5899710104,
+  "lat": 35.6813502,
+  "lon": 139.7683600,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:country": "JP",
+    "addr:housename": "東京駅一番街",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:province": "東京都",
+    "branch": "東京店",
+    "branch:en": "Tokyo",
+    "brand": "トミカ",
+    "brand:en": "Tomica",
+    "brand:wikidata": "Q935432",
+    "contact:phone": "+81 3-5220-1351",
+    "contact:website": "https://www.takaratomy.co.jp/products/tomicashop/shop/index.htm",
+    "level": "-1",
+    "name": "トミカ",
+    "name:en": "Tomica",
+    "name:fr": "Tomica",
+    "name:ja-Latn": "Tomika",
+    "official_name": "トミカショップ 東京キャラクターストリート店",
+    "official_name:en": "Tomica Shop Tokyo Character Street",
+    "official_name:fr": "Tomica Tokyo Character Street",
+    "official_name:ja-Latn": "Tomika shoppu Tōkyō kyarakutāsutorīto-ten",
+    "opening_hours": "Mo-Su 10:00-20:30",
+    "shop": "toys",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5905114985,
+  "lat": 35.6807561,
+  "lon": 139.7633056,
+  "tags": {
+    "brand": "NATURAL LAWSON",
+    "brand:en": "NATURAL LAWSON",
+    "brand:ja": "ナチュラルローソン",
+    "brand:wikidata": "Q11323850",
+    "name": "ナチュラルローソン",
+    "name:en": "Natural Lawson",
+    "name:ja": "ナチュラルローソン",
+    "opening_hours": "Mo-Su 07:00-23:00",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6193806093,
+  "lat": 35.6816998,
+  "lon": 139.7647090,
+  "tags": {
+    "level": "-1",
+    "name": "Echika fit tokyo",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6339680477,
+  "lat": 35.6823399,
+  "lon": 139.7662247,
+  "tags": {
+    "name": "JR East Travel Service Center",
+    "opening_hours": "Mo-Fr 08:30-19:00, Sa-Su, PH 08:30-17:00",
+    "shop": "ticket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6351640486,
+  "lat": 35.6787859,
+  "lon": 139.7627968,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "グリルうかい 丸の内店",
+    "name:en": "Grill Ukai Marunouchi",
+    "website": "https://www.ukai.co.jp/grill"
+  }
+},
+{
+  "type": "node",
+  "id": 6415449943,
+  "lat": 35.6796122,
+  "lon": 139.7709876,
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "中央区",
+    "addr:neighbourhood": "八重洲2丁目",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "name": "アロマ珈琲",
+    "name:en": "Aroma Coffee",
+    "opening_hours": "Mo-Fr 07:00-21:30; Sa 07:00-21:00; Su 07:30-21:00",
+    "phone": "+81 3 3275 3532",
+    "website": "https://www.aromacoffee.co.jp/yaesu.html"
+  }
+},
+{
+  "type": "node",
+  "id": 6417256385,
+  "lat": 35.6802393,
+  "lon": 139.7728442,
+  "tags": {
+    "addr:block_number": "8",
+    "addr:city": "中央区",
+    "addr:housenumber": "16",
+    "addr:neighbourhood": "日本橋三丁目",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "level": "-2",
+    "name": "ぶよお堂",
+    "name:en": "Buyodo",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa,Su 10:00-17:00; PH off",
+    "phone": "+81 3 3271 2410",
+    "shop": "stationery",
+    "website": "http://www.buyodoshop.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6467509501,
+  "lat": 35.6775788,
+  "lon": 139.7703635,
+  "tags": {
+    "amenity": "bar",
+    "name": "Lava Rock",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6516643099,
+  "lat": 35.6804668,
+  "lon": 139.7680142,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "JR東京駅店",
+    "brand": "マクドナルド",
+    "brand:en": "McDonald's",
+    "brand:ja": "マクドナルド",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "ja:マクドナルド",
+    "cuisine": "burger",
+    "name": "マクドナルド",
+    "name:en": "McDonald's",
+    "name:ja": "マクドナルド",
+    "name:zh": "麥當勞",
+    "opening_hours": "Mo-Su 05:30-24:00",
+    "phone": "+81 3 3211 3677",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 6539228885,
+  "lat": 35.6826666,
+  "lon": 139.7728088,
+  "tags": {
+    "level": "0",
+    "name": "日本橋長崎館",
+    "name:en": "Nihonbashi Nagasakikan",
+    "phone": "+81 3 6262 5352",
+    "shop": "gift",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6569781685,
+  "lat": 35.6853532,
+  "lon": 139.7661812,
+  "tags": {
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "en:7-Eleven",
+    "level": "-1",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "official_name:en": "Seven-Eleven",
+    "opening_hours": "Mo-Fr 07:00-23:00",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 6698423080,
+  "lat": 35.6834342,
+  "lon": 139.7684624,
+  "tags": {
+    "amenity": "cafe",
+    "brand": "PRONTO",
+    "brand:en": "PRONTO",
+    "brand:ja": "プロント",
+    "brand:wikidata": "Q11336224",
+    "brand:wikipedia": "ja:プロントコーポレーション",
+    "cuisine": "coffee_shop",
+    "name": "PRONTO",
+    "name:en": "PRONTO",
+    "name:ja": "プロント",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6743164686,
+  "lat": 35.6806532,
+  "lon": 139.7694213,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Yaesu Hatsufuji"
+  }
+},
+{
+  "type": "node",
+  "id": 6773670159,
+  "lat": 35.6809360,
+  "lon": 139.7733220,
+  "tags": {
+    "brand": "Gucci",
+    "brand:wikidata": "Q178516",
+    "brand:wikipedia": "en:Gucci",
+    "name": "Gucci",
+    "second_hand": "no",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6810427257,
+  "lat": 35.6823499,
+  "lon": 139.7660363,
+  "tags": {
+    "brand": "みどりの窓口",
+    "brand:en": "Midori-no-madoguchi",
+    "brand:ja": "みどりの窓口",
+    "brand:wikidata": "Q11279064",
+    "brand:wikipedia": "ja:みどりの窓口",
+    "level": "-1",
+    "name": "みどりの窓口",
+    "name:en": "JR Ticket Office",
+    "name:ja": "みどりの窓口",
+    "note": "改札外",
+    "opening_hours": "05:30-23:00",
+    "shop": "ticket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6844569787,
+  "lat": 35.6826565,
+  "lon": 139.7666613,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "すし好 和",
+    "name:en": "Sushi Yoshi Wa"
+  }
+},
+{
+  "type": "node",
+  "id": 6936372787,
+  "lat": 35.6806373,
+  "lon": 139.7684713,
+  "tags": {
+    "amenity": "bar",
+    "name:en": "Hitachino Brewing Lab Tokyo Station"
+  }
+},
+{
+  "type": "node",
+  "id": 6936651786,
+  "lat": 35.6778781,
+  "lon": 139.7667445,
+  "tags": {
+    "amenity": "bar",
+    "name:en": "Nihombashikoamicho Brewery"
+  }
+},
+{
+  "type": "node",
+  "id": 7052361226,
+  "lat": 35.6821266,
+  "lon": 139.7685498,
+  "tags": {
+    "branch": "東京駅店",
+    "layer": "-1",
+    "name": "ミッフィースタイル",
+    "name:en": "Miffy Style",
+    "phone": "+81 3 3213 5571",
+    "shop": "toys",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7073960643,
+  "lat": 35.6838330,
+  "lon": 139.7683723,
+  "tags": {
+    "level": "0",
+    "name": "レ・フルール・ミズカ",
+    "opening_hours": "10:00-18:00",
+    "shop": "florist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7073960644,
+  "lat": 35.6838602,
+  "lon": 139.7684239,
+  "tags": {
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "brand:wikipedia": "en:FamilyMart",
+    "building:levels": "3",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "opening_hours": "07:00-23:00",
+    "operator": "ファミリーマート",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7073974673,
+  "lat": 35.6821713,
+  "lon": 139.7706459,
+  "tags": {
+    "alt_name": "ヤマダ電機",
+    "branch": "LABI東京八重洲",
+    "brand": "ヤマダデンキ",
+    "brand:en": "Yamada Denki",
+    "brand:ja": "ヤマダデンキ",
+    "brand:wikidata": "Q1096390",
+    "brand:wikipedia": "en:Yamada Denki",
+    "check_date": "2025-05-25",
+    "name": "ヤマダデンキ",
+    "name:en": "Yamada Denki",
+    "name:ja": "ヤマダデンキ",
+    "operator": "ヤマダ電機",
+    "shop": "electronics",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7073974674,
+  "lat": 35.6821364,
+  "lon": 139.7698457,
+  "tags": {
+    "branch": "TEKKO Avenue",
+    "brand": "LAWSON",
+    "brand:en": "LAWSON",
+    "brand:ja": "ローソン",
+    "brand:wikidata": "Q1557223",
+    "name": "ローソン",
+    "name:en": "Lawson",
+    "name:ja": "ローソン",
+    "opening_hours": "24/7",
+    "operator": "ローソン",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7073974676,
+  "lat": 35.6825072,
+  "lon": 139.7698281,
+  "tags": {
+    "amenity": "cafe",
+    "brand": "タリーズコーヒー",
+    "brand:en": "Tully's Coffee",
+    "brand:ja": "タリーズコーヒー",
+    "brand:wikidata": "Q3541983",
+    "brand:wikipedia": "en:Tully's Coffee",
+    "cuisine": "coffee_shop",
+    "name": "タリーズコーヒー",
+    "name:en": "Tully's Coffee",
+    "name:ja": "タリーズコーヒー",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7073974679,
+  "lat": 35.6826230,
+  "lon": 139.7699222,
+  "tags": {
+    "brand": "NATURAL LAWSON",
+    "brand:en": "NATURAL LAWSON",
+    "brand:ja": "ナチュラルローソン",
+    "brand:wikidata": "Q11323850",
+    "brand:wikipedia": "ja:ナチュラルローソン",
+    "name": "ナチュラルローソン",
+    "name:en": "Natural Lawson",
+    "name:ja": "ナチュラルローソン",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7196596448,
+  "lat": 35.6773244,
+  "lon": 139.7702242,
+  "tags": {
+    "level": "0",
+    "name": "明治屋",
+    "name:en": "Meidi-Ya",
+    "name:ja": "明治屋",
+    "opening_hours": "Mo-Sa 10:00-21:00;Su,PH 10:00-20:00",
+    "shop": "supermarket",
+    "website": "https://meidi-ya-store.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7205146485,
+  "lat": 35.6784297,
+  "lon": 139.7625271,
+  "tags": {
+    "name:en": "Le Cafe La Boutique",
+    "shop": "bakery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7215849386,
+  "lat": 35.6807467,
+  "lon": 139.7710994,
+  "tags": {
+    "amenity": "pub",
+    "name": "Big echo karaoke",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 7357132006,
+  "lat": 35.6811383,
+  "lon": 139.7685386,
+  "tags": {
+    "addr:postcode": "100-0005",
+    "alt_name": "ジャパンレールカフェ",
+    "amenity": "cafe",
+    "check_date": "2024-01-01",
+    "contact:facebook": "https://www.facebook.com/JAPAN-RAIL-CAFE-TOKYO-100517331532161/",
+    "cuisine": "japanese;tea;sushi",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Japan Rail Café",
+    "opening_hours": "Mo-Fr 08:00-22:00; Sa-Su 08:00-21:00",
+    "phone": "+81-3-6269-9787",
+    "website": "https://www.jreast.co.jp/e/japanrailcafe/tokyo/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7677931591,
+  "lat": 35.6827196,
+  "lon": 139.7688657,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "alt_name:en": "Kamen Rider Store",
+    "contact:twitter": "https://twitter.com/KamenRiderStore",
+    "level": "-1",
+    "name": "仮面ライダーストア",
+    "name:en": "Kamen Rider Store",
+    "opening_hours": "Mo-Su 10:00-20:30",
+    "shop": "hobby",
+    "website": "https://www.kamen-rider-official.com/official_shop/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8010456801,
+  "lat": 35.6815742,
+  "lon": 139.7701048,
+  "tags": {
+    "branch": "東京駅前店",
+    "check_date": "2025-05-24",
+    "level": "0",
+    "name": "チケット大黒屋",
+    "phone": "+81 3 3278 3081",
+    "shop": "ticket"
+  }
+},
+{
+  "type": "node",
+  "id": 8010456802,
+  "lat": 35.6823612,
+  "lon": 139.7708514,
+  "tags": {
+    "amenity": "cafe",
+    "branch": "東京駅八重洲1丁目店",
+    "brand": "ルノアール",
+    "brand:en": "Renoir",
+    "brand:ja": "ルノアール",
+    "brand:wikidata": "Q11649991",
+    "brand:wikipedia": "ja:銀座ルノアール",
+    "check_date": "2023-01-11",
+    "cuisine": "coffee_shop",
+    "name": "ルノアール",
+    "name:en": "Renoir",
+    "name:ja": "ルノアール",
+    "official_name": "喫茶室ルノアール",
+    "official_name:en": "Ginza Renoir",
+    "official_name:ja": "喫茶室ルノアール",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8432272622,
+  "lat": 35.6815095,
+  "lon": 139.7720308,
+  "tags": {
+    "level": "0",
+    "name": "おいでませ山口館",
+    "phone": "+81 3 3231 1863",
+    "shop": "gift",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9083439431,
+  "lat": 35.6836804,
+  "lon": 139.7686855,
+  "tags": {
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "brand:wikipedia": "ja:ファミリーマート",
+    "building:levels": "0",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 9084900652,
+  "lat": 35.6787538,
+  "lon": 139.7673074,
+  "tags": {
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "brand:wikipedia": "ja:ファミリーマート",
+    "level": "-1",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9186575573,
+  "lat": 35.6823748,
+  "lon": 139.7715150,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "東京イカセンター",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9186575574,
+  "lat": 35.6823539,
+  "lon": 139.7715790,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "伊勢角屋麦汁",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9186589397,
+  "lat": 35.6823055,
+  "lon": 139.7714386,
+  "tags": {
+    "amenity": "food_court",
+    "name": "八重仲ダイニング",
+    "note": "食堂街はフードコートとは違うので、適切なものがあれば修正お願いします",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9633684729,
+  "lat": 35.6799807,
+  "lon": 139.7677956,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "branch": "八重洲南",
+    "level": "0",
+    "name": "ベルマートキヨスク",
+    "name:en": "Bellmart Kiosk",
+    "phone": "+81 3 3281 6388",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9756668631,
+  "lat": 35.6786458,
+  "lon": 139.7657435,
+  "tags": {
+    "amenity": "cafe",
+    "name": "HATO Cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 9756668632,
+  "lat": 35.6782366,
+  "lon": 139.7655736,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "ramen",
+    "name": "孫鈴舎"
+  }
+},
+{
+  "type": "node",
+  "id": 9756668633,
+  "lat": 35.6781791,
+  "lon": 139.7655570,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "天ぷらワイン 大塩"
+  }
+},
+{
+  "type": "node",
+  "id": 9798491320,
+  "lat": 35.6831613,
+  "lon": 139.7697127,
+  "tags": {
+    "branch": "丸の内トラストタワー店",
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "phone": "03-5220-8521",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 9798522415,
+  "lat": 35.6841545,
+  "lon": 139.7704800,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "スペイン料理",
+    "name": "Bar Espanol YEBRA",
+    "phone": "03-6281-9025",
+    "website": "https://www.marunouchi.com/tenants/10229/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798522658,
+  "lat": 35.6842094,
+  "lon": 139.7705189,
+  "tags": {
+    "name": "セブン－イレブン 　常盤橋タワーB1F店",
+    "phone": "03-5201-8015",
+    "shop": "convenience",
+    "website": "https://www.marunouchi.com/tenants/10226/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798532900,
+  "lat": 35.6840968,
+  "lon": 139.7705695,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "クラフトビアレストラン",
+    "name": "CRAFT BEER MARKET TOKYO TORCH店",
+    "phone": "03-6262-3102",
+    "website": "https://www.marunouchi.com/tenants/10231/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798533933,
+  "lat": 35.6842903,
+  "lon": 139.7705121,
+  "tags": {
+    "name": "セブン－イレブン 　常盤橋タワー3F店",
+    "shop": "convenience",
+    "website": "https://www.marunouchi.com/tenants/10239/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798540898,
+  "lat": 35.6843754,
+  "lon": 139.7705560,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "イタリアン",
+    "name": "Tsubamesanjo Bit TOKYO",
+    "opening_hours": "11:00-15:00",
+    "opening_hours:kitchen": "11:00-14:30",
+    "phone": "03-6262-3936"
+  }
+},
+{
+  "type": "node",
+  "id": 9798545627,
+  "lat": 35.6841915,
+  "lon": 139.7707250,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "オールデイダイニング",
+    "name": "TATA　～BAR RESTAURANT CAFE～",
+    "opening_hours": "11:00-23:00",
+    "phone": "03-6281-9974",
+    "website": "https://www.marunouchi.com/tenants/10233/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798547844,
+  "lat": 35.6842451,
+  "lon": 139.7707182,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "フレンチ;フレンチ串揚げ",
+    "name": "フレンチ串揚げ　BEIGNET",
+    "phone": "03-6281-9995",
+    "website": "https://www.marunouchi.com/tenants/10230/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798548833,
+  "lat": 35.6842519,
+  "lon": 139.7704428,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "カフェ",
+    "name": "TOFFEEtokyo",
+    "opening_hours": "08:00-20:00",
+    "phone": "03-6281-9000"
+  }
+},
+{
+  "type": "node",
+  "id": 9798562225,
+  "lat": 35.6840776,
+  "lon": 139.7704901,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "北海道 炉端　えぞ羅",
+    "opening_hours": "11:00-23:00",
+    "opening_hours:kitchen": "11:00-22:00",
+    "phone": "03-6262-5115",
+    "website": "https://www.marunouchi.com/tenants/10234/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798570252,
+  "lat": 35.6844605,
+  "lon": 139.7705408,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "鶏料理",
+    "name": "野乃鳥 丹波赤どり専門 とりのや 本店",
+    "opening_hours": "11:00-23:00",
+    "opening_hours:kitchen": "11:00-22:00",
+    "phone": "03-6265-1744",
+    "website": "https://www.marunouchi.com/tenants/10235/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798577184,
+  "lat": 35.6840140,
+  "lon": 139.7706791,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "カフェラウンジ",
+    "name": "MY Shokudo Hall & Kitchen",
+    "opening_hours": "09:00-21:00",
+    "phone": "03-6665-6989",
+    "website": "https://www.marunouchi.com/tenants/10238/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798604629,
+  "lat": 35.6841240,
+  "lon": 139.7704163,
+  "tags": {
+    "amenity": "cafe",
+    "brand": "タリーズコーヒー",
+    "brand:en": "Tully's Coffee",
+    "brand:ja": "タリーズコーヒー",
+    "brand:wikidata": "Q3541983",
+    "cuisine": "coffee_shop",
+    "name": "タリーズコーヒー",
+    "name:en": "Tully's Coffee",
+    "name:ja": "タリーズコーヒー",
+    "phone": "03-5542-1656",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9798610608,
+  "lat": 35.6840401,
+  "lon": 139.7705517,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "カフェテリアラウンジ",
+    "name": "MY Shokudo Dining & Sakaba",
+    "opening_hours": "17:30-22:00",
+    "phone": "03-6262-7120",
+    "website": "https://www.marunouchi.com/tenants/10237/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798618033,
+  "lat": 35.6841556,
+  "lon": 139.7707087,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "海鮮・日本酒・居酒屋",
+    "name": "魚と日本酒　羽田市場",
+    "phone": "03-5542-1260",
+    "website": "https://www.marunouchi.com/tenants/10225/"
+  }
+},
+{
+  "type": "node",
+  "id": 9798618919,
+  "lat": 35.6843179,
+  "lon": 139.7708267,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "BRIANZA TOKYO",
+    "opening_hours": "11:00-23:00",
+    "opening_hours:kitchen": "11:00-22:00",
+    "phone": "03-6262-7862"
+  }
+},
+{
+  "type": "node",
+  "id": 9893255119,
+  "lat": 35.6812151,
+  "lon": 139.7721130,
+  "tags": {
+    "amenity": "restaurant",
+    "branch": "日本橋店",
+    "brand": "ガスト",
+    "brand:en": "Gusto",
+    "brand:ja": "ガスト",
+    "brand:wikidata": "Q87724117",
+    "cuisine": "western;japanese",
+    "level": "0",
+    "name": "ガスト",
+    "name:en": "Gusto",
+    "name:ja": "ガスト",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10209344943,
+  "lat": 35.6800684,
+  "lon": 139.7637993,
+  "tags": {
+    "addr:block_number": "5",
+    "addr:city": "千代田区",
+    "addr:housenumber": "2",
+    "addr:neighbourhood": "丸の内二丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "brand": "Apple Store",
+    "brand:wikidata": "Q421253",
+    "name": "Apple 丸の内",
+    "name:ko": "Apple 마루노우치점",
+    "phone": "(03) 4213-0500",
+    "shop": "electronics",
+    "short_name": "Apple",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10296731009,
+  "lat": 35.6789424,
+  "lon": 139.7621392,
+  "tags": {
+    "name:en": "Comme des Garçons",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10312480391,
+  "lat": 35.6808580,
+  "lon": 139.7683695,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "branch": "東京店",
+    "contact:twitter": "pps_as",
+    "level": "-1",
+    "name": "プリキュア プリティストア",
+    "name:en": "Precure Pretty Store",
+    "name:ja": "プリキュア プリティストア",
+    "opening_hours": "10:00-20:30",
+    "phone": "+81-3-6551-2550",
+    "shop": "hobby",
+    "shop:anime": "yes",
+    "website": "https://www.toei-anim.co.jp/ptr/precure/"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350865,
+  "lat": 35.6809889,
+  "lon": 139.7717735,
+  "tags": {
+    "amenity": "cafe",
+    "check_date": "2023-01-11",
+    "level": "-1",
+    "name": "ぺしゃわーる",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350866,
+  "lat": 35.6819198,
+  "lon": 139.7718982,
+  "tags": {
+    "addr:floor": "2",
+    "amenity": "restaurant",
+    "check_date": "2023-01-11",
+    "name": "The Flying Penguins",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350867,
+  "lat": 35.6819346,
+  "lon": 139.7718516,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-01-11",
+    "cuisine": "noodle",
+    "level": "0",
+    "name": "小諸そば",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350872,
+  "lat": 35.6814766,
+  "lon": 139.7713147,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2023-01-11",
+    "level": "0",
+    "name": "和が家",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350873,
+  "lat": 35.6814134,
+  "lon": 139.7712996,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-01-11",
+    "cuisine": "japanese",
+    "name": "大衆焼鳥・うなぎ串　幸の鳥",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350874,
+  "lat": 35.6813870,
+  "lon": 139.7717235,
+  "tags": {
+    "amenity": "pub",
+    "brand": "鳥貴族",
+    "brand:en": "Torikizoku",
+    "brand:ja": "鳥貴族",
+    "brand:wikidata": "Q11675129",
+    "check_date": "2023-01-11",
+    "level": "7",
+    "name": "鳥貴族",
+    "name:en": "Torikizoku",
+    "name:ja": "鳥貴族",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350876,
+  "lat": 35.6813416,
+  "lon": 139.7716997,
+  "tags": {
+    "addr:floor": "4",
+    "amenity": "pub",
+    "check_date": "2023-01-11",
+    "name": "土間土間",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350877,
+  "lat": 35.6813326,
+  "lon": 139.7716722,
+  "tags": {
+    "addr:floor": "3",
+    "amenity": "pub",
+    "check_date": "2023-01-11",
+    "name": "ウメ子の家",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350880,
+  "lat": 35.6824035,
+  "lon": 139.7732697,
+  "tags": {
+    "amenity": "pharmacy",
+    "brand": "welcia",
+    "brand:en": "welcia",
+    "brand:ja": "ウエルシア薬局",
+    "brand:wikidata": "Q11288687",
+    "check_date": "2023-01-11",
+    "healthcare": "pharmacy",
+    "name": "ウエルシア薬局",
+    "name:en": "Welcia",
+    "name:ja": "ウエルシア薬局",
+    "shop": "chemist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350882,
+  "lat": 35.6819136,
+  "lon": 139.7731032,
+  "tags": {
+    "check_date": "2023-01-11",
+    "name": "ORANGE HEAL",
+    "shop": "shoes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350883,
+  "lat": 35.6818552,
+  "lon": 139.7730363,
+  "tags": {
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "本間ゴルフ",
+    "shop": "sports",
+    "sport": "golf"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350884,
+  "lat": 35.6809600,
+  "lon": 139.7718411,
+  "tags": {
+    "check_date": "2023-01-11",
+    "name": "リーガルファクトリーストア",
+    "opening_hours": "11:00-20:00",
+    "shop": "shoes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350886,
+  "lat": 35.6809595,
+  "lon": 139.7717205,
+  "tags": {
+    "addr:floor": "6",
+    "check_date": "2023-01-11",
+    "name": "フェアクリニック東京",
+    "shop": "beauty",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350888,
+  "lat": 35.6810635,
+  "lon": 139.7716784,
+  "tags": {
+    "amenity": "cafe",
+    "check_date": "2023-01-11",
+    "craft": "coffee_roaster",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "level": "0",
+    "name": "Good Coffee Farms",
+    "outdoor_seating": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10538350891,
+  "lat": 35.6814723,
+  "lon": 139.7713491,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-01-11",
+    "cuisine": "noodle",
+    "level": "0",
+    "name": "松月庵"
+  }
+},
+{
+  "type": "node",
+  "id": 10569762211,
+  "lat": 35.6802902,
+  "lon": 139.7708495,
+  "tags": {
+    "amenity": "restaurant",
+    "branch": "東京駅前店",
+    "check_date": "2024-11-08",
+    "cuisine": "japanese",
+    "name": "個室和食東山",
+    "website": "https://www.higashiyama.group/lp/tokyo/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10573909309,
+  "lat": 35.6802270,
+  "lon": 139.7707489,
+  "tags": {
+    "amenity": "bar",
+    "name": "串かつ でんがな",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 10574152321,
+  "lat": 35.6799908,
+  "lon": 139.7712632,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2023-01-22",
+    "name": "八重洲商店 東京駅前"
+  }
+},
+{
+  "type": "node",
+  "id": 10913797093,
+  "lat": 35.6802131,
+  "lon": 139.7638299,
+  "tags": {
+    "level": "-1",
+    "name": "アシックスラン 東京丸の内",
+    "name:en": "Asics Run Tokyo Marunouchi",
+    "phone": "+81 3 6259 1601",
+    "shop": "sports",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10913861381,
+  "lat": 35.6827883,
+  "lon": 139.7684164,
+  "tags": {
+    "branch": "東京駅日本橋口店",
+    "brand": "QBハウス",
+    "brand:en": "QB HOUSE",
+    "brand:ja": "QBハウス",
+    "brand:wikidata": "Q11297528",
+    "name": "QBハウス",
+    "name:en": "QB HOUSE",
+    "name:ja": "QBハウス",
+    "opening_hours": "10:00-20:00",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 10915922235,
+  "lat": 35.6842894,
+  "lon": 139.7650301,
+  "tags": {
+    "level": "-1;0;1",
+    "name": "iiyo!!",
+    "shop": "mall",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10965293605,
+  "lat": 35.6774283,
+  "lon": 139.7691305,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Coco Ichibanya World"
+  }
+},
+{
+  "type": "node",
+  "id": 11250599238,
+  "lat": 35.6808390,
+  "lon": 139.7637449,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Kua Aina Burger",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 11370968865,
+  "lat": 35.6807120,
+  "lon": 139.7684915,
+  "tags": {
+    "branch": "東京駅一番街店",
+    "brand": "成城石井",
+    "brand:en": "Seijo Ishii",
+    "brand:ja": "成城石井",
+    "brand:wikidata": "Q11495410",
+    "name": "成城石井",
+    "name:en": "Seijo Ishii",
+    "name:ja": "成城石井",
+    "opening_hours": "08:00-22:00",
+    "phone": "+81 3 6275 6066",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 11392858437,
+  "lat": 35.6815931,
+  "lon": 139.7631005,
+  "tags": {
+    "clothes": "fashion",
+    "name": "Issey Miyake Maranouchi",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11402503824,
+  "lat": 35.6814125,
+  "lon": 139.7687079,
+  "tags": {
+    "branch": "大丸東京店",
+    "layer": "10",
+    "name": "石井スポーツ",
+    "name:en": "Ishii Sports",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "phone": "+81 3 5220 3580",
+    "shop": "outdoor"
+  }
+},
+{
+  "type": "node",
+  "id": 11454138421,
+  "lat": 35.6771288,
+  "lon": 139.7706812,
+  "tags": {
+    "amenity": "restaurant",
+    "branch": "銀座京橋店",
+    "name": "CHIRIRI",
+    "opening_hours": "Mo-Sa 11:30-15:00,17:00-21:00; Sa 11:30-15:00,17:00-21:00; Su,PH off",
+    "website": "https://www.chiriri.co.jp/kyobashi/index.php",
+    "website:menu": "https://www.chiriri.co.jp/kyobashi/menu.php",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11468872542,
+  "lat": 35.6800344,
+  "lon": 139.7678549,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "らーめん 玉",
+    "name:en": "Ramen Tama",
+    "opening_hours": "08:30-23:00"
+  }
+},
+{
+  "type": "node",
+  "id": 11468872544,
+  "lat": 35.6801184,
+  "lon": 139.7678794,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "ひるがお",
+    "name:en": "Hirugao Tokyo Station"
+  }
+},
+{
+  "type": "node",
+  "id": 11468872545,
+  "lat": 35.6802016,
+  "lon": 139.7679104,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "俺式 純",
+    "name:en": "Nashiki Jun Tokyo Station Store (Oreshiki)"
+  }
+},
+{
+  "type": "node",
+  "id": 11468872546,
+  "lat": 35.6803732,
+  "lon": 139.7679845,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "花道庵",
+    "name:en": "Miso Ramen House"
+  }
+},
+{
+  "type": "node",
+  "id": 11468872547,
+  "lat": 35.6803817,
+  "lon": 139.7679501,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "革新家 TOKYO",
+    "name:en": "Kakushinka TOKYO"
+  }
+},
+{
+  "type": "node",
+  "id": 11468872548,
+  "lat": 35.6804045,
+  "lon": 139.7678873,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "東京駅 斑鳩",
+    "name:en": "Tokyo Station Ikaruga"
+  }
+},
+{
+  "type": "node",
+  "id": 11513601554,
+  "lat": 35.6798298,
+  "lon": 139.7693810,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "ASTERISCO",
+    "name:ja": "アステリスコ",
+    "phone": "+81-3-3277-6606",
+    "website": "https://www.yanmarmarche.com/food/restaurant/tokyo/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11513601555,
+  "lat": 35.6798607,
+  "lon": 139.7694900,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "YANMAR MARCHÉ TOKYO",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11513601557,
+  "lat": 35.6798857,
+  "lon": 139.7693923,
+  "tags": {
+    "amenity": "fast_food",
+    "fast_food": "cafeteria",
+    "name": "TORIBA COFFEE TOKYO",
+    "website": "https://www.instagram.com/toriba_coffee/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11513601564,
+  "lat": 35.6771708,
+  "lon": 139.7726558,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chinese"
+  }
+},
+{
+  "type": "node",
+  "id": 11513601565,
+  "lat": 35.6771423,
+  "lon": 139.7726413,
+  "tags": {
+    "amenity": "fast_food",
+    "fast_food": "cafeteria",
+    "name": "Kani's cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 11513623454,
+  "lat": 35.6771836,
+  "lon": 139.7725412,
+  "tags": {
+    "amenity": "bar",
+    "name": "ANTIQUE & Cafe Bar"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462448,
+  "lat": 35.6822959,
+  "lon": 139.7720890,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "下克上",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462450,
+  "lat": 35.6818688,
+  "lon": 139.7706585,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "sushi",
+    "level": "0",
+    "name": "伴",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462451,
+  "lat": 35.6818232,
+  "lon": 139.7706219,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "呑うてんき",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462453,
+  "lat": 35.6816679,
+  "lon": 139.7707326,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "thai",
+    "level": "-1",
+    "name": "トンロー",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462455,
+  "lat": 35.6816575,
+  "lon": 139.7707904,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "chinese",
+    "level": "0;1",
+    "name": "TaiKouRou",
+    "name:ja": "タイコウロウ",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462457,
+  "lat": 35.6817413,
+  "lon": 139.7710023,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "french",
+    "name": "bar.C",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462459,
+  "lat": 35.6819691,
+  "lon": 139.7729213,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "japanese",
+    "level": "0",
+    "name": "四季料理いけ増"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462461,
+  "lat": 35.6820644,
+  "lon": 139.7726473,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "ばんばん"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462463,
+  "lat": 35.6823135,
+  "lon": 139.7725733,
+  "tags": {
+    "check_date": "2024-01-29",
+    "name": "日本橋経絡整体院",
+    "shop": "massage"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462464,
+  "lat": 35.6823221,
+  "lon": 139.7724693,
+  "tags": {
+    "check_date": "2024-01-29",
+    "clothes": "men;women;suits",
+    "level": "0",
+    "name": "HANABISHI",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 11562462465,
+  "lat": 35.6818671,
+  "lon": 139.7710488,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "1",
+    "name": "みなと屋",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658169,
+  "lat": 35.6824823,
+  "lon": 139.7722136,
+  "tags": {
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "オプス日本橋",
+    "shop": "optician",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658170,
+  "lat": 35.6825177,
+  "lon": 139.7722209,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "noodle",
+    "name": "よもだそば",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658171,
+  "lat": 35.6824895,
+  "lon": 139.7722072,
+  "tags": {
+    "check_date": "2024-11-08",
+    "level": "1",
+    "name": "TOMO",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658172,
+  "lat": 35.6825737,
+  "lon": 139.7722401,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "noodle",
+    "level": "0",
+    "name": "蕎麦一心たすけ",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658173,
+  "lat": 35.6822410,
+  "lon": 139.7718122,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "japanese",
+    "level": "0",
+    "name": "割烹　嶋村",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658174,
+  "lat": 35.6822544,
+  "lon": 139.7720495,
+  "tags": {
+    "check_date": "2024-11-08",
+    "level": "0",
+    "name": "SUZUKI",
+    "shop": "alcohol",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658175,
+  "lat": 35.6822232,
+  "lon": 139.7720209,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "-1",
+    "name": "串特急",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658177,
+  "lat": 35.6821416,
+  "lon": 139.7719819,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "sushi",
+    "level": "0",
+    "name": "魚がし日本一",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658179,
+  "lat": 35.6820738,
+  "lon": 139.7719636,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "name": "和膳坊",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658180,
+  "lat": 35.6820175,
+  "lon": 139.7719282,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "やきもつ紅とん",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658181,
+  "lat": 35.6813884,
+  "lon": 139.7699964,
+  "tags": {
+    "check_date": "2025-05-24",
+    "name": "なんぼや",
+    "shop": "pawnbroker",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658182,
+  "lat": 35.6817758,
+  "lon": 139.7715349,
+  "tags": {
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "MATSUNAGA",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658183,
+  "lat": 35.6816915,
+  "lon": 139.7712164,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-01-29",
+    "level": "0",
+    "name": "九州熱中屋",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658184,
+  "lat": 35.6817191,
+  "lon": 139.7711432,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "japanese",
+    "level": "0",
+    "name": "焼肉矢澤",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658185,
+  "lat": 35.6818079,
+  "lon": 139.7711427,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "spanish",
+    "name": "GLASS DANCE",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658186,
+  "lat": 35.6818338,
+  "lon": 139.7710893,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "korean",
+    "level": "0",
+    "name": "とうがらし",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658187,
+  "lat": 35.6818502,
+  "lon": 139.7710412,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "japanese",
+    "level": "0",
+    "name": "炭焼てらまえ"
+  }
+},
+{
+  "type": "node",
+  "id": 11562658188,
+  "lat": 35.6816941,
+  "lon": 139.7709614,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-01-29",
+    "cuisine": "french",
+    "level": "-1",
+    "name": "CasPita",
+    "name:ja": "カスピタ",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11703464982,
+  "lat": 35.6795340,
+  "lon": 139.7645615,
+  "tags": {
+    "amenity": "cafe",
+    "name": "スノーピークカフェ"
+  }
+},
+{
+  "type": "node",
+  "id": 11703467222,
+  "lat": 35.6855362,
+  "lon": 139.7655780,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "spanish",
+    "name": "La Pesquera MARISQUERIA",
+    "website": "https://www.huge.co.jp/restaurant/spanish/lapesquera",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11703474263,
+  "lat": 35.6859472,
+  "lon": 139.7644102,
+  "tags": {
+    "addr:city": "千代田区",
+    "addr:postcode": "100-0004",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "cuisine": "tex-mex",
+    "name": "フリホーレス大手町ファーストスクエア店",
+    "opening_hours": "Mo-Fr 10:00-21:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11703499772,
+  "lat": 35.6837152,
+  "lon": 139.7643259,
+  "tags": {
+    "addr:city": "千代田区",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "name": "Dean&Deluca カフェ丸の内",
+    "opening_hours": "Mo-Fr 07:00-21:00"
+  }
+},
+{
+  "type": "node",
+  "id": 11799056269,
+  "lat": 35.6815838,
+  "lon": 139.7702772,
+  "tags": {
+    "amenity": "bar",
+    "demolished:amenity": "bar",
+    "disused:amenity": "bar",
+    "disused:operator": "The BAR codename MIXOLOGY Tokyo",
+    "name": "ミクソロジー トーキョー",
+    "name:en": "The BAR codename MIXOLOGY Tokyo",
+    "phone": "03 3270 5011"
+  }
+},
+{
+  "type": "node",
+  "id": 11861292769,
+  "lat": 35.6817801,
+  "lon": 139.7687029,
+  "tags": {
+    "name": "パパブブレ",
+    "name:en": "Papabubble",
+    "shop": "confectionery"
+  }
+},
+{
+  "type": "node",
+  "id": 12042871983,
+  "lat": 35.6783109,
+  "lon": 139.7733431,
+  "tags": {
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "description": "京橋1丁目店",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "official_name:en": "Seven-Eleven",
+    "opening_hours": "24/7",
+    "operator": "セブンイレブン・ジャパン",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 12042999697,
+  "lat": 35.6827867,
+  "lon": 139.7727157,
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "中央区",
+    "addr:housenumber": "3",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "fast_food",
+    "check_date": "2026-07-15",
+    "check_date:currency:XBT": "2026-07-15",
+    "contact:facebook": "https://www.facebook.com/Cocorotus/",
+    "contact:twitter": "https://x.com/Cocorotus",
+    "cuisine": "asian",
+    "currency:XBT": "yes",
+    "description": "日本橋長崎館での定期出店場所です。キッチンカーのため、施設の代表住所と実際の出店位置が離れている場合があります。地図上の登録地点を目印にお越しください。",
+    "name": "Cocorotus Foodtruck",
+    "name:ja": "Cocorotus キッチンカー",
+    "opening_hours": "Fr 11:30-14:00",
+    "payment:cash": "yes",
+    "payment:lightning": "yes",
+    "payment:lightning_contactless": "no",
+    "payment:onchain": "no",
+    "payment:paypay": "yes",
+    "street_vendor": "yes",
+    "website": "https://cocorotus.com"
+  }
+},
+{
+  "type": "node",
+  "id": 12066715325,
+  "lat": 35.6773567,
+  "lon": 139.7706829,
+  "tags": {
+    "branch": "DR東京京橋ロイネット店",
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "brand:wikipedia": "ja:セブン-イレブン",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "name:ja_rm": "Sebun Irebun",
+    "name:ko": "세븐일레븐",
+    "official_name:en": "Seven-Eleven",
+    "operator": "株式会社セブン&アイ・ホールディングス",
+    "operator:en": "Seven & I Holdings Co., Ltd.",
+    "operator:wikidata": "Q639447",
+    "operator:wikipedia": "ja:セブン&アイ・ホールディングス",
+    "shop": "convenience",
+    "start_date": "2020-02-01"
+  }
+},
+{
+  "type": "node",
+  "id": 12162797801,
+  "lat": 35.6814710,
+  "lon": 139.7696784,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "food:abura_soba": "yes",
+    "food:ramen": "yes",
+    "name": "元祖油堂 東京ラーメン横丁店",
+    "name:en": "Ganso ABURADOU Tokyo Ramen Yokocho",
+    "opening_hours": "Mo-Su 07:00-23:00",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12162829901,
+  "lat": 35.6772670,
+  "lon": 139.7640717,
+  "tags": {
+    "amenity": "cafe",
+    "craft": "coffee_roaster",
+    "cuisine": "coffee_shop",
+    "name:en": "Brooklyn Roasting Company Tokyo International Forum",
+    "outdoor_seating": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12271743295,
+  "lat": 35.6797384,
+  "lon": 139.7651420,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name:en": "Kaneda",
+    "name:ja": "かね田",
+    "name:ja-Latn": "Kaneda"
+  }
+},
+{
+  "type": "node",
+  "id": 12289440601,
+  "lat": 35.6797902,
+  "lon": 139.7647529,
+  "tags": {
+    "name": "中川政七商店 KITTE丸の内",
+    "name:en": "Nakagawa Masashichi Shōten Tokyo Flagship Store",
+    "shop": "variety_store"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800156,
+  "lat": 35.6821928,
+  "lon": 139.7720026,
+  "tags": {
+    "branch": "東京駅八重洲店",
+    "check_date": "2024-11-08",
+    "name": "はんこ屋さん21",
+    "shop": "stationery"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800157,
+  "lat": 35.6810755,
+  "lon": 139.7713667,
+  "tags": {
+    "brand": "つるや",
+    "brand:en": "Tsuruya",
+    "brand:ja": "つるや",
+    "brand:wikidata": "Q11272578",
+    "check_date": "2024-11-08",
+    "name": "つるや",
+    "name:en": "Tsuruya",
+    "name:ja": "つるや",
+    "shop": "shoes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800159,
+  "lat": 35.6807565,
+  "lon": 139.7716274,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "level": "-1",
+    "name": "おでん山崎"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800160,
+  "lat": 35.6807665,
+  "lon": 139.7716068,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-11-08",
+    "level": "1",
+    "name": "鳥酔"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800161,
+  "lat": 35.6807314,
+  "lon": 139.7716711,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "name": "In The Barrel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800162,
+  "lat": 35.6806221,
+  "lon": 139.7714388,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "cuisine": "barbecue",
+    "level": "-1",
+    "name": "炭火焼肉いずみの",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800163,
+  "lat": 35.6806285,
+  "lon": 139.7714297,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-11-08",
+    "name": "ちゃい九炉",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800164,
+  "lat": 35.6808044,
+  "lon": 139.7714240,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "cuisine": "barbecue",
+    "name": "ぐう",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800165,
+  "lat": 35.6808297,
+  "lon": 139.7714346,
+  "tags": {
+    "check_date": "2024-11-08",
+    "level": "1",
+    "name": "HIRO GINZA",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800166,
+  "lat": 35.6807051,
+  "lon": 139.7710786,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-11-08",
+    "name": "CELTS",
+    "theme": "irish"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800167,
+  "lat": 35.6805584,
+  "lon": 139.7709774,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-11-08",
+    "name": "八吉酒場"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800168,
+  "lat": 35.6804482,
+  "lon": 139.7708939,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "cuisine": "japanese",
+    "name": "じゃぱんらんち"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800169,
+  "lat": 35.6804158,
+  "lon": 139.7709480,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "cuisine": "japanese",
+    "name": "あぶり清水"
+  }
+},
+{
+  "type": "node",
+  "id": 12322800171,
+  "lat": 35.6804224,
+  "lon": 139.7708856,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-11-08",
+    "cuisine": "japanese",
+    "name": "牛たん荒"
+  }
+},
+{
+  "type": "node",
+  "id": 12329983569,
+  "lat": 35.6841271,
+  "lon": 139.7666260,
+  "tags": {
+    "addr:block_number": "東京都千代田区丸の内1-6",
+    "addr:housenumber": "1",
+    "addr:unit": "丸の内オアゾD棟",
+    "amenity": "cafe",
+    "check_date": "2024-11-09",
+    "cuisine": "coffee_shop",
+    "level": "-1",
+    "name": "Coffee machine",
+    "phone": "+81 332155177"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958862,
+  "lat": 35.6799833,
+  "lon": 139.7706494,
+  "tags": {
+    "amenity": "cafe",
+    "check_date": "2024-12-11",
+    "name": "椿屋珈琲"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958863,
+  "lat": 35.6801006,
+  "lon": 139.7707363,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-12-11",
+    "name": "八吉"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958864,
+  "lat": 35.6801064,
+  "lon": 139.7707375,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-12-11",
+    "name": "さば銀"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958865,
+  "lat": 35.6805157,
+  "lon": 139.7711216,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-12-11",
+    "name": "楽蔵うたげ"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958866,
+  "lat": 35.6802266,
+  "lon": 139.7713471,
+  "tags": {
+    "addr:floor": "3",
+    "amenity": "pub",
+    "check_date": "2024-12-11",
+    "name": "目利きの銀次"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958867,
+  "lat": 35.6802104,
+  "lon": 139.7713906,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-12-11",
+    "name": "京の庭"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958868,
+  "lat": 35.6801808,
+  "lon": 139.7714916,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-12-11",
+    "cuisine": "japanese",
+    "name": "にのや"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958869,
+  "lat": 35.6801579,
+  "lon": 139.7715609,
+  "tags": {
+    "check_date": "2024-12-11",
+    "name": "Matsunaga",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958870,
+  "lat": 35.6803115,
+  "lon": 139.7716584,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-12-11",
+    "name": "釣宿酒場マヅメ"
+  }
+},
+{
+  "type": "node",
+  "id": 12411958871,
+  "lat": 35.6802457,
+  "lon": 139.7720496,
+  "tags": {
+    "check_date": "2024-12-11",
+    "name": "dream Bed",
+    "shop": "bed"
+  }
+},
+{
+  "type": "node",
+  "id": 12497563830,
+  "lat": 35.6805416,
+  "lon": 139.7686833,
+  "tags": {
+    "name": "八重洲地下街",
+    "official_name": "ヤエチカ",
+    "shop": "mall",
+    "toilets": "yes",
+    "website": "https://www.yaechika.com/",
+    "wikidata": "Q10892516",
+    "wikipedia": "ja:八重洲地下街"
+  }
+},
+{
+  "type": "node",
+  "id": 12513871378,
+  "lat": 35.6828950,
+  "lon": 139.7658744,
+  "tags": {
+    "addr:block_number": "6",
+    "addr:city": "千代田区",
+    "addr:housenumber": "4",
+    "addr:neighbourhood": "一丁目",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "air_conditioning": "yes",
+    "branch": "丸の内オアゾ店",
+    "brand": "FamilyMart",
+    "brand:en": "FamilyMart",
+    "brand:ja": "ファミリーマート",
+    "brand:wikidata": "Q11247682",
+    "check_date": "2025-05-05",
+    "currency:JPY": "yes",
+    "level": "-1",
+    "name": "ファミリーマート",
+    "name:en": "FamilyMart",
+    "name:ja": "ファミリーマート",
+    "phone": "+81 3 5218 2205",
+    "self_checkout": "yes",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 12548609036,
+  "lat": 35.6793985,
+  "lon": 139.7684979,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop;italian;sandwich",
+    "name": "カフェカルディーノ／HAGARE ヤエチカ店",
+    "name:en": "Cafe Kaldino / Hagare",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "website": "https://www.kaldi.co.jp/"
+  }
+},
+{
+  "type": "node",
+  "id": 12579184563,
+  "lat": 35.6818969,
+  "lon": 139.7674402,
+  "tags": {
+    "brand": "みどりの窓口",
+    "brand:en": "Midori-no-madoguchi",
+    "brand:ja": "みどりの窓口",
+    "brand:wikidata": "Q11279064",
+    "name": "みどりの窓口",
+    "name:en": "JR Ticket Office",
+    "name:ja": "みどりの窓口",
+    "note": "改札内",
+    "shop": "ticket"
+  }
+},
+{
+  "type": "node",
+  "id": 12606700701,
+  "lat": 35.6811392,
+  "lon": 139.7642318,
+  "tags": {
+    "addr:floor": "6F",
+    "addr:housename": "Marunouchi Building",
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "level": "5",
+    "name": "Hakata Ramen Akanoren",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12691304468,
+  "lat": 35.6825781,
+  "lon": 139.7644845,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "mexican",
+    "name": "Molé TAQUERIA Y BAR"
+  }
+},
+{
+  "type": "node",
+  "id": 12691306447,
+  "lat": 35.6822507,
+  "lon": 139.7669968,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "mexican",
+    "name": "北出TACOS",
+    "name:en": "Kita de TACOS"
+  }
+},
+{
+  "type": "node",
+  "id": 12691341153,
+  "lat": 35.6795684,
+  "lon": 139.7645001,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "mexican",
+    "name": "MUCHO MODERN MEXICANO"
+  }
+},
+{
+  "type": "node",
+  "id": 12705200890,
+  "lat": 35.6821307,
+  "lon": 139.7668277,
+  "tags": {
+    "alt_name": "ニューデイズ",
+    "brand": "NewDays",
+    "brand:wikidata": "Q11234763",
+    "name": "NewDays",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 12712667357,
+  "lat": 35.6814414,
+  "lon": 139.7692875,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Saryo Tsujiri",
+    "website": "https://www.giontsujiri.co.jp/store/tokyo-daimaru/"
+  }
+},
+{
+  "type": "node",
+  "id": 12712686943,
+  "lat": 35.6816247,
+  "lon": 139.7690155,
+  "tags": {
+    "name": "Kamakura Toshimaya Daimaru",
+    "shop": "confectionery"
+  }
+},
+{
+  "type": "node",
+  "id": 12756729026,
+  "lat": 35.6819597,
+  "lon": 139.7657289,
+  "tags": {
+    "alt_name": "ニューデイズ",
+    "brand": "NewDays",
+    "brand:wikidata": "Q11234763",
+    "name": "NewDays",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 12767832235,
+  "lat": 35.6782597,
+  "lon": 139.7713884,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Creative Museum Tokyo Cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 12802523312,
+  "lat": 35.6806683,
+  "lon": 139.7657852,
+  "tags": {
+    "alt_name": "JR Ticket Office (Green Window)",
+    "brand": "みどりの窓口",
+    "brand:en": "Midori-no-madoguchi",
+    "brand:ja": "みどりの窓口",
+    "brand:wikidata": "Q11279064",
+    "brand:wikipedia": "ja:みどりの窓口",
+    "name": "みどりの窓口",
+    "name:en": "JR Ticket Office",
+    "name:ja": "みどりの窓口",
+    "note": "改札外",
+    "shop": "ticket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12839836923,
+  "lat": 35.6809643,
+  "lon": 139.7625404,
+  "tags": {
+    "branch": "丸の内二重前店",
+    "brand": "LAWSON",
+    "brand:en": "LAWSON",
+    "brand:ja": "ローソン",
+    "brand:wikidata": "Q1557223",
+    "level": "-1",
+    "name": "ローソン",
+    "name:en": "Lawson",
+    "name:ja": "ローソン",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 12859912148,
+  "lat": 35.6772368,
+  "lon": 139.7706209,
+  "tags": {
+    "brand": "宝くじ",
+    "brand:en": "Takarakuji",
+    "brand:ja": "宝くじ",
+    "brand:wikidata": "Q87824893",
+    "name": "宝くじ",
+    "name:en": "Takarakuji",
+    "name:ja": "宝くじ",
+    "official_name": "全国自治宝くじ",
+    "official_name:en": "National Autonomous Lottery",
+    "official_name:ja": "全国自治宝くじ",
+    "shop": "lottery"
+  }
+},
+{
+  "type": "node",
+  "id": 12859912151,
+  "lat": 35.6775320,
+  "lon": 139.7707771,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "吉野家",
+    "brand:en": "Yoshinoya",
+    "brand:ja": "吉野家",
+    "brand:wikidata": "Q776272",
+    "brand:zh": "吉野家",
+    "brand:zh-Hans": "吉野家",
+    "brand:zh-Hant": "吉野家",
+    "check_date": "2025-05-24",
+    "cuisine": "beef_bowl",
+    "level": "0",
+    "name": "吉野家",
+    "name:en": "Yoshinoya",
+    "name:ja": "吉野家",
+    "name:zh": "吉野家",
+    "name:zh-Hans": "吉野家",
+    "name:zh-Hant": "吉野家",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12859912153,
+  "lat": 35.6773986,
+  "lon": 139.7707010,
+  "tags": {
+    "amenity": "cafe",
+    "brand": "コメダ珈琲店",
+    "brand:en": "KOMEDA'S Coffee",
+    "brand:ja": "コメダ珈琲店",
+    "brand:wikidata": "Q11302679",
+    "check_date": "2025-05-24",
+    "cuisine": "coffee_shop",
+    "name": "コメダ珈琲店",
+    "name:en": "Komeda's Coffee",
+    "name:ja": "コメダ珈琲店",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12883555201,
+  "lat": 35.6836301,
+  "lon": 139.7666962,
+  "tags": {
+    "contact:instagram": "citybakery_marunouchioazo",
+    "name": "THE CITY BAKERY 丸の内オアゾ",
+    "opening_hours": "Mo-Sa 07:00-23:00; Su 07:00-22:00",
+    "shop": "bakery",
+    "website": "https://thecitybakery.jp/shop/article998"
+  }
+},
+{
+  "type": "node",
+  "id": 12883566901,
+  "lat": 35.6793517,
+  "lon": 139.7689189,
+  "tags": {
+    "contact:instagram": "citybakery_yaesu",
+    "name": "THE CITY BAKERY 東京ミッドタウン八重洲",
+    "opening_hours": "Mo-Su 07:30-21:00",
+    "phone": "+81335279438",
+    "shop": "bakery",
+    "website": "https://thecitybakery.jp/shop/article1037"
+  }
+},
+{
+  "type": "node",
+  "id": 12883567201,
+  "lat": 35.6784655,
+  "lon": 139.7716147,
+  "tags": {
+    "contact:instagram": "tokyo8min",
+    "name": "THE CITY BAKERY 京橋トダビルディング",
+    "opening_hours": "Mo-Su 08:00-19:00",
+    "phone": "+81362644820",
+    "shop": "bakery",
+    "website": "https://thecitybakery.jp/shop/article2229"
+  }
+},
+{
+  "type": "node",
+  "id": 12960404097,
+  "lat": 35.6820110,
+  "lon": 139.7683744,
+  "tags": {
+    "brand": "キヨスク",
+    "brand:en": "KIOSK",
+    "brand:ja": "キヨスク",
+    "level": "2",
+    "name": "キヨスク",
+    "name:en": "KIOSK",
+    "name:ja": "キヨスク",
+    "note": "15,16ホーム",
+    "opening_hours": "PH,Mo-Su 13:00-17:45",
+    "shop": "kiosk"
+  }
+},
+{
+  "type": "node",
+  "id": 12960471202,
+  "lat": 35.6823313,
+  "lon": 139.7685010,
+  "tags": {
+    "level": "2",
+    "name": "デリカステーション",
+    "name:en": "Delica Station",
+    "note": "15,16ホーム",
+    "opening_hours": "PH,Mo-Su 06:00-20:15 \"のぞみ487号運行日は21:10まで\"",
+    "shop": "kiosk"
+  }
+},
+{
+  "type": "node",
+  "id": 12965580701,
+  "lat": 35.6788438,
+  "lon": 139.7651400,
+  "tags": {
+    "amenity": "cafe",
+    "contact:instagram": "viron_brasserie",
+    "cuisine": "french",
+    "internet_access": "wlan",
+    "name": "Brasserie Viron Marunouchi",
+    "name:ja-Hira": "ブラっセリー ヴぃロン 丸ノ内店",
+    "opening_hours": "Mo-Su 09:00-20:00",
+    "phone": "+81352207288"
+  }
+},
+{
+  "type": "node",
+  "id": 12979199138,
+  "lat": 35.6815586,
+  "lon": 139.7654337,
+  "tags": {
+    "alt_name": "ニューデイズ",
+    "brand": "NewDays",
+    "brand:wikidata": "Q11234763",
+    "name": "NewDays",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244478,
+  "lat": 35.6849072,
+  "lon": 139.7668963,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-10-30",
+    "level": "-1",
+    "name": "NINJA TOKYO",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244479,
+  "lat": 35.6854462,
+  "lon": 139.7652032,
+  "tags": {
+    "name": "GINZA corridor cannele",
+    "shop": "confectionery"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244480,
+  "lat": 35.6853246,
+  "lon": 139.7655284,
+  "tags": {
+    "amenity": "bar",
+    "name": "GOOD MEAT STOCK",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244481,
+  "lat": 35.6856579,
+  "lon": 139.7656919,
+  "tags": {
+    "name": "EPICERIE BONHEUR 成城石井 大手町店",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244482,
+  "lat": 35.6850826,
+  "lon": 139.7655305,
+  "tags": {
+    "name": "OWNDAYS OOTEMORI店",
+    "shop": "optician"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244483,
+  "lat": 35.6846586,
+  "lon": 139.7641518,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "THE UPPER"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244484,
+  "lat": 35.6824083,
+  "lon": 139.7697676,
+  "tags": {
+    "name": "TEKKO avenue",
+    "shop": "mall"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244486,
+  "lat": 35.6822999,
+  "lon": 139.7639885,
+  "tags": {
+    "name": "POINT ET LIGNE",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244487,
+  "lat": 35.6823174,
+  "lon": 139.7642504,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "RIGOLETTO WINE AND BAR Marunouchi"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244488,
+  "lat": 35.6824597,
+  "lon": 139.7645864,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "AWkitchen TOKYO 新丸ビル店"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244489,
+  "lat": 35.6827050,
+  "lon": 139.7641847,
+  "tags": {
+    "name": "L'ABEILLE 新丸の内ビルディング",
+    "shop": "honey"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244493,
+  "lat": 35.6802876,
+  "lon": 139.7631685,
+  "tags": {
+    "amenity": "fast_food",
+    "fast_food": "cafeteria",
+    "name": "Marunouchi Happ. Stand & Gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244494,
+  "lat": 35.6791852,
+  "lon": 139.7621674,
+  "tags": {
+    "name": "丸の内MY PLAZA",
+    "shop": "mall"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244495,
+  "lat": 35.6822843,
+  "lon": 139.7632079,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "STATION RESTAURANT THE CENTRAL グランスタ東京",
+    "note": "地下1階"
+  }
+},
+{
+  "type": "node",
+  "id": 12995244497,
+  "lat": 35.6834532,
+  "lon": 139.7664032,
+  "tags": {
+    "name": "EHONS TOKYO",
+    "shop": "books"
+  }
+},
+{
+  "type": "node",
+  "id": 12996962609,
+  "lat": 35.6818920,
+  "lon": 139.7690582,
+  "tags": {
+    "name": "mofustand",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 13011641565,
+  "lat": 35.6802582,
+  "lon": 139.7637203,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "GASTRO-PUB COOPERS"
+  }
+},
+{
+  "type": "node",
+  "id": 13023067010,
+  "lat": 35.6814945,
+  "lon": 139.7688978,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "1",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "amenity": "cafe",
+    "name": "京橋千疋屋フルーツパーラー",
+    "name:en": "Kyobashi Sembikiya Fruits Parlor",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "phone": "+81-3-5860-3542",
+    "website": "https://www.senbikiya.co.jp/daimaru3f.html"
+  }
+},
+{
+  "type": "node",
+  "id": 13023085753,
+  "lat": 35.6813645,
+  "lon": 139.7688801,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "1",
+    "addr:postcode": "100-6701",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "amenity": "cafe",
+    "cuisine": "tea;dessert",
+    "name": "デリーモ東京カフェ",
+    "name:en": "Del'immo Tokyo Cafe",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "phone": "+81-3-5860-3542",
+    "website": "https://de-limmo.jp/pages/delimmotokyocafe"
+  }
+},
+{
+  "type": "node",
+  "id": 13027480843,
+  "lat": 35.6822858,
+  "lon": 139.7661016,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "1",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "branch": "丸の内店",
+    "brand": "Eataly",
+    "brand:wikidata": "Q3046645",
+    "name": "Eataly",
+    "name:ja": "イータリー",
+    "note": "グランスタ丸の内B1(丸の内地下北口改札外)。マーケット、カフェ、バー、レストランがある。\nGRANSTA MARUNOUCHI B1 (outside Marunouchi Subway North Exit). Has a market, cafe, bar and restaurant.",
+    "phone": "+81-3-3217-7070",
+    "shop": "supermarket",
+    "website": "https://eataly.co.jp/pages/store-eataly-marunouchi"
+  }
+},
+{
+  "type": "node",
+  "id": 13052053258,
+  "lat": 35.6823415,
+  "lon": 139.7639027,
+  "tags": {
+    "addr:block_number": "５−１",
+    "addr:city": "千代田区",
+    "addr:housenumber": "新丸の内ビルディング５階",
+    "addr:neighbourhood": "一丁目",
+    "addr:postcode": "100-6505",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "amenity": "restaurant",
+    "cuisine": "soba",
+    "name": "Ishizuki Handmade Soba – Shin-Marunouchi Building",
+    "phone": "03-5879-4680",
+    "website": "https://tabelog.com/tokyo/A1302/A130201/13038479/"
+  }
+},
+{
+  "type": "node",
+  "id": 13057440343,
+  "lat": 35.6804811,
+  "lon": 139.7679183,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "name": "津軽煮干 ひらこ屋",
+    "name:en": "Tsugaru dried fish hirakoya"
+  }
+},
+{
+  "type": "node",
+  "id": 13064830389,
+  "lat": 35.6823636,
+  "lon": 139.7673939,
+  "tags": {
+    "addr:block_number": "９−１",
+    "addr:city": "千代田区",
+    "addr:housenumber": "B1F",
+    "addr:neighbourhood": "丸の内1丁目",
+    "addr:postcode": "100-0005",
+    "addr:province": "東京都",
+    "amenity": "restaurant",
+    "name": "Teuchi Soba Miyagawa – GRANSTA Yaekita",
+    "phone": "03-6275-6760",
+    "website": "https://tabelog.com/tokyo/A1302/A130201/13270900/"
+  }
+},
+{
+  "type": "node",
+  "id": 13104604009,
+  "lat": 35.6816832,
+  "lon": 139.7700168,
+  "tags": {
+    "branch": "東京駅八重洲地下街店",
+    "description": "八重洲地下街北1号",
+    "level": "-1",
+    "name": "Jマーケット",
+    "phone": "+81 3 6665 6751",
+    "shop": "ticket"
+  }
+},
+{
+  "type": "node",
+  "id": 13142040565,
+  "lat": 35.6803479,
+  "lon": 139.7657307,
+  "tags": {
+    "name": "丹波屋",
+    "name:en": "Tanbaya",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 13142317615,
+  "lat": 35.6795341,
+  "lon": 139.7679364,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-09-14",
+    "cuisine": "sushi",
+    "level": "0",
+    "name": "ひなと丸"
+  }
+},
+{
+  "type": "node",
+  "id": 13142317616,
+  "lat": 35.6795696,
+  "lon": 139.7678581,
+  "tags": {
+    "addr:floor": ";1",
+    "amenity": "fast_food",
+    "brand": "マクドナルド",
+    "brand:en": "McDonald's",
+    "brand:ja": "マクドナルド",
+    "brand:wikidata": "Q38076",
+    "check_date": "2025-09-14",
+    "cuisine": "burger",
+    "level": "0;0",
+    "name": "マクドナルド",
+    "name:en": "McDonald's",
+    "name:ja": "マクドナルド",
+    "opening_hours": "05:30-24:00",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13165033562,
+  "lat": 35.6812957,
+  "lon": 139.7686704,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "1丁目",
+    "addr:postcode": "100-6701",
+    "addr:province": "東京都",
+    "addr:quarter": "丸の内",
+    "brand": "ハンズ",
+    "brand:en": "Hands",
+    "brand:ja": "ハンズ",
+    "brand:wikidata": "Q859212",
+    "name": "ハンズ",
+    "name:en": "Hands",
+    "name:ja": "ハンズ",
+    "shop": "variety_store"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464956,
+  "lat": 35.6836628,
+  "lon": 139.7730604,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-10-30",
+    "cuisine": "japanese",
+    "level": "0",
+    "name": "かに福"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464958,
+  "lat": 35.6845122,
+  "lon": 139.7679594,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "鍛冶屋文蔵"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464960,
+  "lat": 35.6851788,
+  "lon": 139.7681422,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "博多劇場"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464961,
+  "lat": 35.6853582,
+  "lon": 139.7682001,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "目利きの銀次"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464962,
+  "lat": 35.6854784,
+  "lon": 139.7682582,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "とら八",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464963,
+  "lat": 35.6855742,
+  "lon": 139.7682988,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "羊ンギスカン"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464964,
+  "lat": 35.6857036,
+  "lon": 139.7683433,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "とり家えび寿"
+  }
+},
+{
+  "type": "node",
+  "id": 13269464966,
+  "lat": 35.6858488,
+  "lon": 139.7683982,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-10-30",
+    "name": "とり鉄"
+  }
+},
+{
+  "type": "node",
+  "id": 13387859244,
+  "lat": 35.6813886,
+  "lon": 139.7733776,
+  "tags": {
+    "amenity": "restaurant",
+    "level": "7",
+    "name": "TWOROOMS 日本橋",
+    "name:en": "Two Rooms Nihombashi",
+    "name:ja": "TWOROOMS 日本橋",
+    "website": "https://tworooms-nihombashi.jp/en/"
+  }
+},
+{
+  "type": "node",
+  "id": 13390680101,
+  "lat": 35.6794625,
+  "lon": 139.7707759,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "name": "Erick South Yaesu",
+    "name:ja": "エリックサウス 八重洲店"
+  }
+},
+{
+  "type": "node",
+  "id": 13426030300,
+  "lat": 35.6771180,
+  "lon": 139.7653456,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "sushi"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066405,
+  "lat": 35.6771595,
+  "lon": 139.7654053,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066411,
+  "lat": 35.6791334,
+  "lon": 139.7689639,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name": "立ち食い寿司根室花まる",
+    "name:en": "Sushi stand Hanamaru"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066415,
+  "lat": 35.6772079,
+  "lon": 139.7654311,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "barbecue",
+    "name": "亀戸ホルモン"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066420,
+  "lat": 35.6789926,
+  "lon": 139.7687899,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "level": "-1",
+    "name": "芝蘭 担々麺"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066421,
+  "lat": 35.6793031,
+  "lon": 139.7689020,
+  "tags": {
+    "amenity": "cafe",
+    "branch": "東京ミッドタウン八重洲店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "cuisine": "coffee_shop",
+    "level": "-1",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "takeaway": "yes",
+    "toilets": "separate"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066425,
+  "lat": 35.6772711,
+  "lon": 139.7654499,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "家庭料理 芽"
+  }
+},
+{
+  "type": "node",
+  "id": 13426066436,
+  "lat": 35.6788991,
+  "lon": 139.7684862,
+  "tags": {
+    "amenity": "fast_food",
+    "fast_food": "cafeteria",
+    "level": "-1",
+    "name": "TASU+"
+  }
+},
+{
+  "type": "node",
+  "id": 13534260223,
+  "lat": 35.6801050,
+  "lon": 139.7678981,
+  "tags": {
+    "branch": "東京駅店",
+    "level": "0",
+    "name": "アインズ&トルペ",
+    "name:en": "ainz&tulpe",
+    "phone": "+81 3 3212 5280",
+    "shop": "chemist"
+  }
+},
+{
+  "type": "node",
+  "id": 13580031036,
+  "lat": 35.6810943,
+  "lon": 139.7641311,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "アンティカ・オステリア・デル・ポンテ",
+    "name:en": "ANTICA OSTERIA DEL PONTE",
+    "website": "https://antica-osteria-del-ponte.com"
+  }
+},
+{
+  "type": "node",
+  "id": 13602637558,
+  "lat": 35.6799093,
+  "lon": 139.7708161,
+  "tags": {
+    "addr:floor": "0",
+    "air_conditioning": "yes",
+    "branch": "東京駅八重洲店",
+    "brand": "アクセア",
+    "brand:en": "Accea",
+    "brand:ja": "アクセア",
+    "brand:wikidata": "Q90043156",
+    "check_date": "2026-02-26",
+    "level": "0",
+    "name": "アクセア",
+    "name:en": "Accea",
+    "name:ja": "アクセア",
+    "opening_hours": "24/7",
+    "shop": "copyshop"
+  }
+},
+{
+  "type": "node",
+  "id": 13608896291,
+  "lat": 35.6799399,
+  "lon": 139.7704676,
+  "tags": {
+    "amenity": "cafe",
+    "branch": "ヤエチカ店",
+    "brand": "スターバックス",
+    "brand:en": "Starbucks",
+    "brand:ja": "スターバックス",
+    "brand:wikidata": "Q37158",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "level": "-1",
+    "name": "スターバックス",
+    "name:en": "Starbucks",
+    "name:ja": "スターバックス",
+    "official_name": "スターバックスコーヒー",
+    "official_name:en": "Starbucks Coffee",
+    "official_name:ja": "スターバックスコーヒー",
+    "outdoor_seating": "no",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13609017361,
+  "lat": 35.6815936,
+  "lon": 139.7708930,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-03-01",
+    "name": "富士そば"
+  }
+},
+{
+  "type": "node",
+  "id": 13609017362,
+  "lat": 35.6816142,
+  "lon": 139.7708379,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2026-03-01",
+    "cuisine": "chinese",
+    "name": "春木屋"
+  }
+},
+{
+  "type": "node",
+  "id": 13622007601,
+  "lat": 35.6834294,
+  "lon": 139.7662010,
+  "tags": {
+    "amenity": "cafe",
+    "name": "丸の内オアゾ店",
+    "name:en": "dari K"
+  }
+},
+{
+  "type": "node",
+  "id": 13658461225,
+  "lat": 35.6825032,
+  "lon": 139.7687175,
+  "tags": {
+    "building:floor": "First Avenue Tokyo Station",
+    "floor": "1",
+    "name": "Dragon Ball Store Tokyo",
+    "shop": "toys",
+    "website": "https://dragonball-store.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13666265904,
+  "lat": 35.6820867,
+  "lon": 139.7731963,
+  "tags": {
+    "check_date": "2026-03-21",
+    "level": "0",
+    "name": "Lawson",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 13793424204,
+  "lat": 35.6848796,
+  "lon": 139.7632163,
+  "tags": {
+    "amenity": "cafe",
+    "branch": "都営大手町店",
+    "brand": "ドトール",
+    "brand:en": "DOUTOR",
+    "brand:ja": "ドトール",
+    "brand:wikidata": "Q11322732",
+    "check_date": "2026-04-28",
+    "cuisine": "coffee_shop",
+    "name": "ドトールコーヒーショップ",
+    "name:en": "Doutor Coffee Shop",
+    "name:ja": "ドトールコーヒーショップ",
+    "short_name": "DCS",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13823061163,
+  "lat": 35.6795216,
+  "lon": 139.7704999,
+  "tags": {
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "check_date": "2026-05-13",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "official_name:en": "Seven-Eleven",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 13911908512,
+  "lat": 35.6818321,
+  "lon": 139.7656010,
+  "tags": {
+    "brand": "Mister Minit",
+    "brand:wikidata": "Q1939269",
+    "name": "Mister Minit",
+    "shop": "locksmith"
+  }
+},
+{
+  "type": "node",
+  "id": 13926234638,
+  "lat": 35.6823531,
+  "lon": 139.7666938,
+  "tags": {
+    "hairdresser": "barber",
+    "level": "-1",
+    "name": "QBハウス",
+    "name:en": "QB House",
+    "phone": "+81 570 011 919",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 13944294801,
+  "lat": 35.6814297,
+  "lon": 139.7682326,
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:floor": "B1F",
+    "addr:housename": "東京駅一番街",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸ノ内一丁目",
+    "addr:province": "東京都",
+    "level": "-1",
+    "name": "ヨックモック",
+    "name:en": "Yoku Moku",
+    "name:ja": "ヨックモック",
+    "opening_hours": "09:00-20:30",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:qr_code": "yes",
+    "phone": "+81-3-5293-8327",
+    "shop": "pastry",
+    "smoking": "no",
+    "start_date": "2021-01",
+    "website": "https://yokumoku.co.jp/blogs/store/508"
+  }
+},
+{
+  "type": "node",
+  "id": 14080245864,
+  "lat": 35.6824672,
+  "lon": 139.7664298,
+  "tags": {
+    "amenity": "cafe",
+    "name": "東京ステーションカフェ"
+  }
+},
+{
+  "type": "node",
+  "id": 14096400140,
+  "lat": 35.6825648,
+  "lon": 139.7681061,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "とんかつ 寿々木",
+    "name:en": "Tonkatsu Suzuki"
+  }
+},
+{
+  "type": "node",
+  "id": 14102453739,
+  "lat": 35.6808082,
+  "lon": 139.7683670,
+  "tags": {
+    "brand": "みどりの窓口",
+    "brand:en": "Midori-no-madoguchi",
+    "brand:ja": "みどりの窓口",
+    "brand:wikidata": "Q11279064",
+    "name": "みどりの窓口",
+    "name:en": "JR Ticket Office",
+    "name:ja": "みどりの窓口",
+    "shop": "ticket"
+  }
+},
+{
+  "type": "node",
+  "id": 14102453740,
+  "lat": 35.6806876,
+  "lon": 139.7683019,
+  "tags": {
+    "branch": "東京八重洲中央",
+    "name": "PLUSTA",
+    "phone": "+81-50-1794-6649",
+    "ref:JP:invoice_issuer": "T8180001031531",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 14141249889,
+  "lat": 35.6813055,
+  "lon": 139.7683410,
+  "tags": {
+    "level": "-1",
+    "name": "クレヨンしんちゃんオフィシャルショップ",
+    "name:es": "Tienda Oficial de Crayon Shin-chan",
+    "name:ja": "クレヨンしんちゃんオフィシャルショップ",
+    "name:ja-Hira": "くれよんしんちゃんおふぃしゃるしょっぷ",
+    "name:ja-Latn": "Kureyon Shinchan Ofisharu Shoppu",
+    "shop": "anime"
+  }
+},
+{
+  "type": "node",
+  "id": 14141249894,
+  "lat": 35.6822954,
+  "lon": 139.7687720,
+  "tags": {
+    "name": "Sanrio",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 14141263305,
+  "lat": 35.6821571,
+  "lon": 139.7684358,
+  "tags": {
+    "name": "Mofusand / Mofumofu Store",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 14143314576,
+  "lat": 35.6823658,
+  "lon": 139.7686680,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Kirby Café Petit",
+    "name:es": "Café Kirby Petit",
+    "name:ja": "カービィカフェ Petit",
+    "name:ja-Hira": "かーびぃかふぇ ぷち",
+    "name:ja-Latn": "Kābī Kafe Puchi"
+  }
+},
+{
+  "type": "node",
+  "id": 14205845048,
+  "lat": 35.6829610,
+  "lon": 139.7709283,
+  "tags": {
+    "brand": "7-ELEVEN",
+    "brand:en": "7-ELEVEN",
+    "brand:ja": "セブン-イレブン",
+    "brand:wikidata": "Q259340",
+    "name": "セブン-イレブン",
+    "name:en": "7-Eleven",
+    "name:ja": "セブン-イレブン",
+    "official_name:en": "Seven-Eleven",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "way",
+  "id": 187643809,
+  "bounds": {
+    "minlat": 35.6802576,
+    "minlon": 139.7728055,
+    "maxlat": 35.6812520,
+    "maxlon": 139.7742570
+  },
+  "nodes": [
+    1423719455,
+    1982745359,
+    1982744912,
+    5318804768,
+    6508772015,
+    1982744703,
+    6508772016,
+    1982744945,
+    1423719455
+  ],
+  "geometry": [
+    { "lat": 35.6812520, "lon": 139.7731516 },
+    { "lat": 35.6812414, "lon": 139.7730945 },
+    { "lat": 35.6807837, "lon": 139.7728055 },
+    { "lat": 35.6807334, "lon": 139.7728273 },
+    { "lat": 35.6803229, "lon": 139.7737729 },
+    { "lat": 35.6802576, "lon": 139.7739233 },
+    { "lat": 35.6805923, "lon": 139.7741287 },
+    { "lat": 35.6808014, "lon": 139.7742570 },
+    { "lat": 35.6812520, "lon": 139.7731516 }
+  ],
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "中央区",
+    "addr:country": "JP",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "日本橋二丁目",
+    "addr:postcode": "103-8265",
+    "addr:province": "東京都",
+    "alt_name:ja": "日本橋タカシマヤ",
+    "branch": "日本橋",
+    "branch:en": "Nihonbashi",
+    "brand": "高島屋",
+    "brand:en": "Takashimaya",
+    "building": "retail",
+    "building:levels": "8",
+    "name": "日本橋高島屋",
+    "name:en": "Takashimaya",
+    "name:es": "Takashimaya",
+    "name:ja": "高島屋",
+    "name:ja_rm": "Takashimaya",
+    "name:zh": "高島屋日本橋店",
+    "phone": "+81 3 3211 4111",
+    "shop": "department_store",
+    "source": "Bing",
+    "toilets": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 187797239,
+  "bounds": {
+    "minlat": 35.6824255,
+    "minlon": 139.7721470,
+    "maxlat": 35.6824888,
+    "maxlon": 139.7722640
+  },
+  "nodes": [
+    1984366833,
+    1984366838,
+    1984366825,
+    1984366797,
+    1984366833
+  ],
+  "geometry": [
+    { "lat": 35.6824674, "lon": 139.7721470 },
+    { "lat": 35.6824888, "lon": 139.7721600 },
+    { "lat": 35.6824469, "lon": 139.7722640 },
+    { "lat": 35.6824255, "lon": 139.7722510 },
+    { "lat": 35.6824674, "lon": 139.7721470 }
+  ],
+  "tags": {
+    "addr:block_number": "1",
+    "addr:city": "中央区",
+    "addr:housenumber": "19",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:levels": "5",
+    "cuisine": "soba",
+    "name": "やぶ久",
+    "name:en": "Yabukyu",
+    "opening_hours": "Mo-Fr 11:00-16:00, 17:00-23:00; Sa 11:00-16:00, 17:00-21:30; PH off",
+    "phone": "+81 3 3271 0829",
+    "source": "Bing",
+    "website": "https://www.yabukyu.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 187797285,
+  "bounds": {
+    "minlat": 35.6821184,
+    "minlon": 139.7723969,
+    "maxlat": 35.6822127,
+    "maxlon": 139.7724902
+  },
+  "nodes": [
+    1984366700,
+    1984366685,
+    1984366558,
+    1984366640,
+    1984366700
+  ],
+  "geometry": [
+    { "lat": 35.6822127, "lon": 139.7724419 },
+    { "lat": 35.6821945, "lon": 139.7724902 },
+    { "lat": 35.6821184, "lon": 139.7724441 },
+    { "lat": 35.6821383, "lon": 139.7723969 },
+    { "lat": 35.6822127, "lon": 139.7724419 }
+  ],
+  "tags": {
+    "addr:block_number": "2",
+    "addr:city": "中央区",
+    "addr:housenumber": "3",
+    "addr:neighbourhood": "2",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "japanese",
+    "name": "お多幸本店",
+    "opening_hours": "Mo-Fr 11:30-14:00,17:00-23:00; Sa,PH 16:00-22:30; Su off",
+    "phone": "+81 3 3243 8282",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 624764359,
+  "bounds": {
+    "minlat": 35.6796733,
+    "minlon": 139.7673146,
+    "maxlat": 35.6828753,
+    "maxlon": 139.7690364
+  },
+  "nodes": [
+    5899710108,
+    5899710103,
+    5899710107,
+    5899709997,
+    13873325991,
+    5899710106,
+    5899709998,
+    5899710105,
+    5899710095,
+    5899710098,
+    5899710099,
+    5899710101,
+    5899710108
+  ],
+  "geometry": [
+    { "lat": 35.6827479, "lon": 139.7690364 },
+    { "lat": 35.6828127, "lon": 139.7687778 },
+    { "lat": 35.6828753, "lon": 139.7685395 },
+    { "lat": 35.6810587, "lon": 139.7678163 },
+    { "lat": 35.6801910, "lon": 139.7674744 },
+    { "lat": 35.6798140, "lon": 139.7673146 },
+    { "lat": 35.6797841, "lon": 139.7674263 },
+    { "lat": 35.6796733, "lon": 139.7678575 },
+    { "lat": 35.6799286, "lon": 139.7679605 },
+    { "lat": 35.6807762, "lon": 139.7682788 },
+    { "lat": 35.6809264, "lon": 139.7683351 },
+    { "lat": 35.6810266, "lon": 139.7683747 },
+    { "lat": 35.6827479, "lon": 139.7690364 }
+  ],
+  "tags": {
+    "addr:block_number": "9",
+    "addr:city": "千代田区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "丸の内一丁目",
+    "addr:province": "東京都",
+    "building": "retail",
+    "building:levels": "1",
+    "building:levels:underground": "1",
+    "name": "東京駅一番街",
+    "name:en": "First Avenue Tokyo Station",
+    "name:ja": "東京駅一番街",
+    "name:zh": "東京站一番街",
+    "opening_hours": "10:00-20:00",
+    "phone": "03-3210-0077",
+    "shop": "mall",
+    "toilets": "yes",
+    "website": "https://www.tokyoeki-1bangai.co.jp/",
+    "wikidata": "Q11525947",
+    "wikipedia": "ja:東京駅一番街"
+  }
+},
+{
+  "type": "way",
+  "id": 694410775,
+  "bounds": {
+    "minlat": 35.6792973,
+    "minlon": 139.7728841,
+    "maxlat": 35.6793900,
+    "maxlon": 139.7729716
+  },
+  "nodes": [
+    6520143643,
+    6520143644,
+    6520143645,
+    6520143646,
+    6520143643
+  ],
+  "geometry": [
+    { "lat": 35.6793900, "lon": 139.7729335 },
+    { "lat": 35.6793135, "lon": 139.7728841 },
+    { "lat": 35.6792973, "lon": 139.7729222 },
+    { "lat": 35.6793738, "lon": 139.7729716 },
+    { "lat": 35.6793900, "lon": 139.7729335 }
+  ],
+  "tags": {
+    "addr:block_number": "6",
+    "addr:city": "中央区",
+    "addr:housenumber": "13",
+    "addr:neighbourhood": "3",
+    "addr:postcode": "103-0027",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "sushi",
+    "name": "ほうらい",
+    "name:en": "Horai"
+  }
+},
+{
+  "type": "relation",
+  "id": 7872611,
+  "bounds": {
+    "minlat": 35.6847911,
+    "minlon": 139.7727274,
+    "maxlat": 35.6861384,
+    "maxlon": 139.7743620
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 172599549,
+      "role": "outer",
+      "geometry": [
+         { "lat": 35.6858126, "lon": 139.7727274 },
+         { "lat": 35.6851293, "lon": 139.7730303 },
+         { "lat": 35.6854551, "lon": 139.7741444 },
+         { "lat": 35.6861384, "lon": 139.7738416 },
+         { "lat": 35.6860906, "lon": 139.7736782 },
+         { "lat": 35.6858126, "lon": 139.7727274 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 172599544,
+      "role": "outer",
+      "geometry": [
+         { "lat": 35.6848493, "lon": 139.7739907 },
+         { "lat": 35.6847911, "lon": 139.7742425 },
+         { "lat": 35.6847936, "lon": 139.7742847 },
+         { "lat": 35.6848025, "lon": 139.7743188 },
+         { "lat": 35.6848192, "lon": 139.7743399 },
+         { "lat": 35.6848442, "lon": 139.7743593 },
+         { "lat": 35.6848771, "lon": 139.7743620 },
+         { "lat": 35.6853569, "lon": 139.7741708 },
+         { "lat": 35.6852610, "lon": 139.7738254 },
+         { "lat": 35.6848493, "lon": 139.7739907 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 1058355141,
+      "role": "outer",
+      "geometry": [
+         { "lat": 35.6852583, "lon": 139.7738073 },
+         { "lat": 35.6851769, "lon": 139.7735389 },
+         { "lat": 35.6851597, "lon": 139.7734825 },
+         { "lat": 35.6850642, "lon": 139.7731669 },
+         { "lat": 35.6850397, "lon": 139.7731699 },
+         { "lat": 35.6848498, "lon": 139.7739760 },
+         { "lat": 35.6852583, "lon": 139.7738073 }
+      ]
+    }
+  ],
+  "tags": {
+    "addr:block_number": "4",
+    "addr:city": "中央区",
+    "addr:housenumber": "1",
+    "addr:neighbourhood": "1丁目",
+    "addr:postcode": "103-8001",
+    "addr:province": "東京都",
+    "addr:quarter": "日本橋室町",
+    "name": "日本橋三越本店",
+    "name:en": "Nihonbashi Mitsukoshi Main Store",
+    "name:es": "Tienda principal Nihonbashi Mitsukoshi",
+    "name:ja": "日本橋三越本店",
+    "name:zh": "三越日本橋總店",
+    "opening_hours": "Mo-Su 10:30-19:30",
+    "operator": "株式会社三越伊勢丹",
+    "phone": "+81 3 3241 3311",
+    "shop": "department_store",
+    "type": "multipolygon",
+    "wikidata": "Q108899516",
+    "wikipedia": "ja:三越日本橋本店"
+  }
+}
+
+  ]
+}

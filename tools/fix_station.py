@@ -189,6 +189,200 @@ for i, u in enumerate(bl):
             E.append([u, v, 0, -1, 1]); added += 1
 log.append(f"shinkansen 1F concourse links added: {added}")
 
+# 10b) 付け替えで高低差が無くなった階段/エスカレーターは平らな通路に。同じ位置・同じ高さで分断された点はつなぐ
+flatten = 0
+for e in E:
+    if e[2] == 2 and abs(N[e[0]][1] - N[e[1]][1]) < .6: e[2] = 0; flatten += 1   # 高低差ゼロのエスカレーターだけ（階段は小さな段差として残す）
+pos = collections.defaultdict(list)
+for n in range(len(N)): pos[(round(N[n][0], 1), round(N[n][1], 1), round(N[n][2], 1))].append(n)
+existing = {(min(a_, b_), max(a_, b_)) for a_, b_, *_ in E}
+twins = 0
+for lst in pos.values():
+    for a_, b_ in zip(lst, lst[1:]):
+        if (min(a_, b_), max(a_, b_)) not in existing: E.append([a_, b_, 0, -1, 1]); twins += 1
+log.append(f"flattened level stairs: {flatten}, joined duplicate points: {twins}")
+
+# 11) エレベーター（OSM highway=elevator）: 近くの各階の通路を縦につなぐ（ベビーカー・車いすルート用, kind 4）
+DATA = HTML.parent / "tools" / "data"
+LAT0, LON0 = D["proj"]["lat0"], D["proj"]["lon0"]
+KX, KZ = math.cos(math.radians(LAT0)) * 111320.0, 110540.0
+def P(lat, lon): return ((lon - LON0) * KX, -(lat - LAT0) * KZ)
+def parse_lv(v):
+    out = []
+    for t in str(v or "").split(";"):
+        try: out.append(float(t))
+        except ValueError: pass
+    return out
+flat_deg = collections.Counter()
+for a_, b_, k, nm, ind in E:
+    if k in (0, 3): flat_deg[a_] += 1; flat_deg[b_] += 1
+walk_nodes = [n for n in range(len(N)) if flat_deg[n]]
+existing = {(min(a_, b_), max(a_, b_)) for a_, b_, *_ in E}
+added = 0
+for e in json.loads((DATA / "elevators.json").read_text())["elements"]:
+    t = e.get("tags", {})
+    if e["type"] == "node": x, z = P(e["lat"], e["lon"])
+    elif e.get("geometry") and t.get("highway") == "elevator":
+        g = e["geometry"]; x, z = P(sum(q["lat"] for q in g) / len(g), sum(q["lon"] for q in g) / len(g))
+    else: continue
+    lvs = [int(L) for L in parse_lv(t.get("level"))]
+    want = [H[L] for L in range(min(lvs) - 1, max(lvs) + 2) if L in H] if lvs else []   # 1階分の表記ゆれを許容
+    groups = {}
+    for n in walk_nodes:
+        d = math.hypot(N[n][0] - x, N[n][2] - z)
+        if d > 8: continue
+        y = round(N[n][1], 1)
+        if want and not any(abs(y - w) < .5 for w in want): continue
+        if y not in groups or d < groups[y][0]: groups[y] = (d, n)
+    ys = sorted(groups)
+    for y0, y1 in zip(ys, ys[1:]):
+        if y1 - y0 < 2: continue
+        a_, b_ = groups[y0][1], groups[y1][1]
+        if (min(a_, b_), max(a_, b_)) in existing: continue
+        E.append([a_, b_, 4, -1, 1]); existing.add((min(a_, b_), max(a_, b_))); added += 1
+log.append(f"elevator links: {added}")
+
+def seg_dist(p, a, b):
+    ax, az = a; bx, bz = b; px, pz = p; dx, dz = bx - ax, bz - az; L = dx * dx + dz * dz
+    k = 0 if L == 0 else max(0, min(1, ((px - ax) * dx + (pz - az) * dz) / L))
+    return math.hypot(px - (ax + dx * k), pz - (az + dz * k))
+
+# 11b) 公式のバリアフリー構内図では全ホームにエレベーターがある。OSM に無いホームは「位置推定」のエレベーターで補う
+EST = "エレベーター（位置は推定）"
+if EST not in NAMES: NAMES.append(EST)
+est_idx = NAMES.index(EST)
+adjk = collections.defaultdict(list)
+for i, (a_, b_, k, nm, ind) in enumerate(E): adjk[a_].append((b_, k)); adjk[b_].append((a_, k))
+virt = 0
+for p in D["plats"]:
+    ring = p["ring"]; py = p["y"]
+    on = [n for n in walk_nodes if abs(N[n][1] - py) < .3 and inpoly(N[n][0], N[n][2], ring)]
+    if not on: continue
+    if any(k == 4 for n in on for v, k in adjk[n]): continue
+    # where do this platform's stairs / escalators land?
+    lands = [(n, v) for n in on for v, k in adjk[n] if k in (1, 2) and N[v][1] < py - 2]
+    tops = collections.defaultdict(list)
+    for n, v in lands: tops[n].append(v)
+    # follow stair chains down to their bottom walkway node
+    def bottom(v, came):
+        seen = {came}
+        while flat_deg[v] == 0:
+            nxt = [w for w, k in adjk[v] if k in (1, 2) and w not in seen]
+            if not nxt: break
+            seen.add(v); v = nxt[0]
+        return v
+    best = None
+    for n, vs in tops.items():
+        for v in vs:
+            b = bottom(v, n)
+            if N[b][1] >= py - 2: continue
+            cands = [q for q in walk_nodes if abs(N[q][1] - N[b][1]) < .3 and math.hypot(N[q][0] - N[n][0], N[q][2] - N[n][2]) < 18]
+            for q in cands:
+                d = math.hypot(N[q][0] - N[n][0], N[q][2] - N[n][2])
+                if best is None or d < best[0]: best = (d, n, q)
+    if best:
+        E.append([best[1], best[2], 4, est_idx, 1]); virt += 1
+log.append(f"estimated platform elevators: {virt}")
+
+# 11c) 駅構内・地下で、階段/エスカレーターしか無い上下移動に、近くのエレベーター迂回が無ければ推定エレベーターを補う
+def stroller_graph():
+    g = collections.defaultdict(list)
+    for a_, b_, k, nm, ind in E:
+        if k in (0, 3, 4):
+            w = math.dist(N[a_], N[b_]); g[a_].append((b_, w)); g[b_].append((a_, w))
+    return g
+SG = stroller_graph()
+def reach_within(src, dst, lim=250):
+    d = {src: 0}; pq = [(0, src)]
+    while pq:
+        dd, u = heapq.heappop(pq)
+        if u == dst: return True
+        if dd > d[u] or dd > lim: continue
+        for v, w in SG[u]:
+            if v in gate_nodes_all and v != dst: continue          # 改札の外を回る迂回は数えない
+            if dd + w < d.get(v, 1e18): d[v] = dd + w; heapq.heappush(pq, (dd + w, v))
+    return False
+gate_nodes_all = {g[0] for g in D["gates"]}
+conn = []
+for i, (a_, b_, k, nm, ind) in enumerate(E):
+    if k not in (1, 2): continue
+    for top, nxt in ((a_, b_), (b_, a_)):
+        if flat_deg[top] == 0: continue
+        v, prev, seen = nxt, top, {top}
+        while flat_deg[v] == 0:
+            nx = [w for w, kk in adjk[v] if kk in (1, 2) and w not in seen]
+            if not nx: break
+            seen.add(v); prev, v = v, nx[0]
+        if flat_deg[v] and abs(N[v][1] - N[top][1]) >= 2: conn.append((top, v))
+done = set(); est2 = 0
+for top, bot in conn:
+    key = (min(top, bot), max(top, bot))
+    if key in done: continue
+    done.add(key)
+    inside = in_station(top) or in_station(bot) or min(N[top][1], N[bot][1]) < -1
+    if not inside or reach_within(top, bot): continue
+    E.append([top, bot, 4, est_idx, 1]); est2 += 1
+    w = math.dist(N[top], N[bot]); SG[top].append((bot, w)); SG[bot].append((top, w))
+log.append(f"estimated connector elevators: {est2}")
+
+# 12) お店（OSM shop / 飲食）: 駅の通路に面したものを、通路脇の半透明の区画として配置
+CAT = [("food", ("restaurant", "fast_food", "food_court", "pub", "bar")), ("cafe", ("cafe", "ice_cream")),
+       ("gift", ("gift", "confectionery", "bakery", "department_store", "mall", "variety_store", "chocolate", "pastry", "tea", "alcohol", "deli")),
+       ("conv", ("convenience", "supermarket", "kiosk"))]
+flat_edges = [(a_, b_) for a_, b_, k, *_ in E if k == 0 and abs(N[a_][1] - N[b_][1]) < .3]
+shops = []
+for e in json.loads((DATA / "shops.json").read_text())["elements"]:
+    t = e.get("tags", {}); kind = t.get("shop") or t.get("amenity")
+    if not kind or kind in ("ticket", "hairdresser"): continue
+    if e["type"] == "node": x, z = P(e["lat"], e["lon"])
+    else:
+        g = e.get("geometry") or [q for mbr in e.get("members", []) for q in (mbr.get("geometry") or [])]
+        if not g: continue
+        x, z = P(sum(q["lat"] for q in g) / len(g), sum(q["lon"] for q in g) / len(g))
+    lv = parse_lv(t.get("level"))
+    best = None
+    for a_, b_ in flat_edges:
+        y = N[a_][1]
+        if lv and not any(int(L) in H and abs(H[int(L)] - y) < .5 for L in lv): continue
+        d = seg_dist((x, z), (N[a_][0], N[a_][2]), (N[b_][0], N[b_][2]))
+        if best is None or d < best[0]: best = (d, a_, b_)
+    if not best or best[0] > 14: continue
+    d, a_, b_ = best
+    ax, az, bx, bz = N[a_][0], N[a_][2], N[b_][0], N[b_][2]
+    dx, dz = bx - ax, bz - az; L = math.hypot(dx, dz) or 1
+    ux, uz = dx / L, dz / L
+    k = max(0, min(1, ((x - ax) * ux + (z - az) * uz) / L))
+    px, pz = ax + ux * k * L, az + uz * k * L
+    side = 1 if (-(uz) * (x - px) + ux * (z - pz)) >= 0 else -1
+    off = 1.95   # 通路の壁の内側に沿った店先として置く（壁の外に置くと POV で見えない）
+    cx, cz = px - uz * off * side, pz + ux * off * side
+    cat = next((c for c, ks in CAT if kind in ks), "shop")
+    shops.append([round(cx, 1), round(N[a_][1], 2), round(cz, 1), round(math.atan2(ux, uz), 3), cat, t.get("name", "")])
+# お店ゾーン（改札内は OSM に個別店舗がほぼ無い）: ゾーン名の付いた通路の両側に店先を並べる
+ZONES = [("ラーメン", "food"), ("おかし", "gift"), ("キャラクター", "shop"), ("グランスタ", "gift"), ("一番街", "gift"), ("八重北", "food"),
+         ("黒塀", "food"), ("グルメ", "food"), ("地下街", "shop"), ("ヤエチカ", "shop"), ("地下1番通り", "shop"), ("地下2番通り", "food"), ("エキュート", "gift")]
+taken = [(q[0], q[2], q[1]) for q in shops]
+zone_n = 0
+for a_, b_, k, nm, ind in E:
+    if k != 0 or nm < 0 or abs(N[a_][1] - N[b_][1]) > .3: continue
+    zname = NAMES[nm]; cat = next((c for key, c in ZONES if key in zname), None)
+    if not cat: continue
+    ax, az, bx, bz, y = N[a_][0], N[a_][2], N[b_][0], N[b_][2], N[a_][1]
+    L = math.hypot(bx - ax, bz - az)
+    if L < 4: continue
+    ux, uz = (bx - ax) / L, (bz - az) / L
+    t = 2.5
+    while t < L - 2:
+        for side in (1, -1):
+            cx, cz = ax + ux * t - uz * 1.95 * side, az + uz * t + ux * 1.95 * side
+            if any(abs(q[2] - y) < .5 and math.hypot(q[0] - cx, q[1] - cz) < 3.5 for q in taken): continue
+            alt = cat if cat != "gift" or (int(t / 5) + side) % 3 else "food"
+            shops.append([round(cx, 1), round(y, 2), round(cz, 1), round(math.atan2(ux, uz), 3), alt, zname.split(";")[0]]); taken.append((cx, cz, y)); zone_n += 1
+        t += 5
+log.append(f"shop-zone storefronts: {zone_n}")
+D["shops"] = shops
+log.append(f"shops placed: {len(shops)} " + str(collections.Counter(q[4] for q in shops)))
+
 # ------------------------------------------------ enclosure (walls / floors / ceilings) rebuilt from corrected heights
 LV = sorted(H.items())
 def level_of(y): return min(LV, key=lambda kv: abs(kv[1] - y))[0]
@@ -211,7 +405,7 @@ def cells_of(a, b, r):
 cells = collections.defaultdict(dict); shaft = collections.defaultdict(set); hole = collections.defaultdict(set)
 for a, b, k, nm, ind in E:
     A, B = N[a], N[b]
-    if k == 3: continue
+    if k in (3, 4): continue
     if k == 0:
         if abs(A[1] - B[1]) > .3: continue
         L = level_of(A[1]); mu, mv = rot((A[0] + B[0]) / 2, (A[2] + B[2]) / 2)

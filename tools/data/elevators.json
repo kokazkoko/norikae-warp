@@ -1,0 +1,1481 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-26T13:02:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3790005990,
+  "lat": 35.6760348,
+  "lon": 139.7719034,
+  "tags": {
+    "highway": "elevator",
+    "name": "宝町駅",
+    "name:en": "Takaracho Station",
+    "railway": "subway_entrance",
+    "ref": "A7",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3790005991,
+  "lat": 35.6762146,
+  "lon": 139.7727042,
+  "tags": {
+    "highway": "elevator",
+    "name": "宝町駅",
+    "name:en": "Takaracho Station",
+    "railway": "subway_entrance",
+    "ref": "A8",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6242231349,
+  "lat": 35.6873479,
+  "lon": 139.7735184,
+  "tags": {
+    "access": "customers",
+    "highway": "elevator",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6286173611,
+  "lat": 35.6846256,
+  "lon": 139.7747601,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 8528949587,
+  "lat": 35.6879690,
+  "lon": 139.7691634,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 8528949588,
+  "lat": 35.6872435,
+  "lon": 139.7688255,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 10234975611,
+  "lat": 35.6827325,
+  "lon": 139.7723333,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584376,
+  "lat": 35.6878729,
+  "lon": 139.7721313,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584377,
+  "lat": 35.6879633,
+  "lon": 139.7720905,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584378,
+  "lat": 35.6879449,
+  "lon": 139.7720277,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584379,
+  "lat": 35.6879331,
+  "lon": 139.7721040,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584381,
+  "lat": 35.6878584,
+  "lon": 139.7720760,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584383,
+  "lat": 35.6879148,
+  "lon": 139.7720445,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584387,
+  "lat": 35.6878896,
+  "lon": 139.7720597,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 11303584388,
+  "lat": 35.6879063,
+  "lon": 139.7721171,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;5"
+  }
+},
+{
+  "type": "node",
+  "id": 12180302742,
+  "lat": 35.6816527,
+  "lon": 139.7758877,
+  "tags": {
+    "highway": "elevator",
+    "indoor": "yes",
+    "level": "-3;-2"
+  }
+},
+{
+  "type": "node",
+  "id": 12531890037,
+  "lat": 35.6815964,
+  "lon": 139.7670444,
+  "tags": {
+    "highway": "elevator",
+    "level": "1;0;-1",
+    "note": "普通列車10号車2番ドア付近",
+    "wheelchair": "designated"
+  }
+},
+{
+  "type": "node",
+  "id": 12535633065,
+  "lat": 35.6816847,
+  "lon": 139.7668599,
+  "tags": {
+    "highway": "elevator",
+    "note": "5・6番線ともに9号車3番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12535633066,
+  "lat": 35.6817132,
+  "lon": 139.7666559,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 12555922663,
+  "lat": 35.6804239,
+  "lon": 139.7652532,
+  "tags": {
+    "highway": "elevator",
+    "ref": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 12568145488,
+  "lat": 35.6808642,
+  "lon": 139.7661568,
+  "tags": {
+    "access": "customers",
+    "highway": "elevator",
+    "level": "0;1",
+    "note": "普通列車3号車1番ドア付近",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12570989717,
+  "lat": 35.6824849,
+  "lon": 139.7668256,
+  "tags": {
+    "highway": "elevator",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12573438969,
+  "lat": 35.6824437,
+  "lon": 139.7660421,
+  "tags": {
+    "highway": "elevator",
+    "note": "このエレベーターで地下に行き、出てまっすぐ歩くと丸の内地下北口がある",
+    "ref": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 12578205529,
+  "lat": 35.6812504,
+  "lon": 139.7643933,
+  "tags": {
+    "highway": "elevator",
+    "ref": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 12579184566,
+  "lat": 35.6814538,
+  "lon": 139.7674389,
+  "tags": {
+    "highway": "elevator",
+    "note": "10号車付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12579184573,
+  "lat": 35.6814013,
+  "lon": 139.7676657,
+  "tags": {
+    "highway": "elevator",
+    "note": "10号車付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12583613069,
+  "lat": 35.6819213,
+  "lon": 139.7649322,
+  "tags": {
+    "highway": "elevator",
+    "note": "4号車1番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12587489766,
+  "lat": 35.6777274,
+  "lon": 139.7650227,
+  "tags": {
+    "highway": "elevator",
+    "level": "-2;-3;-4",
+    "note": "4号車4番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12587489767,
+  "lat": 35.6776460,
+  "lon": 139.7649976,
+  "tags": {
+    "highway": "elevator",
+    "level": "-2;-3;-4"
+  }
+},
+{
+  "type": "node",
+  "id": 12589905543,
+  "lat": 35.6817649,
+  "lon": 139.7656133,
+  "tags": {
+    "highway": "elevator",
+    "note": "丸の内地下中央口～エレベーター乗り換え～総武1・2番線4号車1番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12589905544,
+  "lat": 35.6817807,
+  "lon": 139.7656264,
+  "tags": {
+    "highway": "elevator",
+    "note": "丸の内地下中央口～エレベーター乗り換え～総武1・2番線4号車1番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12589905545,
+  "lat": 35.6818370,
+  "lon": 139.7655267,
+  "tags": {
+    "highway": "elevator",
+    "note": "エレベーター乗り換え階～総武3・4番線4号車1番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12612240169,
+  "lat": 35.6813586,
+  "lon": 139.7671683,
+  "tags": {
+    "highway": "elevator",
+    "note": "普通列車7号車4番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12612307110,
+  "lat": 35.6849623,
+  "lon": 139.7634186,
+  "tags": {
+    "highway": "elevator",
+    "indoor": "yes",
+    "level": "-2;-1;0"
+  }
+},
+{
+  "type": "node",
+  "id": 12772155273,
+  "lat": 35.6805140,
+  "lon": 139.7662031,
+  "tags": {
+    "highway": "elevator",
+    "note": "2号車3番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12772155279,
+  "lat": 35.6804712,
+  "lon": 139.7663939,
+  "tags": {
+    "highway": "elevator",
+    "note": "1号車3番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12772155281,
+  "lat": 35.6804268,
+  "lon": 139.7665963,
+  "tags": {
+    "highway": "elevator",
+    "note": "普通列車3号車1番ドア付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12813394912,
+  "lat": 35.6806824,
+  "lon": 139.7674021,
+  "tags": {
+    "highway": "elevator",
+    "note": "7号車付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12813394924,
+  "lat": 35.6807291,
+  "lon": 139.7671772,
+  "tags": {
+    "highway": "elevator",
+    "note": "7号車付近"
+  }
+},
+{
+  "type": "node",
+  "id": 12996857890,
+  "lat": 35.6860844,
+  "lon": 139.7744881,
+  "tags": {
+    "access": "yes",
+    "goods": "yes",
+    "highway": "elevator",
+    "indoor": "yes",
+    "level": "-2;-1;0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13009529866,
+  "lat": 35.6803778,
+  "lon": 139.7682989,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13063370387,
+  "lat": 35.6809279,
+  "lon": 139.7621537,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13229908258,
+  "lat": 35.6854315,
+  "lon": 139.7619944,
+  "tags": {
+    "highway": "elevator",
+    "indoor": "yes",
+    "layer": "-1",
+    "level": "-1"
+  }
+},
+{
+  "type": "node",
+  "id": 13229908267,
+  "lat": 35.6853723,
+  "lon": 139.7628205,
+  "tags": {
+    "highway": "elevator",
+    "indoor": "yes",
+    "layer": "-1",
+    "level": "-1"
+  }
+},
+{
+  "type": "node",
+  "id": 13254318430,
+  "lat": 35.6848288,
+  "lon": 139.7642143,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13254318431,
+  "lat": 35.6846951,
+  "lon": 139.7645991,
+  "tags": {
+    "highway": "elevator",
+    "indoor": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13259177027,
+  "lat": 35.6872470,
+  "lon": 139.7634632,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13304703937,
+  "lat": 35.6843148,
+  "lon": 139.7626190,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13304703945,
+  "lat": 35.6881797,
+  "lon": 139.7642705,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13306418593,
+  "lat": 35.6760407,
+  "lon": 139.7618127,
+  "tags": {
+    "highway": "elevator",
+    "indoor": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13328479337,
+  "lat": 35.6776842,
+  "lon": 139.7658916,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13519756988,
+  "lat": 35.6794000,
+  "lon": 139.7669368,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 13942805999,
+  "lat": 35.6779477,
+  "lon": 139.7646699,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 14080245845,
+  "lat": 35.6824803,
+  "lon": 139.7664845,
+  "tags": {
+    "highway": "elevator",
+    "level": "0;1;2",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1354414704,
+  "bounds": {
+    "minlat": 35.6815864,
+    "minlon": 139.7670436,
+    "maxlat": 35.6815964,
+    "maxlon": 139.7670444
+  },
+  "nodes": [
+    12531890037,
+    12534072745
+  ],
+  "geometry": [
+    { "lat": 35.6815964, "lon": 139.7670444 },
+    { "lat": 35.6815864, "lon": 139.7670436 }
+  ],
+  "tags": {
+    "destination:forward": "普通列車10号車2番ドア",
+    "highway": "footway",
+    "level": "1",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1354414705,
+  "bounds": {
+    "minlat": 35.6815796,
+    "minlon": 139.7670343,
+    "maxlat": 35.6815964,
+    "maxlon": 139.7670444
+  },
+  "nodes": [
+    12534072744,
+    12531890037
+  ],
+  "geometry": [
+    { "lat": 35.6815796, "lon": 139.7670343 },
+    { "lat": 35.6815964, "lon": 139.7670444 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "layer": "-1",
+    "level": "-1",
+    "name": "エレベーター;地下1階",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1356614985,
+  "bounds": {
+    "minlat": 35.6803669,
+    "minlon": 139.7652532,
+    "maxlat": 35.6804239,
+    "maxlon": 139.7653581
+  },
+  "nodes": [
+    12555922663,
+    5737964527
+  ],
+  "geometry": [
+    { "lat": 35.6804239, "lon": 139.7652532 },
+    { "lat": 35.6803669, "lon": 139.7653581 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター1;1階",
+    "name:en": "Elevator 1 (1st Floor / Ground Floor)"
+  }
+},
+{
+  "type": "way",
+  "id": 1356614986,
+  "bounds": {
+    "minlat": 35.6804239,
+    "minlon": 139.7650488,
+    "maxlat": 35.6804579,
+    "maxlon": 139.7652532
+  },
+  "nodes": [
+    12555922663,
+    6397133564
+  ],
+  "geometry": [
+    { "lat": 35.6804239, "lon": 139.7652532 },
+    { "lat": 35.6804579, "lon": 139.7650488 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-1",
+    "name": "エレベーター1;地下1階",
+    "name:en": "Elevator 1 - Basement Level 1 (B1)"
+  }
+},
+{
+  "type": "way",
+  "id": 1358332869,
+  "bounds": {
+    "minlat": 35.6824849,
+    "minlon": 139.7667739,
+    "maxlat": 35.6824983,
+    "maxlon": 139.7668256
+  },
+  "nodes": [
+    12570989713,
+    12570989717
+  ],
+  "geometry": [
+    { "lat": 35.6824983, "lon": 139.7667739 },
+    { "lat": 35.6824849, "lon": 139.7668256 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-1",
+    "name": "東京駅;段差解消エレベーター"
+  }
+},
+{
+  "type": "way",
+  "id": 1358962399,
+  "bounds": {
+    "minlat": 35.6816897,
+    "minlon": 139.7666508,
+    "maxlat": 35.6817132,
+    "maxlon": 139.7666559
+  },
+  "nodes": [
+    12535633066,
+    12578111679
+  ],
+  "geometry": [
+    { "lat": 35.6817132, "lon": 139.7666559 },
+    { "lat": 35.6816897, "lon": 139.7666508 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1358968599,
+  "bounds": {
+    "minlat": 35.6812504,
+    "minlon": 139.7643717,
+    "maxlat": 35.6812772,
+    "maxlon": 139.7644035
+  },
+  "nodes": [
+    12368428697,
+    12578205530,
+    12578205529
+  ],
+  "geometry": [
+    { "lat": 35.6812772, "lon": 139.7643717 },
+    { "lat": 35.6812699, "lon": 139.7644035 },
+    { "lat": 35.6812504, "lon": 139.7643933 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター2;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1358968600,
+  "bounds": {
+    "minlat": 35.6812504,
+    "minlon": 139.7643933,
+    "maxlat": 35.6812781,
+    "maxlon": 139.7644671
+  },
+  "nodes": [
+    12578205529,
+    12578205531,
+    12578205532
+  ],
+  "geometry": [
+    { "lat": 35.6812504, "lon": 139.7643933 },
+    { "lat": 35.6812781, "lon": 139.7644017 },
+    { "lat": 35.6812635, "lon": 139.7644671 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-1",
+    "name": "エレベーター2;地下1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1360339408,
+  "bounds": {
+    "minlat": 35.6817649,
+    "minlon": 139.7655589,
+    "maxlat": 35.6818084,
+    "maxlon": 139.7656264
+  },
+  "nodes": [
+    12589905543,
+    12596099147,
+    12589905544
+  ],
+  "geometry": [
+    { "lat": 35.6817649, "lon": 139.7656133 },
+    { "lat": 35.6818084, "lon": 139.7655589 },
+    { "lat": 35.6817807, "lon": 139.7656264 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-1",
+    "name": "エレベーター;地下1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1360339414,
+  "bounds": {
+    "minlat": 35.6817649,
+    "minlon": 139.7655957,
+    "maxlat": 35.6817878,
+    "maxlon": 139.7656264
+  },
+  "nodes": [
+    12589905543,
+    12593002492,
+    12589905544
+  ],
+  "geometry": [
+    { "lat": 35.6817649, "lon": 139.7656133 },
+    { "lat": 35.6817878, "lon": 139.7655957 },
+    { "lat": 35.6817807, "lon": 139.7656264 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-4",
+    "name": "エレベーター;地下4階"
+  }
+},
+{
+  "type": "way",
+  "id": 1360339416,
+  "bounds": {
+    "minlat": 35.6817649,
+    "minlon": 139.7656046,
+    "maxlat": 35.6817819,
+    "maxlon": 139.7656264
+  },
+  "nodes": [
+    12589905543,
+    12593002493,
+    12589905544
+  ],
+  "geometry": [
+    { "lat": 35.6817649, "lon": 139.7656133 },
+    { "lat": 35.6817819, "lon": 139.7656046 },
+    { "lat": 35.6817807, "lon": 139.7656264 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-5",
+    "name": "エレベーター;地下5階"
+  }
+},
+{
+  "type": "way",
+  "id": 1360339417,
+  "bounds": {
+    "minlat": 35.6818370,
+    "minlon": 139.7655267,
+    "maxlat": 35.6818813,
+    "maxlon": 139.7655665
+  },
+  "nodes": [
+    12589905545,
+    12593002494
+  ],
+  "geometry": [
+    { "lat": 35.6818370, "lon": 139.7655267 },
+    { "lat": 35.6818813, "lon": 139.7655665 }
+  ],
+  "tags": {
+    "destination": "4号車1番ドア",
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-5",
+    "name": "エレベーター;地下5階"
+  }
+},
+{
+  "type": "way",
+  "id": 1360339418,
+  "bounds": {
+    "minlat": 35.6818275,
+    "minlon": 139.7655187,
+    "maxlat": 35.6818370,
+    "maxlon": 139.7655267
+  },
+  "nodes": [
+    12593002495,
+    12589905545
+  ],
+  "geometry": [
+    { "lat": 35.6818275, "lon": 139.7655187 },
+    { "lat": 35.6818370, "lon": 139.7655267 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-4",
+    "name": "エレベーター;地下4階"
+  }
+},
+{
+  "type": "way",
+  "id": 1362244725,
+  "bounds": {
+    "minlat": 35.6813586,
+    "minlon": 139.7671683,
+    "maxlat": 35.6814096,
+    "maxlon": 139.7671810
+  },
+  "nodes": [
+    12612240169,
+    12612240170
+  ],
+  "geometry": [
+    { "lat": 35.6813586, "lon": 139.7671683 },
+    { "lat": 35.6814096, "lon": 139.7671810 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;地下1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1362244726,
+  "bounds": {
+    "minlat": 35.6813586,
+    "minlon": 139.7671683,
+    "maxlat": 35.6813896,
+    "maxlon": 139.7671957
+  },
+  "nodes": [
+    12612240169,
+    12612240171,
+    12612240172
+  ],
+  "geometry": [
+    { "lat": 35.6813586, "lon": 139.7671683 },
+    { "lat": 35.6813896, "lon": 139.7671794 },
+    { "lat": 35.6813857, "lon": 139.7671957 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1362244728,
+  "bounds": {
+    "minlat": 35.6813586,
+    "minlon": 139.7671683,
+    "maxlat": 35.6813780,
+    "maxlon": 139.7671811
+  },
+  "nodes": [
+    12612240169,
+    12612240173
+  ],
+  "geometry": [
+    { "lat": 35.6813586, "lon": 139.7671683 },
+    { "lat": 35.6813780, "lon": 139.7671811 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1363349492,
+  "bounds": {
+    "minlat": 35.6816870,
+    "minlon": 139.7666464,
+    "maxlat": 35.6817132,
+    "maxlon": 139.7666559
+  },
+  "nodes": [
+    12535633066,
+    12623457148
+  ],
+  "geometry": [
+    { "lat": 35.6817132, "lon": 139.7666559 },
+    { "lat": 35.6816870, "lon": 139.7666464 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1363349493,
+  "bounds": {
+    "minlat": 35.6816315,
+    "minlon": 139.7668340,
+    "maxlat": 35.6816847,
+    "maxlon": 139.7668599
+  },
+  "nodes": [
+    12979199127,
+    12535633065
+  ],
+  "geometry": [
+    { "lat": 35.6816315, "lon": 139.7668340 },
+    { "lat": 35.6816847, "lon": 139.7668599 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-1",
+    "name": "エレベーター;地下1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1363349494,
+  "bounds": {
+    "minlat": 35.6816847,
+    "minlon": 139.7668599,
+    "maxlat": 35.6817280,
+    "maxlon": 139.7668761
+  },
+  "nodes": [
+    12535633065,
+    12578111655
+  ],
+  "geometry": [
+    { "lat": 35.6816847, "lon": 139.7668599 },
+    { "lat": 35.6817280, "lon": 139.7668761 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1363349495,
+  "bounds": {
+    "minlat": 35.6815828,
+    "minlon": 139.7670393,
+    "maxlat": 35.6815964,
+    "maxlon": 139.7670444
+  },
+  "nodes": [
+    12531890037,
+    12623457150
+  ],
+  "geometry": [
+    { "lat": 35.6815964, "lon": 139.7670444 },
+    { "lat": 35.6815828, "lon": 139.7670393 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "level": "0",
+    "name": "エレベーター;1階",
+    "tunnel": "building_passage"
+  }
+},
+{
+  "type": "way",
+  "id": 1363836454,
+  "bounds": {
+    "minlat": 35.6808521,
+    "minlon": 139.7661529,
+    "maxlat": 35.6808642,
+    "maxlon": 139.7661568
+  },
+  "nodes": [
+    12568145488,
+    12628406268
+  ],
+  "geometry": [
+    { "lat": 35.6808642, "lon": 139.7661568 },
+    { "lat": 35.6808521, "lon": 139.7661529 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "layer": "1",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1363836456,
+  "bounds": {
+    "minlat": 35.6808642,
+    "minlon": 139.7661542,
+    "maxlat": 35.6808863,
+    "maxlon": 139.7661598
+  },
+  "nodes": [
+    12568145489,
+    13645595289,
+    12568145488
+  ],
+  "geometry": [
+    { "lat": 35.6808863, "lon": 139.7661542 },
+    { "lat": 35.6808745, "lon": 139.7661598 },
+    { "lat": 35.6808642, "lon": 139.7661568 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316050,
+  "bounds": {
+    "minlat": 35.6804854,
+    "minlon": 139.7661963,
+    "maxlat": 35.6805140,
+    "maxlon": 139.7662031
+  },
+  "nodes": [
+    12772155273,
+    12636014190
+  ],
+  "geometry": [
+    { "lat": 35.6805140, "lon": 139.7662031 },
+    { "lat": 35.6804854, "lon": 139.7661963 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;1階",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316051,
+  "bounds": {
+    "minlat": 35.6804974,
+    "minlon": 139.7661800,
+    "maxlat": 35.6805140,
+    "maxlon": 139.7662031
+  },
+  "nodes": [
+    12772155273,
+    12772155274,
+    12772155275
+  ],
+  "geometry": [
+    { "lat": 35.6805140, "lon": 139.7662031 },
+    { "lat": 35.6804974, "lon": 139.7661964 },
+    { "lat": 35.6805007, "lon": 139.7661800 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316052,
+  "bounds": {
+    "minlat": 35.6804920,
+    "minlon": 139.7661964,
+    "maxlat": 35.6804974,
+    "maxlon": 139.7662211
+  },
+  "nodes": [
+    12772155274,
+    12772155276
+  ],
+  "geometry": [
+    { "lat": 35.6804974, "lon": 139.7661964 },
+    { "lat": 35.6804920, "lon": 139.7662211 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316053,
+  "bounds": {
+    "minlat": 35.6804553,
+    "minlon": 139.7663870,
+    "maxlat": 35.6804712,
+    "maxlon": 139.7663939
+  },
+  "nodes": [
+    12772155278,
+    12772155279
+  ],
+  "geometry": [
+    { "lat": 35.6804553, "lon": 139.7663870 },
+    { "lat": 35.6804712, "lon": 139.7663939 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "layer": "1",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316054,
+  "bounds": {
+    "minlat": 35.6804494,
+    "minlon": 139.7663709,
+    "maxlat": 35.6804591,
+    "maxlon": 139.7664127
+  },
+  "nodes": [
+    12772155277,
+    12772155278,
+    12772155280
+  ],
+  "geometry": [
+    { "lat": 35.6804591, "lon": 139.7663709 },
+    { "lat": 35.6804553, "lon": 139.7663870 },
+    { "lat": 35.6804494, "lon": 139.7664127 }
+  ],
+  "tags": {
+    "destination": "1号車3番ドア",
+    "highway": "footway",
+    "layer": "1",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316055,
+  "bounds": {
+    "minlat": 35.6804405,
+    "minlon": 139.7663854,
+    "maxlat": 35.6804712,
+    "maxlon": 139.7663939
+  },
+  "nodes": [
+    12772155279,
+    12636014194
+  ],
+  "geometry": [
+    { "lat": 35.6804712, "lon": 139.7663939 },
+    { "lat": 35.6804405, "lon": 139.7663854 }
+  ],
+  "tags": {
+    "destination:forward": "南通路",
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316056,
+  "bounds": {
+    "minlat": 35.6803915,
+    "minlon": 139.7665879,
+    "maxlat": 35.6804268,
+    "maxlon": 139.7665963
+  },
+  "nodes": [
+    12772155281,
+    12933731104
+  ],
+  "geometry": [
+    { "lat": 35.6804268, "lon": 139.7665963 },
+    { "lat": 35.6803915, "lon": 139.7665879 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316057,
+  "bounds": {
+    "minlat": 35.6804079,
+    "minlon": 139.7665880,
+    "maxlat": 35.6804268,
+    "maxlon": 139.7665963
+  },
+  "nodes": [
+    12772155284,
+    12772155281
+  ],
+  "geometry": [
+    { "lat": 35.6804079, "lon": 139.7665880 },
+    { "lat": 35.6804268, "lon": 139.7665963 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1379316058,
+  "bounds": {
+    "minlat": 35.6803998,
+    "minlon": 139.7665667,
+    "maxlat": 35.6804132,
+    "maxlon": 139.7666235
+  },
+  "nodes": [
+    12772155282,
+    12772155284,
+    12772155283
+  ],
+  "geometry": [
+    { "lat": 35.6804132, "lon": 139.7665667 },
+    { "lat": 35.6804079, "lon": 139.7665880 },
+    { "lat": 35.6803998, "lon": 139.7666235 }
+  ],
+  "tags": {
+    "destination": "普通列車3号車1番ドア",
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "1",
+    "name": "エレベーター;2階"
+  }
+},
+{
+  "type": "way",
+  "id": 1412408967,
+  "bounds": {
+    "minlat": 35.6816832,
+    "minlon": 139.7666411,
+    "maxlat": 35.6817132,
+    "maxlon": 139.7666559
+  },
+  "nodes": [
+    12535633066,
+    12979199114
+  ],
+  "geometry": [
+    { "lat": 35.6817132, "lon": 139.7666559 },
+    { "lat": 35.6816832, "lon": 139.7666411 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-1",
+    "name": "エレベーター;地下1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1412408974,
+  "bounds": {
+    "minlat": 35.6816350,
+    "minlon": 139.7668407,
+    "maxlat": 35.6816847,
+    "maxlon": 139.7668599
+  },
+  "nodes": [
+    12535633065,
+    12623457149
+  ],
+  "geometry": [
+    { "lat": 35.6816847, "lon": 139.7668599 },
+    { "lat": 35.6816350, "lon": 139.7668407 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1481868812,
+  "bounds": {
+    "minlat": 35.6824849,
+    "minlon": 139.7668143,
+    "maxlat": 35.6825001,
+    "maxlon": 139.7668256
+  },
+  "nodes": [
+    12570989717,
+    13590035514,
+    12570989718
+  ],
+  "geometry": [
+    { "lat": 35.6824849, "lon": 139.7668256 },
+    { "lat": 35.6824890, "lon": 139.7668143 },
+    { "lat": 35.6825001, "lon": 139.7668187 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "indoor": "yes",
+    "name": "東京駅;段差解消エレベーター"
+  }
+},
+{
+  "type": "way",
+  "id": 1487694604,
+  "bounds": {
+    "minlat": 35.6817819,
+    "minlon": 139.7655939,
+    "maxlat": 35.6817876,
+    "maxlon": 139.7656046
+  },
+  "nodes": [
+    12593002493,
+    13638691514
+  ],
+  "geometry": [
+    { "lat": 35.6817819, "lon": 139.7656046 },
+    { "lat": 35.6817876, "lon": 139.7655939 }
+  ],
+  "tags": {
+    "destination": "4号車1番ドア",
+    "highway": "footway",
+    "indoor": "yes",
+    "layer": "-5",
+    "name": "エレベーター;地下5階"
+  }
+},
+{
+  "type": "way",
+  "id": 1529707649,
+  "bounds": {
+    "minlat": 35.6778954,
+    "minlon": 139.7646166,
+    "maxlat": 35.6779602,
+    "maxlon": 139.7646699
+  },
+  "nodes": [
+    13942805999,
+    13942806000,
+    13942931001
+  ],
+  "geometry": [
+    { "lat": 35.6779477, "lon": 139.7646699 },
+    { "lat": 35.6779602, "lon": 139.7646344 },
+    { "lat": 35.6778954, "lon": 139.7646166 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "name": "東京ビルディング;エレベーター;1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1529707650,
+  "bounds": {
+    "minlat": 35.6779477,
+    "minlon": 139.7646012,
+    "maxlat": 35.6780054,
+    "maxlon": 139.7646699
+  },
+  "nodes": [
+    13942805999,
+    13942805998,
+    12522256518
+  ],
+  "geometry": [
+    { "lat": 35.6779477, "lon": 139.7646699 },
+    { "lat": 35.6779625, "lon": 139.7646012 },
+    { "lat": 35.6780054, "lon": 139.7646143 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "layer": "-1",
+    "name": "東京ビルディング;エレベーター;地下1階"
+  }
+},
+{
+  "type": "way",
+  "id": 1529707651,
+  "bounds": {
+    "minlat": 35.6778409,
+    "minlon": 139.7645977,
+    "maxlat": 35.6779515,
+    "maxlon": 139.7646699
+  },
+  "nodes": [
+    13942805999,
+    13942931002,
+    13942931003
+  ],
+  "geometry": [
+    { "lat": 35.6779477, "lon": 139.7646699 },
+    { "lat": 35.6779515, "lon": 139.7646274 },
+    { "lat": 35.6778409, "lon": 139.7645977 }
+  ],
+  "tags": {
+    "highway": "footway",
+    "layer": "-2",
+    "name": "東京ビルディング;エレベーター;地下2階",
+    "tunnel": "building_passage"
+  }
+}
+
+  ]
+}
