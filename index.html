@@ -117,6 +117,8 @@
   #modeBtns button:hover{border-color:#3a475f}
   #note{font-size:10.5px;color:var(--dim);max-width:520px;text-align:right;line-height:1.5}
   #miniNote{display:none;margin:6px 0 0;font-size:10px;line-height:1.45;color:var(--dim)}
+  #sheetNote{display:none;margin:2px 0;font-size:10px;line-height:1.45;color:var(--dim)}
+  #osmAttr{display:none;position:fixed;z-index:9;right:10px;bottom:calc(48vh + 10px + env(safe-area-inset-bottom,0px));font-size:9px;color:rgba(200,210,225,.7);pointer-events:none}
   #mapWrap{position:fixed;z-index:10;right:14px;bottom:calc(84px + env(safe-area-inset-bottom,0px));padding:8px}
   #mapWrap[hidden]{display:none!important}
   #minimap{display:block;width:220px;height:170px}
@@ -137,15 +139,39 @@
     #navIcon{flex-basis:34px;height:34px;font-size:18px}
     #navText span{display:none}
     #navDist{font-size:17px}
-    #board{width:100%;max-height:none;overflow:visible}
-    /* スマホ: 上のパネル全体を縦スワイプでスクロール（ルート候補を全部見られる） */
-    #top{bottom:calc(64px + env(safe-area-inset-bottom,0px));overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;align-content:flex-start;padding-bottom:12px}
-    .brand{flex-wrap:wrap;gap:2px 8px}
-    .brand h1{font-size:16px;letter-spacing:.02em;white-space:nowrap}
-    .brand span{font-size:10px;letter-spacing:.02em;white-space:nowrap}
+    /* スマホ: 上は小さな入力バー、下はルート候補シート、真ん中は常に模型 */
+    #top{top:calc(6px + env(safe-area-inset-top,0px));left:6px;right:6px;display:block}
+    #controls{padding:7px 9px;gap:4px;width:100%}
+    .brand h1{font-size:13px;letter-spacing:.02em;white-space:nowrap}
+    .brand span{display:none}
+    #controls .row{flex-wrap:nowrap;gap:5px}
+    #controls > .row + .row{display:none}
+    .field{flex:1 1 0}
+    .field label{font-size:9.5px;letter-spacing:.02em;white-space:nowrap;overflow:hidden}
+    .field input{padding:6px 8px;font-size:13.5px}
+    .iconbtn{width:28px;height:32px;font-size:13px}
+    #goBtn{height:32px;padding:0 9px;font-size:12.5px;white-space:nowrap}
+    #miniNote{display:none!important}
+    #board{position:fixed;left:6px;right:6px;bottom:calc(6px + env(safe-area-inset-bottom,0px));width:auto;height:48vh;max-height:48vh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:8px 9px;gap:5px}
+    #board h2{display:none}
+    #summary{font-size:12px;line-height:1.4}
+    #summary > div:nth-child(2){display:none}
+    #summary > div:nth-child(3){font-size:10.5px!important;margin-top:0!important}
+    .ropts{gap:5px}
+    .ropt{display:grid;grid-template-columns:auto 1fr;column-gap:8px;row-gap:0;padding:4px 9px;width:100%;line-height:1.28}
+    .ropt b{white-space:nowrap}
+    .ropt b{grid-column:1;grid-row:1;font-size:12.5px}
+    .ropt .mono{grid-column:2;grid-row:1;justify-self:end;font-size:11px;white-space:nowrap}
+    .ropt:not(.on) > span:last-child{display:none}   /* 改札は選択中のルートだけ表示して、7本が一度に見えるように */
+    .ropt .tagline{grid-column:1 / -1;grid-row:2;font-size:11px}
+    .ropt > span:last-child{grid-column:1 / -1;grid-row:3;font-size:10.5px}
+    .ropt .tagline,.ropt > span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;max-width:100%}
+    #sheetNote{display:block}
+    #osmAttr{display:block}
+    body.pov #osmAttr,body.clean #osmAttr{bottom:calc(6px + env(safe-area-inset-bottom,0px))}
+    body:not(.pov) #bottom,body:not(.pov) #bar{display:none}
     #mapWrap{display:none!important}
     #note{display:none}
-    #miniNote{display:block}
     #nav{bottom:calc(70px + env(safe-area-inset-bottom,0px))}
     #navText b{font-size:15px}
   }
@@ -178,10 +204,12 @@
   <aside id="board" class="panel" aria-live="polite">
     <h2>乗換ルート</h2>
     <div id="summary"></div>
+    <p id="sheetNote">個人制作の非公式ツール（各鉄道会社とは無関係）。情報は推定を含むため、実際は駅の掲示・公式情報でご確認ください。地図 © OpenStreetMap contributors</p>
     <ol id="steps"></ol>
   </aside>
 </div>
 
+<div id="osmAttr">© OpenStreetMap contributors</div>
 <button type="button" id="menuBtn" aria-label="ルート選択を表示">☰ ルート選択</button>
 <div id="povTop"><button type="button" id="povReplay">もう一度</button><button type="button" id="povModel">模型を見る</button></div>
 <div id="nav" class="panel" hidden>
@@ -473,7 +501,19 @@ const speedPass = new ShaderPass({
       col/=12.;float v=smoothstep(.95,.25,length(d*vec2(1.,.85)));col*=mix(1.-uVig,1.,v);gl_FragColor=vec4(col,1.);}`,
 });
 composer.addPass(speedPass);
-function resize() { const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); composer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+function resize() { const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); composer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix(); if (typeof applyViewOffset === "function") applyViewOffset(); }
+// スマホの模型表示: 上の入力バーと下のルート候補シートの間を画面の中心として描く
+function viewBand() {
+  if (!matchMedia("(max-width:760px)").matches || document.body.classList.contains("clean") || document.body.classList.contains("pov") || mode !== "overview") return null;
+  const t = document.getElementById("controls").getBoundingClientRect().bottom, b = document.getElementById("board").getBoundingClientRect().top;
+  return b - t > 80 ? [t, b] : null;
+}
+function applyViewOffset() {
+  const band = viewBand(), w = innerWidth, h = innerHeight;
+  if (band) camera.setViewOffset(w, h, 0, Math.round(h / 2 - (band[0] + band[1]) / 2), w, h); else camera.clearViewOffset();
+  return band;
+}
+new MutationObserver(() => { try { applyViewOffset(); } catch (e) { /* mode 未初期化の間は何もしない */ } }).observe(document.body, { attributes: true, attributeFilter: ["class"] });
 addEventListener("resize", resize);
 
 /* ---------------- textures & materials ---------------- */
@@ -990,7 +1030,7 @@ function showRoute(r) {
   const m = route.total, min = Math.max(1, Math.round(m / 75));
   const gatesOf = x => x.steps.filter(s => s.kind === "gate").map(s => s.main.replace(/を通る$/, ""));
   const opts = routeOptions.map((o, i) => {
-    const on = o === r, lab = o.stroller ? "ベビーカー・車いすルート（階段なし）" : `ルート${i + 1 - (routeOptions.slice(0, i).some(x => x.stroller) ? 1 : 0)}${i === 0 ? "（最短）" : ""}`;
+    const on = o === r, lab = o.stroller ? "ベビーカー・車いす（階段なし）" : `ルート${i + 1 - (routeOptions.slice(0, i).some(x => x.stroller) ? 1 : 0)}${i === 0 ? "（最短）" : ""}`;
     return `<button type="button" class="ropt${on ? " on" : ""}${o.stroller ? " baby" : ""}" data-i="${i}"><b>${lab}</b><span class="tagline">${(o.tags || []).join(" / ") || (o.outdoor >= 30 ? "外を歩く" : "駅構内")}</span><span class="mono">約${Math.round(o.total / 10) * 10}m・屋外${Math.round(o.outdoor / 10) * 10}m・約${Math.max(1, Math.round(o.total / 75))}分</span><span>改札：${gatesOf(o).length ? gatesOf(o).join(" → ") : "出ない（改札内で乗換）"}</span></button>`;
   }).join("");
   summary.innerHTML = `<div><span style="color:${LINES[a].color}">■</span> ${LINES[a].name} → <span style="color:${LINES[b].color}">■</span> ${LINES[b].name}</div>
@@ -1001,7 +1041,7 @@ function showRoute(r) {
     ${route.mode === "strict" || route.mode === "reenter" ? "" : `<div style="font-size:11.5px;color:#ffb020">※ この区間は地図データに改札の情報が不足しているため、改札の判定を簡略化しています</div>`}`;
   summary.querySelectorAll(".ropt").forEach(bt => bt.onclick = () => {
     showRoute(routeOptions[+bt.dataset.i]);
-    if (matchMedia("(max-width:760px)").matches) { if (mode !== "overview") toOverview(); document.body.classList.add("clean"); frameRoute(); }   // スマホ: パネルを隠して模型全体でルートを見せる
+    if (matchMedia("(max-width:760px)").matches) { if (mode !== "overview") toOverview(); else frameRoute(); }   // スマホ: 真ん中の模型ですぐ切り替えて見せる
     else if (mode === "overview") frameRoute();
   });
   stepsEl.innerHTML = "";
@@ -1027,7 +1067,8 @@ function frameRoute() {
   if (!route) return;
   const b3 = new THREE.Box3(); route.dense.forEach(p => b3.expandByPoint(p));
   const c = b3.getCenter(new THREE.Vector3()), size = b3.getSize(new THREE.Vector3()).length();
-  const fit = camera.aspect < 1 ? 1 / Math.max(.45, camera.aspect) : 1;   // 縦長画面では横幅に収まるよう引く
+  const band = applyViewOffset();
+  const fit = Math.max(band ? innerHeight / (band[1] - band[0]) * .8 : 1, camera.aspect < 1 ? 1 / Math.max(.45, camera.aspect) : 1);   // 縦長画面・パネルの隙間に収まるよう引く
   tweenCam(c.clone().addScaledVector(new THREE.Vector3(.42, .78, .95).normalize(), Math.max(160, size * 1.05 * fit)), c, 1.1);
 }
 function tweenCam(pos, target, dur) { camTween.active = true; camTween.t0 = performance.now(); camTween.dur = dur * 1000; camTween.p0 = camera.position.clone(); camTween.t0v = controls.target.clone(); camTween.p1 = pos; camTween.t1 = target; }
