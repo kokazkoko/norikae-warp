@@ -116,6 +116,7 @@
   #modeBtns button{height:36px;padding:0 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel-solid);color:var(--ink);font:500 13px "Zen Kaku Gothic New",sans-serif;cursor:pointer}
   #modeBtns button:hover{border-color:#3a475f}
   #note{font-size:10.5px;color:var(--dim);max-width:520px;text-align:right;line-height:1.5}
+  #miniNote{display:none;margin:6px 0 0;font-size:10px;line-height:1.45;color:var(--dim)}
   #mapWrap{position:fixed;z-index:10;right:14px;bottom:calc(84px + env(safe-area-inset-bottom,0px));padding:8px}
   #mapWrap[hidden]{display:none!important}
   #minimap{display:block;width:220px;height:170px}
@@ -139,6 +140,7 @@
     #board{width:100%;max-height:28vh}
     #mapWrap{display:none!important}
     #note{display:none}
+    #miniNote{display:block}
     #nav{bottom:calc(70px + env(safe-area-inset-bottom,0px))}
     #navText b{font-size:15px}
   }
@@ -166,6 +168,7 @@
       </div>
     </div>
     <div id="err" role="alert"></div>
+    <p id="miniNote">個人制作の非公式ツール（各鉄道会社とは無関係）。情報は推定を含むため、実際は駅の掲示・公式情報でご確認ください。地図 © OpenStreetMap contributors</p>
   </form>
   <aside id="board" class="panel" aria-live="polite">
     <h2>乗換ルート</h2>
